@@ -2143,7 +2143,7 @@ break
             break
 		
 		
-		 case 'play123'{
+	case 'play123': {
 		    
 		if (!text) return reply(`Example : ${prefix + command} අල්ලන් යන්න බැරි අතක්`)
                 let yts = require("yt-search")
@@ -2166,6 +2166,7 @@ break
 📢 Url : ${anu.url}
 
 😊 ඔයාට ඕන Audio එකද 🎵, නැතිනම්, Audio Document 📃 එකද, පහතින් තෝරන්න 👇  `,
+			
                     footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
                     buttons: buttons,
                     headerType: 4
