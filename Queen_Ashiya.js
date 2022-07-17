@@ -4207,7 +4207,7 @@ case 'allmenu': {
 		    {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
                
        let buttonMessage = {
-       image: { url: picak+'All Menu'},
+       image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
        caption: `
 ┏━ *${botname}* ━━⭓ 
 ┃
