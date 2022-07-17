@@ -3448,8 +3448,7 @@ reply("Success Changing Menu To "+q)
 		case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-								   result = fs.readFileSync(`./Queen_Ashiya_Media/voice/owner.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+								   
 
 								   
 
