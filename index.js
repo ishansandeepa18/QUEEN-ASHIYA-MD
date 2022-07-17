@@ -160,7 +160,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
         } catch (err) {
             console.log(err)
         }
-    })Ashiya
+    })
 	
     //Setting\\
     Ashiya.decodeJid = (jid) => {
