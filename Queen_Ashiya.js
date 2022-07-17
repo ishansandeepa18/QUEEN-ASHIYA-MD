@@ -109,10 +109,10 @@ const nexusnw = require('xfarr-api')
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database\\
-let setiker = JSON.parse(fs.readFileSync('./database/sticker.json'));
-let voice = JSON.parse(fs.readFileSync('./database/voice.json'));
-let image = JSON.parse(fs.readFileSync('./database/image.json'))
-let video = JSON.parse(fs.readFileSync('./database/video.json'))
+let setik = JSON.parse(fs.readFileSync('./database/sticker.json'));
+let vien = JSON.parse(fs.readFileSync('./database/voice.json'));
+let imagi = JSON.parse(fs.readFileSync('./database/image.json'))
+let videox = JSON.parse(fs.readFileSync('./database/video.json'))
 
 //read database\\
 let tebaklagu = db.data.game.tebaklagu = []
