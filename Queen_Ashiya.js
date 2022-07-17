@@ -270,7 +270,7 @@ const reply = (teks) => {
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
-			for (let anjh of image){
+			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/image/${anjh}.jpg`)
 					Ashiya.sendMessage(m.chat, { image: result }, { quoted: m })
