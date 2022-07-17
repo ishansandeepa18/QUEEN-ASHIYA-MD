@@ -3442,6 +3442,170 @@ reply("Success Changing Menu To "+q)
 }
 
                     break
+		
+		
+		
+		case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+								   result = fs.readFileSync(`./Queen_Ashiya_Media/voice/owner.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+								   
+
+}
+break
+		case 'mk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Mk.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'පොල් ගානවා.. ඔයත් එනවද' }, { quoted: m })
+
+
+}
+break
+		case 'gn': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gn.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'තෝ යකාම කාපිය...' }, { quoted: m })
+
+
+}
+break
+		
+		case 'gm': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gm.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'සුබ උදෑසනක් වේවා.. ඔයාටත්...' }, { quoted: m })
+
+}
+break
+		case 'ishan': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ishan.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+		case 'adarei': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarei.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                         Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
+
+}
+break
+		case 'fuck': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Fuck.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+
+}
+break
+	case 'ha': case 'hako': case 'hakoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ha.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
+	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Na.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'හා නැද්ද.. හා කමක් නෑ..' }, { quoted: m })
+
+}
+break
+	case 'mmm': case 'hmm': case 'හ්ම්': case 'mm': case 'hmmm': case 'හ්ම්ම්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hmm.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
+		
+		case 'adarey': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarey.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
+
+}
+break
+	case 'ane': case 'anee': case 'අනේ': case 'අනෙ': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Huththa.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+
+}
+break
+	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Pakaya.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+
+}
+break
+	case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ponnaya.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+                                          Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+
+}
+break
+		case 'denawada': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/denawada.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'මොනවද ඕන ...' }, { quoted: m })
+
+
+}
+break
+	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Marilada.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'නෑ තාම පණපිටින් ඉන්නො..' }, { quoted: m })
+
+
+}
+break
+	case 'gothaya': case 'goothaya': case 'ගෝතයා': case 'ගෝතය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gothaya.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+	case 'umma': case 'ummah': case 'ummma': case 'උම්මා': case 'උම්මාහ්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Umma.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Wesi.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'උබලයි අම්මද බං ...' }, { quoted: m })
+
+
+}
+break
+		
+		
+		
+		
                      case 'alive': case 'ashiya':{
                            	timestampe = speed();
 latensie = speed() - timestampe
@@ -3498,7 +3662,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-            case 'list': case 'menu': {
+	case 'list': case 'menu': case 'මෙනු': {
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
