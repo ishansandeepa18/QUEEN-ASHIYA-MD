@@ -36,14 +36,14 @@ global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'Wait A minute...',
+    success: 'හරි ✅',
+    admin: 'උබට බෑ බං ඇඩ්මින්ට විතරයි පුලුවන්!',
+    botAdmin: 'මුලින්ම ඇඩ්මින් දීලා ඉන්න!',
+    owner: 'මට විතරයි මේක කරන්න පුලුවන්!',
+    group: 'Groups වල විතරයි පුලුවන්!',
+    private: 'Private Chat වල විතරයි පුලුවන්!',
+    bot: 'මෙම විශේෂාංගය Bot සඳහා පමණි',
+    wait: 'පොඩ්ඩක් ඉන්න මගේ මැණික Wait ⏳ ...',
     error: 'Error! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
@@ -60,7 +60,7 @@ global.mess = {
    umpanawal: 5,
    potionawal: 1
 }
-global.thumb = fs.readFileSync('./Queen_Ashiya_Media/gojo.jpg')
+global.thumb = fs.readFileSync('./Queen_Ashiya_Media/Ashiya.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
