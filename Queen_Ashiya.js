@@ -2085,7 +2085,7 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵'}, type: 1},
+                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: 'Low Quality'}, type: 1},
 		    {buttonId: `play321 ${anu.url}`, buttonText: {displayText: 'High Quality'}, type: 1},
                 ]
                 let buttonMessage = {
@@ -2100,7 +2100,7 @@ break
 🎗 Uploaded On : ${anu.ago}
 📢 Url : ${anu.url}
 
-😊 ඔයාට ඕන Audio එකද 🎵, නැතිනම්, Audio Document 📃 එකද, පහතින් තෝරන්න 👇  `,
+😊 ඔයාට ඕන Audio එකේ Quality එක පහතින් තෝරන්න...  `,
                     footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
                     buttons: buttons,
                     headerType: 4
@@ -2111,39 +2111,6 @@ break
             break
 		
 		case 'play321': {
-		    
-		if (!text) return reply(`Example : ${prefix + command} අල්ලන් යන්න බැරි අතක්`)
-                let yts = require("yt-search")
-                let search = await yts(text)
-                let anu = search.videos[0]
-                let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵 '}, type: 1},
-		    {buttonId: `ytmp31 ${anu.url}`, buttonText: {displayText: '📃 AUDIO DOCUMENT 📃'}, type: 1},
-                ]
-                let buttonMessage = {
-                    image: { url: anu.thumbnail },
-                    caption: `
-  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
-		    
-📝 Title : ${anu.title}
-
-⏰ Duration : ${anu.timestamp}
-👀 Viewes : ${anu.views}
-🎗 Uploaded On : ${anu.ago}
-📢 Url : ${anu.url}
-
-😊 ඔයාට ඕන Audio එකද 🎵, නැතිනම්, Audio Document 📃 එකද, පහතින් තෝරන්න 👇  `,
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                    buttons: buttons,
-                    headerType: 4
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
-		
-		
-	case 'play123': {
 		    
 		if (!text) return reply(`Example : ${prefix + command} අල්ලන් යන්න බැරි අතක්`)
                 let yts = require("yt-search")
@@ -2165,7 +2132,40 @@ break
 🎗 Uploaded On : ${anu.ago}
 📢 Url : ${anu.url}
 
-😊 ඔයාට ඕන Audio එකද 🎵, නැතිනම්, Audio Document 📃 එකද, පහතින් තෝරන්න 👇  `,
+😊 ඔයා තෝර ගත්තේ Audio එකේ High Quality, දැන් ඔයාට ඕන  🎵 AUDIO 🎵 එකද, නැතිනම් 📃 AUDIO DOCUMENT 📃 එකද කියා පහතින් තෝරන්න... `,
+                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    buttons: buttons,
+                    headerType: 4
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+		
+		
+	case 'play123': {
+		    
+		if (!text) return reply(`Example : ${prefix + command} අල්ලන් යන්න බැරි අතක්`)
+                let yts = require("yt-search")
+                let search = await yts(text)
+                let anu = search.videos[0]
+                let buttons = [
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵 '}, type: 1},
+		    {buttonId: `documentfile2 ${anu.url}`, buttonText: {displayText: '📃 AUDIO DOCUMENT 📃'}, type: 1},
+                ]
+                let buttonMessage = {
+                    image: { url: anu.thumbnail },
+                    caption: `
+  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+		    
+📝 Title : ${anu.title}
+
+⏰ Duration : ${anu.timestamp}
+👀 Viewes : ${anu.views}
+🎗 Uploaded On : ${anu.ago}
+📢 Url : ${anu.url}
+
+😊 ඔයා තෝර ගත්තේ Audio එකේ Low Quality, දැන් ඔයාට ඕන  🎵 AUDIO 🎵 එකද, නැතිනම් 📃 AUDIO DOCUMENT 📃 එකද කියා පහතින් තෝරන්න...  `,
 			
                     footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
                     buttons: buttons,
