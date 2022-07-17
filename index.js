@@ -100,21 +100,21 @@ async function startAshiya() {
        try {
        ppgc = await Ashiya.profilePictureUrl(pea[0].id, 'image')
        } catch {
-       ppgc = 'https://shortlink.Ashiyaarridho.my.id/rg1oT'
+       ppgc = 'https://shortlink.IshuMdNxarridho.my.id/rg1oT'
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       Ashiya.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nGroup එක Mute කලා යාලුවනේ පුලුවන් ඉක්මනින් ආයේ Unmute කරන්නම් සිදුවන අපහසුතාවයට සමාවෙන්න... !`, `Group Settings Change Message`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       Ashiya.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nGroup එක Unmute කලා යාලුවනේ දැන් ඔයාලට පුලුවන් මේ බොට් ඉශූගෙන් උදව් ගන්න... !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == true) {
-       Ashiya.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nGroup එකේ Info Edit කරන්න පුලුවන් ඇඩ්මින්ලට විතරයි... !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == false) {
-       Ashiya.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nදැන් ඔයාලා හැමදෙනාටම Group එකේ Info Edit කරන්න පුලුවන්...  !`, `Group Settings Change Message`, wm_fatih, [])
        } else {
-       Ashiya.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nමෙන්න මේ ඉශූ Group එකේ නම වෙනස් කලා... *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
-    })
+    })Ashiya
 
     Ashiya.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
@@ -140,9 +140,9 @@ async function startAshiya() {
         let nama = await Ashiya.getName(num)
 memb = metadata.participants.length
 
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.im.ge/2022/07/03/uUTgTK.png&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 
-Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.im.ge/2022/07/03/uUTgTK.png&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     Ashiya.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
 ⭐✑ Hi👋 @${num.split("@")[0]},
@@ -150,17 +150,17 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 ⭐✑ Description: ${metadata.desc}
 
-⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+⭐✑ ඔයාව සාදරයෙන් පිළිගන්නවා මේ Group එකට... ඔයාලට පුලුවන් මේ Group එකෙන් ඔයාලගේ වැඩ පහසු කර ගන්න වැඩි දුර තොරතුරු දැන ගැනීමට .menu / .list ලෙස Type කරන්න...!!`} )
                 } else if (anu.action == 'remove') {
                     Ashiya.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+⭐✑ මේන්න මේ ගෝතයා Group එකෙන් Left උනා... හා කමක් නෑ. උට හොද නම් මට මොකෝ 😅` })
                 }
             }
         } catch (err) {
             console.log(err)
         }
-    })
+    })Ashiya
 	
     //Setting\\
     Ashiya.decodeJid = (jid) => {
