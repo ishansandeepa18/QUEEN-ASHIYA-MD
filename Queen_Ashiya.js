@@ -2078,32 +2078,34 @@ break
         }
         break
 	    case 'play': case 'song': case 'ytplay': {
-                if (!text) return reply(`Example : ${prefix + command} Stay`)
+		    
+		if (!text) return reply(`Example : ${prefix + command} අල්ලන් යන්න බැරි අතක්`)
                 let yts = require("yt-search")
                 let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+                let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎶Audio🎶'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵 '}, type: 1},
+		    {buttonId: `documentfile ${anu.url}`, buttonText: {displayText: '📃 AUDIO DOCUMENT 📃'}, type: 1},
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-🐦 Title : ${anu.title}
-🐦 Ext : Search
-🐦 ID : ${anu.videoId}
-🐦 Duration : ${anu.timestamp}
-🐦 Viewes : ${anu.views}
-🐦 Uploaded On : ${anu.ago}
-🐦 Author : ${anu.author.name}
-🐦 Channel : ${anu.author.url}
-🐦 Description : ${anu.description}
-🐦 Url : ${anu.url}`,
-                    footer: Ashiya.user.name,
+  *I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
+		    
+📝 Title : ${anu.title}
+🔎 Ext : Search
+⏰ Duration : ${anu.timestamp}
+👀 Viewes : ${anu.views}
+🎗 Uploaded On : ${anu.ago}
+📢 Url : ${anu.url}
+
+😊 ඔයාට ඕන Audio එකද 🎵, නැතිනම්, Audio Document 📃 එකද, පහතින් තෝරන්න 👇  `,
+                    footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
                     buttons: buttons,
                     headerType: 4
                 }
                 Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
             }
             break
 	    case 'ytmp3': case 'getmusic': case 'ytaudio': {
@@ -2112,10 +2114,33 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                Ashiya.sendImage(m.chat, media.thumb, `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '320kbps'}`, m)
+                const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
+		await Ashiya.sendMessage(from, { delete: down.key})
+		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
+		await  Ashiya.sendMessage(from, { delete: uplord.key})
+               
+        
                 Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
+		
+		case 'documentfile': {
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
+		await Ashiya.sendMessage(from, { delete: down.key})
+			Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
+		await Ashiya.sendMessage(from, { delete: uplord.key})
+		
+               
+		
+	}
+            break
+		
             case 'ytmp4': case 'getvideo': case 'ytvideo': {
                 let { ytv } = require('./lib/y2mate')
                 if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`)
