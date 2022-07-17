@@ -1416,7 +1416,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 	    case 'setname': case 'setgcname': case 'setsubject': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) replay(`${mess.admin}`)
+                if (!isAdmins) return replay(`${mess.admin}`)
                 if (!text) replay(`Where Is The Text?`)
                 await Ashiya.groupUpdateSubject(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
@@ -1778,7 +1778,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE🎉 」\n\n${text}`
+                      let txt = `💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞\n\n${text}`
                       Ashiya.send5ButImg(i, txt, Ashiya.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1812,7 +1812,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE 🎉」\n\n${text}`
+                      let txt = `💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞\n\n${text}`
                       Ashiya.send5ButImg(yoi, txt, Ashiya.user.name, global.thumb, btn)
 		}
 		reply('Broadcast Success')
@@ -3565,8 +3565,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "⚔All Features",
-								"rows": [
-									{
+								"rows": [{
+									
 										"title": "All Menu 📁",
 										"description": "සියලුම කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක!",
 										"rowId": `${prefix}allmenu`
