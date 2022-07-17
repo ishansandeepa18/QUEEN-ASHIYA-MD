@@ -109,10 +109,10 @@ const nexusnw = require('xfarr-api')
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database\\
-let sticker = JSON.parse(fs.readFileSync('./database/sticker.json'));
-let voice = JSON.parse(fs.readFileSync('./database/voice.json'));
-let image = JSON.parse(fs.readFileSync('./database/image.json'))
-let video = JSON.parse(fs.readFileSync('./database/video.json'))
+let setik = JSON.parse(fs.readFileSync('./database/sticker.json'));
+let vien = JSON.parse(fs.readFileSync('./database/voice.json'));
+let imagi = JSON.parse(fs.readFileSync('./database/image.json'))
+let videox = JSON.parse(fs.readFileSync('./database/video.json'))
 
 //read database\\
 let tebaklagu = db.data.game.tebaklagu = []
@@ -258,25 +258,25 @@ const reply = (teks) => {
         }
 
         //auto reply 
-        for (let anji of sticker){
+        for (let anji of setik){
 				if (budy === anji){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/${anji}.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
-			for (let anju of voice){
+			for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/voice/${anju}.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
-			for (let anjh of image){
+			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/image/${anjh}.jpg`)
 					Ashiya.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
-					for (let anjh of video){
+					for (let anjh of videox){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/video/${anjh}.mp4`)
 					Ashiya.sendMessage(m.chat, { video: result }, { quoted: m })
