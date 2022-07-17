@@ -5311,8 +5311,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 		
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
 		
-𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢... 
- !!!`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋‍","id": 'owner'}}] )
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢...  `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋‍","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
