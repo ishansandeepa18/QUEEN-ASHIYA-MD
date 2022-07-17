@@ -3442,6 +3442,508 @@ reply("Success Changing Menu To "+q)
 }
 
                     break
+		
+		
+	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+								   
+								   
+
+}
+break
+		case 'mk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Mk.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'පොල් ගානවා.. ඔයත් එනවද' }, { quoted: m })
+
+
+}
+break
+		case 'gn': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gn.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'තෝ යකාම කාපිය...' }, { quoted: m })
+
+
+}
+break
+		
+		case 'gm': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gm.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'සුබ උදෑසනක් වේවා.. ඔයාටත්...' }, { quoted: m })
+
+}
+break
+		case 'ishan': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ishan.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+		case 'adarei': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarei.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                         Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
+
+}
+break
+		case 'fuck': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Fuck.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+
+}
+break
+	case 'ha': case 'hako': case 'hakoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ha.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
+	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Na.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'හා නැද්ද.. හා කමක් නෑ..' }, { quoted: m })
+
+}
+break
+	case 'mmm': case 'hmm': case 'හ්ම්': case 'mm': case 'hmmm': case 'හ්ම්ම්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hmm.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+}
+break
+		
+		case 'adarey': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarey.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
+
+}
+break
+	case 'ane': case 'anee': case 'අනේ': case 'අනෙ': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Huththa.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+
+}
+break
+	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Pakaya.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+
+}
+break
+	case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ponnaya.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+                                          Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+
+}
+break
+		case 'denawada': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/denawada.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'මොනවද ඕන ...' }, { quoted: m })
+
+
+}
+break
+	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Marilada.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'නෑ තාම පණපිටින් ඉන්නො..' }, { quoted: m })
+
+
+}
+break
+	case 'gothaya': case 'goothaya': case 'ගෝතයා': case 'ගෝතය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gothaya.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+	case 'umma': case 'ummah': case 'ummma': case 'උම්මා': case 'උම්මාහ්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Umma.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+
+
+}
+break
+	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Wesi.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+                                        Ashiya.sendMessage(m.chat, { text :'උබලයි අම්මද බං ...' }, { quoted: m })
+
+
+}
+break
+		case 'ado': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ado.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'adarey': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/adarey.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'arakku': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/arakku.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'athal': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/athal.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'aththa': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/aththa.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ayye': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ayye.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ayyo': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ayyo.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ba': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ba.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'baha': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/baha.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'bayay': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bayay.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'bijja': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bijja.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'bomuda': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bomuda.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'data': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/data.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'diyanko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/diyanko.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ela': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ela.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+
+
+case 'iya': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/iya.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+
+
+case 'ganja': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ganja.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'gm': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/gm.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'gn': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/gn.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ha': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ha.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'hari': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/hari.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'holman': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/holman.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ida': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ida.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'idahan': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/idahan.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'karapanko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/karapanko.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'kawda': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/kawda.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ko.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'koo': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/koo.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'manika': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/manika.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'marila': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/marila.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'me': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/me.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'mk': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/mk.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'modaya': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/modaya.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'mokakda': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/mokakda.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'moko': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/moko.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'naha': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/naha.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'natapan': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/natapan.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'niyamay': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/niyamay.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ow': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ow.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'palayan': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/palayan.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'pennanna': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/pennanna.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'sira': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/sira.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'tharahay': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/tharahay.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'adarey': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/adarey.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'huththa': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/huththa.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+		case 'ponnaya': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/ponnaya.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+	case 'pakaya': case 'pamkaya': case 'pakayo': case 'pakayoo': {result = fs.readFileSync(`./Dark_Ishu_Media/sticker/bijja.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+
+
+
+}
+break
+	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා උබ කියනකන් හිටියේ 😂' }, { quoted: m })
+
+
+
+}
+break
+		
+		
+		
+		
+		
+		
                      case 'alive': case 'ashiya':{
                            	timestampe = speed();
 latensie = speed() - timestampe
@@ -3681,13 +4183,22 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
-                Ashiya.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
+                Ashiya.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/17/FlEwaG.jpg' }, caption: `*Hi    ${m.pushName}*\n 
+		
+		*I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
+		
+		
+		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
+		
+		𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢...\n` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/nexusNw/Gojo-Satoru\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
+                reply(`https://www.youtube.com/c/SinhanadaMusicRemix\n  Subscribe කරන්න අමතක කරන්න එපා... අලුත්ම සිංදු ආපූ ගමන් අහන්න මේ චැනල් එක Subscribe කරලා තියා ගන්න...`)
             }
             break
+		
+		
 case 'allmenu': {
   	let buttons = [
                     {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
