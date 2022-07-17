@@ -1135,7 +1135,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             }
             break
 		
-	case 'react1': {
+	case 'react': {
                 if (!isCreator) throw mess.owner
                 reactionMessage = {
                     react: {
@@ -1147,10 +1147,6 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             }
             break
 		
-		case 'react': { 
-   
-Ashiya.sendMessage(m.chat, reactionMessage)} 
-break
 		
 		
 		
@@ -4059,7 +4055,7 @@ break
 break
 	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා උබ කියනකන් හිටියේ 😂' }, { quoted: m })
 
-
+                                                     Ashiya.sendMessage(from, { react: { text: `😊`, key: m.key }})
 
 }
 break
@@ -4127,7 +4123,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 break
             case 'list': case 'menu': {
 		    
-Ashiya.sendMessage(from, { react: { text: `😊`, key: m.key }})
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
