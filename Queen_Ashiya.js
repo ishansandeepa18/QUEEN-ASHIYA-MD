@@ -244,7 +244,7 @@ const reply = (teks) => {
 	
 	  //antilink\\
         if (db.data.chats[m.chat].antilink) {
-        if (budy.match(`chat.whatsapp.com`)) {
+        if (budy.match(`https://`)) {
         reply(`「 ANTI LINK 」\n\nYou have been detected sending a group link, sorry you will be kicked !`)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒`)
         let gclink = (`https://chat.whatsapp.com/`+await Ashiya.groupInviteCode(m.chat))
@@ -1871,12 +1871,12 @@ break
             reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
-                let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
+                let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' })
                 await fs.unlinkSync(encmedia)
             } else if (/video/.test(mime)) {
                 if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds!')
                 let media = await quoted.download()
-                let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
+                let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' })
                 await fs.unlinkSync(encmedia)
             } else {
                 reply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 Seconds`)
@@ -1892,7 +1892,7 @@ reply(mess.wait)
 mee = await Ashiya.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
 meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`
-memek = await Ashiya.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
+memek = await Ashiya.sendImageAsSticker(m.chat, meme, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' })
 await fs.unlinkSync(memek)
 }
 break
@@ -1917,7 +1917,7 @@ break
 		let [emoji1, emoji2] = text.split`+`
 		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
 		for (let res of anu.results) {
-		    let encmedia = await Ashiya.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
+		    let encmedia = await Ashiya.sendImageAsSticker(m.chat, res.url, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', categories: res.tags })
 		    await fs.unlinkSync(encmedia)
 		}
 	    }
@@ -3681,7 +3681,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
-                Ashiya.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
+                Ashiya.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `*Hi  ${m.pushName}*\n-----------------\n` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
