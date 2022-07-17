@@ -114,7 +114,7 @@ async function startAshiya() {
        } else {
        Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nමෙන්න මේ ඉශූ Group එකේ නම වෙනස් කලා... *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
-    })Ashiya
+    })
 
     Ashiya.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
