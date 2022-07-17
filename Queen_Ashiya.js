@@ -258,25 +258,25 @@ const reply = (teks) => {
         }
 
         //auto reply 
-        for (let anji of setik){
+        for (let anji of sticker){
 				if (budy === anji){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/${anji}.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
-			for (let anju of vien){
+			for (let anju of voice){
 				if (budy === anju){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/voice/${anju}.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
-			for (let anjh of imagi){
+			for (let anjh of image){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/image/${anjh}.jpg`)
 					Ashiya.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
-					for (let anjh of videox){
+					for (let anjh of video){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/video/${anjh}.mp4`)
 					Ashiya.sendMessage(m.chat, { video: result }, { quoted: m })
