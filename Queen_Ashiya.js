@@ -241,6 +241,13 @@ const reply = (teks) => {
 		setting.status = new Date() * 1
 	    }
 	}
+	    
+	    //antispam or auto react
+//if (m.message && msgFilter.isFiltered(from)) {
+//console.log(`${global.themeemoji}[SPAM]`, color(moment(m.messageTimestamp * 1000).format('DD/MM/YYYY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(m.pushName))
+//return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})
+//}
+	    
 	
 	  //antilink\\
         if (db.data.chats[m.chat].antilink) {
@@ -475,6 +482,16 @@ Typed *surrender* to surrender and admited defeat`
 	    delete this.game[room.id]
 	    }
 	    }
+	    
+	    //react function
+const reactionMessage = {
+                    react: {
+                        text: args[0],
+                        key: { remoteJid: m.chat, fromMe: true, id: quoted.id }
+                    }
+                }
+
+
 
         //Suit PvP\\
 	    this.suit = this.suit ? this.suit : {}
@@ -1118,7 +1135,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             }
             break
 		
-	case 'react': {
+	case 'react1': {
                 if (!isCreator) throw mess.owner
                 reactionMessage = {
                     react: {
@@ -1129,6 +1146,12 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
                 Ashiya.sendMessage(m.chat, reactionMessage)
             }
             break
+		
+		case 'react': { 
+   
+Ashiya.sendMessage(m.chat, reactionMessage)} 
+break
+		
 		
 		
             case 'kuismath': case 'math': {
@@ -1867,12 +1890,12 @@ break
             reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
-                let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
+                let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', author: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' })
                 await fs.unlinkSync(encmedia)
             } else if (/video/.test(mime)) {
                 if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds!')
                 let media = await quoted.download()
-                let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
+                let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', author: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' })
                 await fs.unlinkSync(encmedia)
             } else {
                 reply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 Seconds`)
@@ -1888,7 +1911,7 @@ reply(mess.wait)
 mee = await Ashiya.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
 meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`
-memek = await Ashiya.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
+memek = await Ashiya.sendImageAsSticker(m.chat, meme, m, { packname: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', author: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' })
 await fs.unlinkSync(memek)
 }
 break
@@ -1913,7 +1936,7 @@ break
 		let [emoji1, emoji2] = text.split`+`
 		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
 		for (let res of anu.results) {
-		    let encmedia = await Ashiya.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
+		    let encmedia = await Ashiya.sendImageAsSticker(m.chat, res.url, m, { packname: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', author: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' })
 		    await fs.unlinkSync(encmedia)
 		}
 	    }
@@ -4103,6 +4126,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
 break
             case 'list': case 'menu': {
+		    
+Ashiya.sendMessage(from, { react: { text: `😊`, key: m.key }})
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
