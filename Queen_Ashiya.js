@@ -3480,117 +3480,119 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: `Please Choose The Menu\n\n`,
-                    buttonText: "Menu",
-                    footerText: `${global.footer}`,
+                    title: `𝘏𝘪  ${pushname} 👋`, 
+			
+                    description: `
+		    💁‍♀️ මෙතනින් ඔයාට ඕන Command List එක තෝර ගන්න \n\n`,
+                    buttonText: "👨‍💻 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 👨‍💻",
+                    footerText: `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "Main Features",
+								"title": "⚔All Features",
 								"rows": [
 									{
-										"title": "Main Menu",
-										"description": "Displays The List Of Main Features",
-										"rowId": `${prefix}mainmenu`
+										"title": "All Menu 📁",
+										"description": "සියලුම කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක!",
+										"rowId": `${prefix}allmenu`
 									}
 								]
 							},
 							{
-								"title": "Bot Features",
+								"title": "⚔Bot Features",
 								"rows": [
 									{
-										"title": "All Menu",
-										"description": "Displays The List Of All The Features!",
-										"rowId": `${prefix}allmenu`
+										"title": "Main Menu 👨‍🎓",
+										"description": "Main කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										"rowId": `${prefix}mainmenu`
 									},
 									{
-										"title": "Owner Menu",
-										"description": "Displays The List Of Owner Features",
+										"title": "Owner Menu 🤴",
+										"description": "Owner කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu",
-										"description": "Displays The List Of Main Features",
+										"title": "Group Menu 🌎",
+										"description": "Groop කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}groupmenu`
 										},
 									{
-										"title": "Rpg Menu",
+										"title": "Rpg Menu ⛔",
 										"description": "Displays The List Of Rpg Features",
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
-										"title": "Download Menu",
-										"description": "Displays The List Of Download Features",
+										"title": "Download Menu 📥",
+										"description": "Download කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Search Menu",
+										"title": "Search Menu 🔎",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-											"title": "Random Menu",
+											"title": "Random Menu 🔪",
 										"description": "Displays The List Of Random Features",
 										"rowId": `${prefix}randommenu`
 										},
 										{
-											"title": "Random Anime Menu",
+											"title": "Random Anime Menu 🛡",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}randomanimemenu`
 										},
 										{
-											"title": "Fun Menu",
+											"title": "Fun Menu 😃",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-											"title": "Convert Menu",
-										"description": "Displays The List Of Convert Features",
+											"title": "Convert Menu 🔄",
+										"description": "Convert කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu",
+											"title": "Database Menu 💻",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-											"title": "Voice Changer Menu",
+											"title": "Voice Changer Menu 🎤",
 										"description": "Displays The List Of Voice Changing Features",
 										"rowId": `${prefix}voicechangermenu`
 										},
 										{
-											"title": "TXT-to-IMG Menu",
+											"title": "TXT-to-IMG Menu 📝",
 										"description": "Displays The List Of Textpro Features",
 										"rowId": `${prefix}textpromenu`
 										},
 										{
-											"title": "Islamic Menu",
+											"title": "Islamic Menu 🔸",
 										"description": "Displays The List Of Islamic Features",
 										"rowId": `${prefix}islamicmenu`
 										},
 										{
-											"title": "Horoscope Menu",
+											"title": "Horoscope Menu 🔹",
 										"description": "Displays The List Of Horoscope Features",
 										"rowId": `${prefix}horoscopemenu`
 										}
 								]
 							},
 							{
-								"title": "Chat With Fellow Users",
+								"title": "⚔Chat With Fellow Users",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu",
+										"title": "Anonymous Chat Menu 🚫",
 										"description": "Displays The List Of Anonymous Chat Features",
 										"rowId": `${prefix}anonymouschatmenu`
 									}
 								]
 							},
 							{
-								"title": "Credit",
+								"title": "⚔Create By",
 								"rows": [
 									{
-										"title": "Thanks To",
-										"description": "Displays The List Of Credit Of The Bot !!",
+										"title": "𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢",
+										"description": ".",
 										"rowId": `${prefix}tqtt`
 									}
 								]
@@ -3599,10 +3601,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
           listType: 1
                 }
             }), {})
-            Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-    case 'donasi': case 'donate': case 'sewabot': case 'sewa': {
+    case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
                 Ashiya.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
@@ -3612,234 +3614,324 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
 case 'allmenu': {
   	anu = `
-┏━「 *${botname}* 」━━⭓ 
-┃╔══☯︎「 MAIN 」☯︎
-┃╠ ${prefix}alive
-┃╠ ${prefix}script
-┃╠ ${prefix}speedtest
-┃╠ ${prefix}ping
-┃╠ ${prefix}owner
-┃╠ ${prefix}menu
-┃╠ ${prefix}delete
-┃╠ ${prefix}chatinfo
-┃╠ ${prefix}quoted
-┃╠ ${prefix}listpc
-┃╠ ${prefix}listgc
-┃╠ ${prefix}donate
-┃╠ ${prefix}report [bug]
-┃╠══✪「 OWNER 」 ☯︎
-┃╠ ${prefix}chat [option]
-┃╠ ${prefix}join [link]
-┃╠ ${prefix}leave
-┃╠ ${prefix}block [user]
-┃╠ ${prefix}unblock [user]
-┃╠ ${prefix}bcgroup [text]
-┃╠ ${prefix}bcall [text]
-┃╠ ${prefix}setppbot [image]
-┃╠ ${prefix}setexif
-┃╠══✪「 GROUP 」 ☯︎      
-┃╠${prefix}grouplink
-┃╠${prefix}ephemeral [option]
-┃╠${prefix}setgcpp [image]
-┃╠${prefix}setname [text]
-┃╠${prefix}setdesc [text]
-┃╠${prefix}group [text]
-┃╠${prefix}editinfo [option]
-┃╠${prefix}add [user]
-┃╠${prefix}kick [reply/tag]
-┃╠${prefix}hidetag [text]
-┃╠${prefix}tagall [text]
-┃╠${prefix}antilink [on/off]
-┃╠${prefix}mute [on/off]
-┃╠${prefix}promote [reply/tag]
-┃╠${prefix}demote [reply/tag]
-┃╠${prefix}vote
-┃╠${prefix}devote
-┃╠${prefix}upvote
-┃╠${prefix}checkvote
-┃╠${prefix}delvote
-┃╠══☯︎「 RPG 」 ☯︎
-┃╠${prefix}hunting
-┃╠${prefix}mining
-┃╠${prefix}heal
-┃╠${prefix}userlimit
-┃╠${prefix}profile
-┃╠${prefix}inventory
-┃╠${prefix}leaderboard
-┃╠${prefix}buy [option]
-┃╠${prefix}sell [option]
-┃╠═✪「 DOWNLOADER 」☯︎
-┃╠${prefix}ytmp3 [url|quality]
-┃╠${prefix}ytmp4 [url|quality]
-┃╠${prefix}getmusic [yt link]
-┃╠${prefix}getvideo [yt link]
-┃╠${prefix}umma [query]
-┃╠${prefix}joox [query]
-┃╠${prefix}soundcloud [url]
-┃╠══✪「 SEARCHER 」 ☯︎
-┃╠${prefix}play [query]
-┃╠${prefix}song [query]
-┃╠${prefix}yts [query]
-┃╠${prefix}google [query]
-┃╠${prefix}gimage [query]
-┃╠${prefix}pinterest [query]
-┃╠${prefix}wallpaper [query]
-┃╠${prefix}wikimedia [query]
-┃╠${prefix}ytsearch [query]
-┃╠${prefix}ringtone [query]
-┃╠${prefix}webtoon [query]
-┃╠══✪「 RANDOM 」☯︎
-┃╠${prefix}coffee
-┃╠${prefix}animequote (indo)
-┃╠${prefix}couplepp
-┃╠═✪「 RANDOM ANIME 」☯︎
-┃╠${prefix}loli
-┃╠${prefix}bully
-┃╠${prefix}cuddle
-┃╠${prefix}cry
-┃╠${prefix}hug
-┃╠${prefix}awoo
-┃╠${prefix}kiss
-┃╠${prefix}lick
-┃╠${prefix}pat
-┃╠${prefix}smug
-┃╠${prefix}bonk
-┃╠${prefix}yeet
-┃╠${prefix}blush
-┃╠${prefix}smile
-┃╠${prefix}wave
-┃╠${prefix}highfive
-┃╠${prefix}handhold
-┃╠${prefix}nom
-┃╠${prefix}glomp
-┃╠${prefix}bite
-┃╠${prefix}slap
-┃╠${prefix}kill
-┃╠${prefix}happy
-┃╠${prefix}wink
-┃╠${prefix}poke
-┃╠${prefix}dance
-┃╠${prefix}cringe
-┃╠══✪「 FUN 」 ☯︎
-┃╠ ${prefix}how [text
-┃╠ ${prefix}when [text]
-┃╠ ${prefix}is [text]
-┃╠ ${prefix}what [text]
-┃╠ ${prefix}can [text]
-┃╠ ${prefix}rate [text]
-┃╠ ${prefix}wangy [text]
-┃╠ ${prefix}beautifulcheck [tag]
-┃╠ ${prefix}awesomecheck [tag]
-┃╠ ${prefix}prettycheck [tag]
-┃╠ ${prefix}lesbiancheck [tag]
-┃╠ ${prefix}gaycheck [tag]
-┃╠ ${prefix}cutecheck [tag]
-┃╠ ${prefix}uglycheck [tag]
-┃╠ ${prefix}hornycheck [tag]
-┃╠ ${prefix}charactercheck [tag]
-┃╠ ${prefix}lovelycheck [tag]
-┃╠ ${prefix}couple
-┃╠ ${prefix}mysoulmate
-┃╠ ${prefix}hot
-┃╠ ${prefix}sexy
-┃╠ ${prefix}kind
-┃╠ ${prefix}idiot
-┃╠ ${prefix}handsome
-┃╠ ${prefix}beautiful
-┃╠ ${prefix}cute
-┃╠ ${prefix}pretty
-┃╠ ${prefix}lesbian
-┃╠ ${prefix}noob
-┃╠ ${prefix}bastard
-┃╠ ${prefix}foolish
-┃╠ ${prefix}nerd
-┃╠ ${prefix}asshole
-┃╠ ${prefix}gay
-┃╠ ${prefix}smart
-┃╠ ${prefix}stubble
-┃╠ ${prefix}dog
-┃╠ ${prefix}horny
-┃╠ ${prefix}cunt
-┃╠ ${prefix}wibu
-┃╠ ${prefix}tictactoe
-┃╠ ${prefix}delttt
-┃╠ ${prefix}guess [option]
-┃╠ ${prefix}math [mode]
-┃╠ ${prefix}suitpvp [tag]
-┃╠═══✪「 CONVERTER 」 ☯︎
-┃╠ ${prefix}toimage [reply stick]
-┃╠ ${prefix}sticker [reply img|gif]
-┃╠ ${prefix}emojimix [moji+moji]
-┃╠ ${prefix}tovideo [reply img]
-┃╠ ${prefix}togif [reply stick]
-┃╠ ${prefix}tourl [reply img]
-┃╠ ${prefix}tovn [reply aud]
-┃╠ ${prefix}tomp3 [reply vn]
-┃╠ ${prefix}toaudio [reply vid]
-┃╠ ${prefix}ebinary [reply txt]
-┃╠ ${prefix}dbinary [reply txt]
-┃╠ ${prefix}styletext [text]
-┃╠══✪「 DATABASE 」 ☯︎
-┃╠ ${prefix}setcmd
-┃╠ ${prefix}listcmd
-┃╠ ${prefix}delcmd
-┃╠ ${prefix}lockcmd
-┃╠ ${prefix}addmsg
-┃╠ ${prefix}listmsg
-┃╠ ${prefix}getmsg
-┃╠ ${prefix}delmsg
-┃╠═✪「 ANONYMOUS CHAT 」☯︎
-┃╠${prefix}anonymous
-┃╠${prefix}start
-┃╠${prefix}next
-┃╠${prefix}leave
-┃╠═✪「 VOICE CHANGER 」☯︎
-┃╠${prefix}bass [reply aud]
-┃╠${prefix}blown [reply aud]
-┃╠${prefix}deep [reply aud]
-┃╠${prefix}earrape [reply aud]
-┃╠${prefix}fast [reply aud]
-┃╠${prefix}fat [reply aud]
-┃╠${prefix}nightcore [reply aud]
-┃╠${prefix}reverse [reply aud]
-┃╠${prefix}robot [reply aud]
-┃╠${prefix}slow [reply aud]
-┃╠${prefix}squirrel [reply aud]
-┃╠══✪「 ISLAMIC 」☯︎
-┃╠${prefix}juzamma
-┃╠══✪「 HOROSCOPE 」☯︎
-┃╠${prefix}nomorhoki (indo)
-┃╠${prefix}artimimpi (indo)
-┃╠${prefix}artinama (indo)
-┃╠${prefix}ramaljodoh (indo)
-┃╠${prefix}ramaljodohbali (indo)
-┃╠${prefix}suamiistri (indo)
-┃╠${prefix}ramalcinta (indo)
-┃╠${prefix}cocoknama (indo)
-┃╠${prefix}pasangan (indo)
-┃╠${prefix}jadiannikah (indo)
-┃╠${prefix}sifatusaha (indo)
-┃╠${prefix}rezeki (indo)
-┃╠${prefix}pekerjaan (indo)
-┃╠${prefix}nasib (indo)
-┃╠${prefix}penyakit (indo)
-┃╠${prefix}tarot (indo)
-┃╠${prefix}fengshui (indo)
-┃╠${prefix}haribaik (indo)
-┃╠${prefix}harisangar (indo)
-┃╠${prefix}harisial (indo)
-┃╠${prefix}nagahari (indo)
-┃╠${prefix}arahrezeki (indo)
-┃╠${prefix}peruntungan (indo)
-┃╠${prefix}weton (indo)
-┃╠${prefix}karakter (indo)
-┃╠${prefix}keberuntungan (indo)
-┃╠${prefix}memancing (indo)
-┃╠${prefix}masasubur (indo)
-┃╠${prefix}zodiak (indo)
-┃╠${prefix}shio (indo)
-┃╚═══════✍︎𝑁𝑒𝑥𝑢𝑠𝑁𝑤
-┗━「 *Created By ${ownername}*  𖠌」━⭓`
+┏━ *${botname}* ━━⭓ 
+┃
+┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
+┃║
+┃╠✹👩‍💻 alive
+┃╠✹👩‍💻 info
+┃╠✹👩‍💻 script
+┃╠✹👩‍💻 speedtest
+┃╠✹👩‍💻 ping
+┃╠✹👩‍💻 owner
+┃╠✹👩‍💻 menu
+┃╠✹👩‍💻 delete
+┃╠✹👩‍💻 chatinfo
+┃╠✹👩‍💻 quoted
+┃╠✹👩‍💻 donate
+┃╠✹👩‍💻 report [bug]
+┃║
+┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
+┃║
+┃╠✹🤴 chat [option]
+┃╠✹🤴 add [link]
+┃╠✹🤴 leave
+┃╠✹🤴 block [user]
+┃╠✹🤴 unblock [user]
+┃╠✹🤴 bcgroup [text]
+┃╠✹🤴 bcall [text]
+┃╠✹🤴 setppbot [image]
+┃╠✹🤴 setexif
+┃║
+┃╠✹📖️══☬❯ GROUP 🌎 ❮ 👇   
+┃║   
+┃╠✹🌎 grouplink
+┃╠✹🌎 ephemeral [option]
+┃╠✹🌎 setgcpp [image]
+┃╠✹🌎 setname [text]
+┃╠✹🌎 setdesc [text]
+┃╠✹🌎 group [text]
+┃╠✹🌎 editinfo [option]
+┃╠✹🌎 add [user]
+┃╠✹🌎 kick [reply/tag]
+┃╠✹🌎 hidetag [text]
+┃╠✹🌎 tagall [text]
+┃╠✹🌎 antilink [on/off]
+┃╠✹🌎 mute [on/off]
+┃╠✹🌎 promote [reply/tag]
+┃╠✹🌎 demote [reply/tag]
+┃╠✹🌎 vote
+┃╠✹🌎 devote
+┃╠✹🌎 upvote
+┃╠✹🌎 checkvote
+┃╠✹🌎 delvote
+┃║
+┃╠✹📖️══☬❯ TEXT PRO 📝 ❮ 👇
+┃║	        
+┃╠✹📝 candy [txt]
+┃╠✹📝 3dchristmas [txt]
+┃╠✹📝 christmas [txt]
+┃╠✹📝 sparklechristmas [txt]
+┃╠✹📝 deepsea [txt]
+┃╠✹📝 scifi [txt]
+┃╠✹📝 rainbow [txt]
+┃╠✹📝 waterpipe [txt]
+┃╠✹📝 spooky [txt]
+┃╠✹📝 pencil [txt]
+┃╠✹📝 circuit [txt]
+┃╠✹📝 discovery [txt]
+┃╠✹📝 metalic [txt]
+┃╠✹📝 fiction [txt]
+┃╠✹📝 demon [txt]
+┃╠✹📝 transformer [txt]
+┃╠✹📝 berry [txt]
+┃╠✹📝 thunder [txt]
+┃╠✹📝 magma [txt]
+┃╠✹📝 3dstone [txt]
+┃╠✹📝 neonlight [txt]
+┃╠✹📝 glitch [txt]
+┃╠✹📝 harrypotter [txt]
+┃╠✹📝 brokenglass [txt]
+┃╠✹📝 papercut [txt]
+┃╠✹📝 watercolor [txt]
+┃╠✹📝 multicolor [txt]
+┃╠✹📝 neondevil [txt]
+┃╠✹📝 underwater [txt]
+┃╠✹📝 graffitibike [txt]
+┃╠✹📝 snow [txt]
+┃╠✹📝 cloud [txt]
+┃╠✹📝 honey [txt]
+┃╠✹📝 ice [txt]
+┃╠✹📝 fruitjuice [txt]
+┃╠✹📝 biscuit [txt]
+┃╠✹📝 wood [txt]
+┃╠✹📝 chocolate [txt]
+┃╠✹📝 strawberry [txt]
+┃╠✹📝 matrix [txt]
+┃╠✹📝 blood [txt]
+┃╠✹📝 dropwater [txt]
+┃╠✹📝 toxic [txt]
+┃╠✹📝 lava [txt]
+┃╠✹📝 rock [txt]
+┃╠✹📝 bloodglas [txt]
+┃╠✹📝 hallowen [txt]
+┃╠✹📝 darkgold [txt]
+┃╠✹📝 joker [txt]
+┃╠✹📝 wicker [txt]
+┃╠✹📝 firework [txt]
+┃╠✹📝 skeleton [txt]
+┃╠✹📝 blackpink [txt]
+┃╠✹📝 sand [txt]
+┃╠✹📝 glue [txt]
+┃╠✹📝 1917 [txt]
+┃╠✹📝 leaves [txt]
+┃║
+┃╠✹📖️══☯︎❯ RPG ⛔ ❮ 👇
+┃║
+┃╠✹⛔ hunting
+┃╠✹⛔ mining
+┃╠✹⛔ heal
+┃╠✹⛔ userlimit
+┃╠✹⛔ profile
+┃╠✹⛔ inventory
+┃╠✹⛔ leaderboard
+┃╠✹⛔ buy [option]
+┃╠✹⛔ sell [option]
+┃║
+┃╠✹📖️═☬❯ DOWNLOADER 📥 ❮ 👇
+┃║
+┃╠✹📥🎵 song [url|quality]
+┃╠✹📥🎞️ video [url|quality]
+┃╠✹📥🎵 ytmp3 [url]
+┃╠✹📥🎥 ytmp4 [url]
+┃╠✹📥🎶 getmusic [url]
+┃╠✹📥🎞️ getvideo [url]
+┃╠✹📥🎼 joox [query]
+┃╠✹📥🔉 soundcloud [url]
+┃║
+┃╠✹📖️══☬❯ SEARCHER 🔎 ❮ 👇
+┃║
+┃╠✹🔎 play [query]
+┃╠✹🔎 song [query]
+┃╠✹🔎 yts [query]
+┃╠✹🔎 google [query]
+┃╠✹🔎 gimage [query]
+┃╠✹🔎 pinterest [query]
+┃╠✹🔎 wallpaper [query]
+┃╠✹🔎 wikimedia [query]
+┃╠✹🔎 ytsearch [query]
+┃╠✹🔎 ringtone [query]
+┃╠✹🔎 webtoon [query]
+┃║
+┃╠✹📖️══☬❯ RANDOM 🔖 ❮ 👇
+┃║
+┃╠✹🔖 coffee
+┃╠✹🔖 animequote (indo)
+┃╠✹🔖 couplepp
+┃║
+┃╠✹📖️═☬❯ RANDOM ANIME ❮ ☀️👇
+┃║
+┃╠✹☀️ loli
+┃╠✹☀️ bully
+┃╠✹☀️ cuddle
+┃╠✹☀️ cry
+┃╠✹☀️ hug
+┃╠✹☀️ awoo
+┃╠✹☀️ kiss
+┃╠✹☀️ lick
+┃╠✹☀️ pat
+┃╠✹☀️ smug
+┃╠✹☀️ bonk
+┃╠✹☀️ yeet
+┃╠✹☀️ blush
+┃╠✹☀️ smile
+┃╠✹☀️ wave
+┃╠✹☀️ highfive
+┃╠✹☀️ handhold
+┃╠✹☀️ nom
+┃╠✹☀️ glomp
+┃╠✹☀️ bite
+┃╠✹☀️ slap
+┃╠✹☀️ kill
+┃╠✹☀️ happy
+┃╠✹☀️ wink
+┃╠✹☀️ poke
+┃╠✹☀️ dance
+┃╠✹☀️ cringe
+┃║
+┃╠✹📖️══☬❯ FUN 😃 ❮ 👇
+┃║
+┃╠✹😃 how [text]
+┃╠✹😃 when [text]
+┃╠✹😃 is [text]
+┃╠✹😃 what [text]
+┃╠✹😃 can [text]
+┃╠✹😃 rate [text]
+┃╠✹😃 wangy [text]
+┃╠✹😃 beautifulcheck [tag]
+┃╠✹😃 awesomecheck [tag]
+┃╠✹😃 prettycheck [tag]
+┃╠✹😃 lesbiancheck [tag]
+┃╠✹😃 gaycheck [tag]
+┃╠✹😃 cutecheck [tag]
+┃╠✹😃 uglycheck [tag]
+┃╠✹😃 hornycheck [tag]
+┃╠✹😃 charactercheck [tag]
+┃╠✹😃 lovelycheck [tag]
+┃╠✹😃 couple
+┃╠✹😃 mysoulmate
+┃╠✹😃 hot
+┃╠✹😃 sexy
+┃╠✹😃 kind
+┃╠✹😃 idiot
+┃╠✹😃 handsome
+┃╠✹😃 beautiful
+┃╠✹😃 cute
+┃╠✹😃 pretty
+┃╠✹😃 lesbian
+┃╠✹😃 noob
+┃╠✹😃 bastard
+┃╠✹😃 foolish
+┃╠✹😃 nerd
+┃╠✹😃 asshole
+┃╠✹😃 gay
+┃╠✹😃 smart
+┃╠✹😃 stubble
+┃╠✹😃 dog
+┃╠✹😃 horny
+┃╠✹😃 cunt
+┃╠✹😃 wibu
+┃╠✹😃 tictactoe
+┃╠✹😃 delttt
+┃╠✹😃 guess [option]
+┃╠✹😃 math [mode]
+┃╠✹😃 suitpvp [tag]
+┃║
+┃╠✹📖️═══☬❯ CONVERTER 🔄 ❮ 👇
+┃║
+┃╠✹🔄 toimage [reply stick]
+┃╠✹🔄 sticker [reply img|gif]
+┃╠✹🔄 emojimix [moji+moji]
+┃╠✹🔄 tovideo [reply img]
+┃╠✹🔄 togif [reply stick]
+┃╠✹🔄 tourl [reply img]
+┃╠✹🔄 tovn [reply aud]
+┃╠✹🔄 tomp3 [reply vn]
+┃╠✹🔄 toaudio [reply vid]
+┃╠✹🔄 ebinary [reply txt]
+┃╠✹🔄 dbinary [reply txt]
+┃╠✹🔄 styletext [text]
+┃║
+┃╠✹📖️══☬❯ DATABASE 💻 ❮ 👇
+┃║
+┃╠✹💻 setcmd
+┃╠✹💻 listcmd
+┃╠✹💻 delcmd
+┃╠✹💻 lockcmd
+┃╠✹💻 addmsg
+┃╠✹💻 listmsg
+┃╠✹💻 getmsg
+┃╠✹💻 delmsg
+┃║
+┃╠✹📖️═☬❯ ANONYMOUS CHAT 🚫 ❮ 👇
+┃║
+┃╠✹🚫 anonymous
+┃╠✹🚫 start
+┃╠✹🚫 next
+┃╠✹🚫 leave
+┃║
+┃╠✹📖️═☬❯ VOICE CHANGER 🎤 ❮ 👇
+┃║
+┃╠✹🎤 bass [reply aud]
+┃╠✹🎤 blown [reply aud]
+┃╠✹🎤 deep [reply aud]
+┃╠✹🎤 earrape [reply aud]
+┃╠✹🎤 fast [reply aud]
+┃╠✹🎤 fat [reply aud]
+┃╠✹🎤 nightcore [reply aud]
+┃╠✹🎤 reverse [reply aud]
+┃╠✹🎤 robot [reply aud]
+┃╠✹🎤 slow [reply aud]
+┃╠✹🎤 squirrel [reply aud]
+┃║
+┃╠✹📖️══☬❯ ISLAMIC 🔸 ❮ 👇
+┃║
+┃╠✹🔸 juzamma
+┃║
+┃╠✹📖️══☬❯ HOROSCOPE 🔹 ❮ 👇
+┃║
+┃╠✹🔹 nomorhoki (indo)
+┃╠✹🔹 artimimpi (indo)
+┃╠✹🔹 artinama (indo)
+┃╠✹🔹 ramaljodoh (indo)
+┃╠✹🔹 ramaljodohbali (indo)
+┃╠✹🔹 suamiistri (indo)
+┃╠✹🔹 ramalcinta (indo)
+┃╠✹🔹 cocoknama (indo)
+┃╠✹🔹 pasangan (indo)
+┃╠✹🔹 jadiannikah (indo)
+┃╠✹🔹 sifatusaha (indo)
+┃╠✹🔹 rezeki (indo)
+┃╠✹🔹 pekerjaan (indo)
+┃╠✹🔹 nasib (indo)
+┃╠✹🔹 penyakit (indo)
+┃╠✹🔹 tarot (indo)
+┃╠✹🔹 fengshui (indo)
+┃╠✹🔹 haribaik (indo)
+┃╠✹🔹 harisangar (indo)
+┃╠✹🔹 harisial (indo)
+┃╠✹🔹 nagahari (indo)
+┃╠✹🔹 arahrezeki (indo)
+┃╠✹🔹 peruntungan (indo)
+┃╠✹🔹 weton (indo)
+┃╠✹🔹 karakter (indo)
+┃╠✹🔹 keberuntungan (indo)
+┃╠✹🔹 memancing (indo)
+┃╠✹🔹 masasubur (indo)
+┃╠✹🔹 zodiak (indo)
+┃╠✹🔹 shio (indo)
+┃║
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
@@ -3866,384 +3958,420 @@ break
 case 'mainmenu':
 var unicorn = await getBuffer(picak+'Main Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 MAIN 」
-┃╠ ${prefix}alive
-┃╠ ${prefix}script
-┃╠ ${prefix}speedtest
-┃╠ ${prefix}ping
-┃╠ ${prefix}owner
-┃╠ ${prefix}menu
-┃╠ ${prefix}delete
-┃╠ ${prefix}chatinfo
-┃╠ ${prefix}quoted
-┃╠ ${prefix}listpc
-┃╠ ${prefix}listgc
-┃╠ ${prefix}donate
-┃╠ ${prefix}report [bug]
+┏━ ${botname} ━━⭓ 
+┃
+┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
+┃║
+┃╠✹👩‍💻 alive
+┃╠✹👩‍💻 info
+┃╠✹👩‍💻 script
+┃╠✹👩‍💻 speedtest
+┃╠✹👩‍💻 ping
+┃╠✹👩‍💻 owner
+┃╠✹👩‍💻 menu
+┃╠✹👩‍💻 delete
+┃╠✹👩‍💻 chatinfo
+┃╠✹👩‍💻 quoted
+┃╠✹👩‍💻 donate
+┃╠✹👩‍💻 report [bug]
+┃║
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
 var unicorn = await getBuffer(picak+'Group Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 GROUP 」	        
-┃╠${prefix}grouplink
-┃╠${prefix}ephemeral [option]
-┃╠${prefix}setgcpp [image]
-┃╠${prefix}setname [text]
-┃╠${prefix}setdesc [text]
-┃╠${prefix}group [text]
-┃╠${prefix}editinfo [option]
-┃╠${prefix}add [user]
-┃╠${prefix}kick [reply/tag]
-┃╠${prefix}hidetag [text]
-┃╠${prefix}tagall [text]
-┃╠${prefix}antilink [on/off]
-┃╠${prefix}mute [on/off]
-┃╠${prefix}promote [reply/tag]
-┃╠${prefix}demote [reply/tag]
-┃╠${prefix}vote
-┃╠${prefix}devote
-┃╠${prefix}upvote
-┃╠${prefix}checkvote
-┃╠${prefix}delvote
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ GROUP 🌎 ❮ 👇   
+┃║   
+┃╠✹🌎 grouplink
+┃╠✹🌎 ephemeral [option]
+┃╠✹🌎 setgcpp [image]
+┃╠✹🌎 setname [text]
+┃╠✹🌎 setdesc [text]
+┃╠✹🌎 group [text]
+┃╠✹🌎 editinfo [option]
+┃╠✹🌎 add [user]
+┃╠✹🌎 kick [reply/tag]
+┃╠✹🌎 hidetag [text]
+┃╠✹🌎 tagall [text]
+┃╠✹🌎 antilink [on/off]
+┃╠✹🌎 mute [on/off]
+┃╠✹🌎 promote [reply/tag]
+┃╠✹🌎 demote [reply/tag]
+┃╠✹🌎 vote
+┃╠✹🌎 devote
+┃╠✹🌎 upvote
+┃╠✹🌎 checkvote
+┃╠✹🌎 delvote
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 
 case 'rpgmenu':
 var unicorn = await getBuffer(picak+'Rpg Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 RPG 」	        
-┃╠${prefix}hunting
-┃╠${prefix}mining
-┃╠${prefix}heal
-┃╠${prefix}limituser
-┃╠${prefix}profile
-┃╠${prefix}inventory
-┃╠${prefix}leaderboard
-┃╠${prefix}buy [option]
-┃╠${prefix}sell [option]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☯︎❯ RPG ⛔ ❮ 👇
+┃║
+┃╠✹⛔ hunting
+┃╠✹⛔ mining
+┃╠✹⛔ heal
+┃╠✹⛔ userlimit
+┃╠✹⛔ profile
+┃╠✹⛔ inventory
+┃╠✹⛔ leaderboard
+┃╠✹⛔ buy [option]
+┃╠✹⛔ sell [option]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 
 case 'funmenu':
 var unicorn = await getBuffer(picak+'Fun Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 FUN 」	        
-┃╠ ${prefix}how [text
-┃╠ ${prefix}when [text]
-┃╠ ${prefix}is [text]
-┃╠ ${prefix}what [text]
-┃╠ ${prefix}can [text]
-┃╠ ${prefix}rate [text]
-┃╠ ${prefix}wangy [text]
-┃╠ ${prefix}beautifulcheck [tag]
-┃╠ ${prefix}awesomecheck [tag]
-┃╠ ${prefix}prettycheck [tag]
-┃╠ ${prefix}lesbiancheck [tag]
-┃╠ ${prefix}gaycheck [tag]
-┃╠ ${prefix}cutecheck [tag]
-┃╠ ${prefix}uglycheck [tag]
-┃╠ ${prefix}hornycheck [tag]
-┃╠ ${prefix}charactercheck [tag]
-┃╠ ${prefix}lovelycheck [tag]
-┃╠ ${prefix}couple
-┃╠ ${prefix}mysoulmate
-┃╠ ${prefix}hot
-┃╠ ${prefix}sexy
-┃╠ ${prefix}kind
-┃╠ ${prefix}handsome
-┃╠ ${prefix}beautiful
-┃╠ ${prefix}cute
-┃╠ ${prefix}pretty
-┃╠ ${prefix}lesbian
-┃╠ ${prefix}noob
-┃╠ ${prefix}bastard
-┃╠ ${prefix}foolish
-┃╠ ${prefix}nerd
-┃╠ ${prefix}asshole
-┃╠ ${prefix}gay
-┃╠ ${prefix}smart
-┃╠ ${prefix}stubble
-┃╠ ${prefix}dog
-┃╠ ${prefix}horny
-┃╠ ${prefix}cunt
-┃╠ ${prefix}wibu
-┃╠ ${prefix}tictactoe
-┃╠ ${prefix}delttt
-┃╠ ${prefix}guess [option]
-┃╠ ${prefix}math [mode]
-┃╠ ${prefix}suitpvp [tag]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ FUN 😃 ❮ 👇
+┃║
+┃╠✹😃 how [text]
+┃╠✹😃 when [text]
+┃╠✹😃 is [text]
+┃╠✹😃 what [text]
+┃╠✹😃 can [text]
+┃╠✹😃 rate [text]
+┃╠✹😃 wangy [text]
+┃╠✹😃 beautifulcheck [tag]
+┃╠✹😃 awesomecheck [tag]
+┃╠✹😃 prettycheck [tag]
+┃╠✹😃 lesbiancheck [tag]
+┃╠✹😃 gaycheck [tag]
+┃╠✹😃 cutecheck [tag]
+┃╠✹😃 uglycheck [tag]
+┃╠✹😃 hornycheck [tag]
+┃╠✹😃 charactercheck [tag]
+┃╠✹😃 lovelycheck [tag]
+┃╠✹😃 couple
+┃╠✹😃 mysoulmate
+┃╠✹😃 hot
+┃╠✹😃 sexy
+┃╠✹😃 kind
+┃╠✹😃 idiot
+┃╠✹😃 handsome
+┃╠✹😃 beautiful
+┃╠✹😃 cute
+┃╠✹😃 pretty
+┃╠✹😃 lesbian
+┃╠✹😃 noob
+┃╠✹😃 bastard
+┃╠✹😃 foolish
+┃╠✹😃 nerd
+┃╠✹😃 asshole
+┃╠✹😃 gay
+┃╠✹😃 smart
+┃╠✹😃 stubble
+┃╠✹😃 dog
+┃╠✹😃 horny
+┃╠✹😃 cunt
+┃╠✹😃 wibu
+┃╠✹😃 tictactoe
+┃╠✹😃 delttt
+┃╠✹😃 guess [option]
+┃╠✹😃 math [mode]
+┃╠✹😃 suitpvp [tag]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 
 case 'ownermenu':
 var unicorn = await getBuffer(picak+'Owner Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 OWNER 」	        
-┃╠${prefix}grouplink
-┃╠${prefix}ephemeral [option]
-┃╠${prefix}setgcpp [image]
-┃╠${prefix}setname [text]
-┃╠${prefix}setdesc [text]
-┃╠${prefix}group [text]
-┃╠${prefix}editinfo [option]
-┃╠${prefix}add [user]
-┃╠${prefix}kick [reply/tag]
-┃╠${prefix}hidetag [text]
-┃╠${prefix}tagall [text]
-┃╠${prefix}antilink [on/off]
-┃╠${prefix}mute [on/off]
-┃╠${prefix}promote [reply/tag]
-┃╠${prefix}demote [reply/tag]
-┃╠${prefix}vote
-┃╠${prefix}devote
-┃╠${prefix}upvote
-┃╠${prefix}checkvote
-┃╠${prefix}delvote
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
+┃║
+┃╠✹🤴 chat [option]
+┃╠✹🤴 add [link]
+┃╠✹🤴 leave
+┃╠✹🤴 block [user]
+┃╠✹🤴 unblock [user]
+┃╠✹🤴 bcgroup [text]
+┃╠✹🤴 bcall [text]
+┃╠✹🤴 setppbot [image]
+┃╠✹🤴 setexif
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 DOWNLOADER 」	        
-┃╠${prefix}ytmp3 [url|quality]
-┃╠${prefix}ytmp4 [url|quality]
-┃╠${prefix}getmusic [yt link]
-┃╠${prefix}getvideo [yt link]
-┃╠${prefix}umma [query]
-┃╠${prefix}joox [query]
-┃╠${prefix}soundcloud [url]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️═☬❯ DOWNLOADER 📥 ❮ 👇
+┃║
+┃╠✹📥🎵 song [url|quality]
+┃╠✹📥🎞️ video [url|quality]
+┃╠✹📥🎵 ytmp3 [url|quality]
+┃╠✹📥🎥 ytmp4 [url|quality]
+┃╠✹📥🎶 getmusic [yt link]
+┃╠✹📥🎞️ getvideo [yt link]
+┃╠✹📥🎼 joox [query]
+┃╠✹📥🔉 soundcloud [url]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 SEARCHER 」	        
-┃╠${prefix}play [query]
-┃╠${prefix}song [query]
-┃╠${prefix}yts [query]
-┃╠${prefix}google [query]
-┃╠${prefix}gimage [query]
-┃╠${prefix}pinterest [query]
-┃╠${prefix}wallpaper [query]
-┃╠${prefix}wikimedia [query]
-┃╠${prefix}ytsearch [query]
-┃╠${prefix}ringtone [query]
-┃╠${prefix}webtoon [query]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ SEARCHER 🔎 ❮ 👇
+┃║
+┃╠✹🔎 play [query]
+┃╠✹🔎 song [query]
+┃╠✹🔎 yts [query]
+┃╠✹🔎 google [query]
+┃╠✹🔎 gimage [query]
+┃╠✹🔎 pinterest [query]
+┃╠✹🔎 wallpaper [query]
+┃╠✹🔎 wikimedia [query]
+┃╠✹🔎 ytsearch [query]
+┃╠✹🔎 ringtone [query]
+┃╠✹🔎 webtoon [query]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 RANDOM 」	        
-┃╠${prefix}coffee
-┃╠${prefix}animequote (indo)
-┃╠${prefix}couplepp
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ RANDOM 🔖 ❮ 👇
+┃║
+┃╠✹🔖 coffee
+┃╠✹🔖 animequote (indo)
+┃╠✹🔖 couplepp
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔✪「 RANDOM ANIME 」	        
-┃╠${prefix}loli
-┃╠${prefix}bully
-┃╠${prefix}cuddle
-┃╠${prefix}cry
-┃╠${prefix}hug
-┃╠${prefix}awoo
-┃╠${prefix}kiss
-┃╠${prefix}lick
-┃╠${prefix}pat
-┃╠${prefix}smug
-┃╠${prefix}bonk
-┃╠${prefix}yeet
-┃╠${prefix}blush
-┃╠${prefix}smile
-┃╠${prefix}wave
-┃╠${prefix}highfive
-┃╠${prefix}handhold
-┃╠${prefix}nom
-┃╠${prefix}glomp
-┃╠${prefix}bite
-┃╠${prefix}slap
-┃╠${prefix}kill
-┃╠${prefix}happy
-┃╠${prefix}wink
-┃╠${prefix}poke
-┃╠${prefix}dance
-┃╠${prefix}cringe
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️═☬❯ RANDOM ANIME ❮ ☀️👇
+┃║
+┃╠✹☀️ loli
+┃╠✹☀️ bully
+┃╠✹☀️ cuddle
+┃╠✹☀️ cry
+┃╠✹☀️ hug
+┃╠✹☀️ awoo
+┃╠✹☀️ kiss
+┃╠✹☀️ lick
+┃╠✹☀️ pat
+┃╠✹☀️ smug
+┃╠✹☀️ bonk
+┃╠✹☀️ yeet
+┃╠✹☀️ blush
+┃╠✹☀️ smile
+┃╠✹☀️ wave
+┃╠✹☀️ highfive
+┃╠✹☀️ handhold
+┃╠✹☀️ nom
+┃╠✹☀️ glomp
+┃╠✹☀️ bite
+┃╠✹☀️ slap
+┃╠✹☀️ kill
+┃╠✹☀️ happy
+┃╠✹☀️ wink
+┃╠✹☀️ poke
+┃╠✹☀️ dance
+┃╠✹☀️ cringe
+┃║
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═✪「 TEXT PRO 」	        
-┃╠ ${prefix}3dchristmas [txt]
-┃╠ ${prefix}3ddeepsea [txt]
-┃╠ ${prefix}americanflag [txt]
-┃╠ ${prefix}3dscifi [txt]
-┃╠ ${prefix}3drainbow [txt]
-┃╠ ${prefix}3dwaterpipe [txt]
-┃╠ ${prefix}halloweenskeleton [txt]
-┃╠ ${prefix}sketch [txt]
-┃╠ ${prefix}bluecircuit [txt]
-┃╠ ${prefix}space [txt]
-┃╠ ${prefix}metallic [txt]
-┃╠ ${prefix}fiction [txt]
-┃╠ ${prefix}greenhorror [txt]
-┃╠ ${prefix}transformer [txt]
-┃╠ ${prefix}berry [txt]
-┃╠ ${prefix}thunder [txt]
-┃╠ ${prefix}magma [txt]
-┃╠ ${prefix}3dcrackedstone [txt]
-┃╠ ${prefix}3dneonlight [txt]
-┃╠ ${prefix}impressiveglitch [txt]
-┃╠ ${prefix}naturalleaves [txt]
-┃╠ ${prefix}fireworksparkle [txt]
-┃╠ ${prefix}matrix [txt]
-┃╠ ${prefix}dropwater [txt]
-┃╠ ${prefix}harrypotter [txt]
-┃╠ ${prefix}foggywindow [txt]
-┃╠ ${prefix}neondevils [txt]
-┃╠ ${prefix}christmasholiday [txt]
-┃╠ ${prefix}3dgradient [txt]
-┃╠ ${prefix}blackpink [txt]
-┃╠ ${prefix}gluetext [txt]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ TEXT PRO 📝 ❮ 👇
+┃║	        
+┃╠✹📝 candy [txt]
+┃╠✹📝 3dchristmas [txt]
+┃╠✹📝 christmas [txt]
+┃╠✹📝 sparklechristmas [txt]
+┃╠✹📝 deepsea [txt]
+┃╠✹📝 scifi [txt]
+┃╠✹📝 rainbow [txt]
+┃╠✹📝 waterpipe [txt]
+┃╠✹📝 spooky [txt]
+┃╠✹📝 pencil [txt]
+┃╠✹📝 circuit [txt]
+┃╠✹📝 discovery [txt]
+┃╠✹📝 metalic [txt]
+┃╠✹📝 fiction [txt]
+┃╠✹📝 demon [txt]
+┃╠✹📝 transformer [txt]
+┃╠✹📝 berry [txt]
+┃╠✹📝 thunder [txt]
+┃╠✹📝 magma [txt]
+┃╠✹📝 3dstone [txt]
+┃╠✹📝 neonlight [txt]
+┃╠✹📝 glitch [txt]
+┃╠✹📝 harrypotter [txt]
+┃╠✹📝 brokenglass [txt]
+┃╠✹📝 papercut [txt]
+┃╠✹📝 watercolor [txt]
+┃╠✹📝 multicolor [txt]
+┃╠✹📝 neondevil [txt]
+┃╠✹📝 underwater [txt]
+┃╠✹📝 graffitibike [txt]
+┃╠✹📝 snow [txt]
+┃╠✹📝 cloud [txt]
+┃╠✹📝 honey [txt]
+┃╠✹📝 ice [txt]
+┃╠✹📝 fruitjuice [txt]
+┃╠✹📝 biscuit [txt]
+┃╠✹📝 wood [txt]
+┃╠✹📝 chocolate [txt]
+┃╠✹📝 strawberry [txt]
+┃╠✹📝 matrix [txt]
+┃╠✹📝 blood [txt]
+┃╠✹📝 dropwater [txt]
+┃╠✹📝 toxic [txt]
+┃╠✹📝 lava [txt]
+┃╠✹📝 rock [txt]
+┃╠✹📝 bloodglas [txt]
+┃╠✹📝 hallowen [txt]
+┃╠✹📝 darkgold [txt]
+┃╠✹📝 joker [txt]
+┃╠✹📝 wicker [txt]
+┃╠✹📝 firework [txt]
+┃╠✹📝 skeleton [txt]
+┃╠✹📝 blackpink [txt]
+┃╠✹📝 sand [txt]
+┃╠✹📝 glue [txt]
+┃╠✹📝 1917 [txt]
+┃╠✹📝 leaves [txt]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 CONVERTER 」	        
-┃╠ ${prefix}toimage [reply stick]
-┃╠ ${prefix}sticker [reply img|gif]
-┃╠ ${prefix}emojimix [moji+moji]
-┃╠ ${prefix}tovideo [reply img]
-┃╠ ${prefix}togif [reply stick]
-┃╠ ${prefix}tourl [reply media]
-┃╠ ${prefix}tovn [reply aud]
-┃╠ ${prefix}tomp3 [reply vn]
-┃╠ ${prefix}toaudio [reply vid]
-┃╠ ${prefix}ebinary [reply txt]
-┃╠ ${prefix}dbinary [reply txt]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️═══☬❯ CONVERTER 🔄 ❮ 👇
+┃║
+┃╠✹🔄 toimage [reply stick]
+┃╠✹🔄 sticker [reply img|gif]
+┃╠✹🔄 emojimix [moji+moji]
+┃╠✹🔄 tovideo [reply img]
+┃╠✹🔄 togif [reply stick]
+┃╠✹🔄 tourl [reply img]
+┃╠✹🔄 tovn [reply aud]
+┃╠✹🔄 tomp3 [reply vn]
+┃╠✹🔄 toaudio [reply vid]
+┃╠✹🔄 ebinary [reply txt]
+┃╠✹🔄 dbinary [reply txt]
+┃╠✹🔄 styletext [text]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔═══✪「 DATABASE 」	        
-┃╠ ${prefix}setcmd
-┃╠ ${prefix}listcmd
-┃╠ ${prefix}delcmd
-┃╠ ${prefix}lockcmd
-┃╠ ${prefix}addmsg
-┃╠ ${prefix}listmsg
-┃╠ ${prefix}getmsg
-┃╠ ${prefix}delmsg
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ DATABASE 💻 ❮ 👇
+┃║
+┃╠✹💻 setcmd
+┃╠✹💻 listcmd
+┃╠✹💻 delcmd
+┃╠✹💻 lockcmd
+┃╠✹💻 addmsg
+┃╠✹💻 listmsg
+┃╠✹💻 getmsg
+┃╠✹💻 delmsg
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
-case 'databasemenu':
+case 'anonymouschatmenu':
 var unicorn = await getBuffer(picak+'Database Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 ANONYMOUS CHAT 」	        
-┃╠${prefix}anonymous
-┃╠${prefix}start
-┃╠${prefix}next
-┃╠${prefix}leave
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️═☬❯ ANONYMOUS CHAT 🚫 ❮ 👇
+┃║
+┃╠✹🚫 anonymous
+┃╠✹🚫 start
+┃╠✹🚫 next
+┃╠✹🚫 leave
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 ISLAMIC 」	        
-┃╠${prefix}juzamma
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ ISLAMIC 🔸 ❮ 👇
+┃║
+┃╠✹🔸 juzamma
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 VOICE CHANGER 」	        
-┃╠${prefix}bass [reply aud]
-┃╠${prefix}blown [reply aud]
-┃╠${prefix}deep [reply aud]
-┃╠${prefix}earrape [reply aud]
-┃╠${prefix}fast [reply aud]
-┃╠${prefix}fat [reply aud]
-┃╠${prefix}nightcore [reply aud]
-┃╠${prefix}reverse [reply aud]
-┃╠${prefix}robot [reply aud]
-┃╠${prefix}slow [reply aud]
-┃╠${prefix}squirrel [reply aud]
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️═☬❯ VOICE CHANGER 🎤 ❮ 👇
+┃║
+┃╠✹🎤 bass [reply aud]
+┃╠✹🎤 blown [reply aud]
+┃╠✹🎤 deep [reply aud]
+┃╠✹🎤 earrape [reply aud]
+┃╠✹🎤 fast [reply aud]
+┃╠✹🎤 fat [reply aud]
+┃╠✹🎤 nightcore [reply aud]
+┃╠✹🎤 reverse [reply aud]
+┃╠✹🎤 robot [reply aud]
+┃╠✹🎤 slow [reply aud]
+┃╠✹🎤 squirrel [reply aud]
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-┏━「 ${botname} 」━━⭓ 
-┃╔══✪「 HOROSCOPE 」	        
-┃╠${prefix}nomorhoki (indo)
-┃╠${prefix}artimimpi (indo)
-┃╠${prefix}artinama (indo)
-┃╠${prefix}ramaljodoh (indo)
-┃╠${prefix}ramaljodohbali (indo)
-┃╠${prefix}suamiistri (indo)
-┃╠${prefix}ramalcinta (indo)
-┃╠${prefix}cocoknama (indo)
-┃╠${prefix}pasangan (indo)
-┃╠${prefix}jadiannikah (indo)
-┃╠${prefix}sifatusaha (indo)
-┃╠${prefix}rezeki (indo)
-┃╠${prefix}pekerjaan (indo)
-┃╠${prefix}nasib (indo)
-┃╠${prefix}penyakit (indo)
-┃╠${prefix}tarot (indo)
-┃╠${prefix}fengshui (indo)
-┃╠${prefix}haribaik (indo)
-┃╠${prefix}harisangar (indo)
-┃╠${prefix}harisial (indo)
-┃╠${prefix}nagahari (indo)
-┃╠${prefix}arahrezeki (indo)
-┃╠${prefix}peruntungan (indo)
-┃╠${prefix}weton (indo)
-┃╠${prefix}karakter (indo)
-┃╠${prefix}keberuntungan (indo)
-┃╠${prefix}memancing (indo)
-┃╠${prefix}masasubur (indo)
-┃╠${prefix}zodiak (indo)
-┃╠${prefix}shio (indo)
+┏━ ${botname} ━━⭓ 
+┃╠✹📖️══☬❯ HOROSCOPE 🔹 ❮ 👇
+┃║
+┃╠✹🔹 nomorhoki (indo)
+┃╠✹🔹 artimimpi (indo)
+┃╠✹🔹 artinama (indo)
+┃╠✹🔹 ramaljodoh (indo)
+┃╠✹🔹 ramaljodohbali (indo)
+┃╠✹🔹 suamiistri (indo)
+┃╠✹🔹 ramalcinta (indo)
+┃╠✹🔹 cocoknama (indo)
+┃╠✹🔹 pasangan (indo)
+┃╠✹🔹 jadiannikah (indo)
+┃╠✹🔹 sifatusaha (indo)
+┃╠✹🔹 rezeki (indo)
+┃╠✹🔹 pekerjaan (indo)
+┃╠✹🔹 nasib (indo)
+┃╠✹🔹 penyakit (indo)
+┃╠✹🔹 tarot (indo)
+┃╠✹🔹 fengshui (indo)
+┃╠✹🔹 haribaik (indo)
+┃╠✹🔹 harisangar (indo)
+┃╠✹🔹 harisial (indo)
+┃╠✹🔹 nagahari (indo)
+┃╠✹🔹 arahrezeki (indo)
+┃╠✹🔹 peruntungan (indo)
+┃╠✹🔹 weton (indo)
+┃╠✹🔹 karakter (indo)
+┃╠✹🔹 keberuntungan (indo)
+┃╠✹🔹 memancing (indo)
+┃╠✹🔹 masasubur (indo)
+┃╠✹🔹 zodiak (indo)
+┃╠✹🔹 shio (indo)
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
