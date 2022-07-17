@@ -3850,8 +3850,7 @@ case 'allmenu': {
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./Queen_Ashiya_Media/gojo.jpg')},
+                          
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {
