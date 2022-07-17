@@ -247,13 +247,13 @@ const reply = (teks) => {
         if (budy.match(`https://`)) {
         reply(`😂 හරිනේ පුම්කේ අමාරුව \n\nඇයි බං Link දැම්මෙ...උබව Remove කරන්න වෙනවා බං Sorry... `)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒`)
-        let gclink = (`https://chat.whatsapp.com/`+await IshuMdNx.groupInviteCode(m.chat))
+        let gclink = (`https://chat.whatsapp.com/`+await Ashiya.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
         if (isgclink) return reply(`ඔයාව නම් මට අයින් කරන්න බෑ. මොකද ඔයා දැම්මේ මේ Group එකේ ලින්ක් එකනේ...`)
         if (isAdmins) return reply(`හා ඔයාව නම් අයින් කරන්න බෑ මට. මොකද ඔයා මේකේ ඇඩ්මින් කෙනෙක්නේ`)
         if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh`)
-        IshuMdNx.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+        Ashiya.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
 
