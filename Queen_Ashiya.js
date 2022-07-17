@@ -3688,7 +3688,13 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu': {
-  	anu = `
+  	let buttons = [
+                    {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+		    {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+               
+       let buttonMessage = {
+       image: { url: ''},
+       caption: `
 ┏━ *${botname}* ━━⭓ 
 ┃
 ┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
@@ -3703,7 +3709,7 @@ case 'allmenu': {
 ┃╠✹👩‍💻 delete
 ┃╠✹👩‍💻 chatinfo
 ┃╠✹👩‍💻 quoted
-┃╠✹👩‍💻 info
+┃╠✹👩‍💻 donate
 ┃╠✹👩‍💻 report [bug]
 ┃║
 ┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
@@ -4006,33 +4012,24 @@ case 'allmenu': {
 ┃╠✹🔹 zodiak (indo)
 ┃╠✹🔹 shio (indo)
 ┃║
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `
-    const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                          
-                            hydratedFooterText: `${pushname}`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: 'YouTube📍',
-                                    url: `${myweb}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+   footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                    buttons: buttons,
+                    headerType: 4
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
             }
-break
-case 'mainmenu':
-var unicorn = await getBuffer(picak+'Main Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+            break
+		
+case 'mainmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Main Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃
 ┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
@@ -4047,16 +4044,28 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹👩‍💻 delete
 ┃╠✹👩‍💻 chatinfo
 ┃╠✹👩‍💻 quoted
-┃╠✹👩‍💻 info
+┃╠✹👩‍💻 donate
 ┃╠✹👩‍💻 report [bug]
 ┃║
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-
-case 'grupmenu': case 'groupmenu':
-var unicorn = await getBuffer(picak+'Group Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+	    
+case 'grupmenu': case 'groupmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Group Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ GROUP 🌎 ❮ 👇   
 ┃║   
@@ -4081,12 +4090,26 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🌎 checkvote
 ┃╠✹🌎 delvote
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-
-case 'rpgmenu':
-var unicorn = await getBuffer(picak+'Rpg Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+	
+	footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+	    
+case 'rpgmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Rpg Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☯︎❯ RPG ⛔ ❮ 👇
 ┃║
@@ -4100,12 +4123,26 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹⛔ buy [option]
 ┃╠✹⛔ sell [option]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+	
+case 'funmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Fun Menu'},
+        caption: `
 
-case 'funmenu':
-var unicorn = await getBuffer(picak+'Fun Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ FUN 😃 ❮ 👇
 ┃║
@@ -4155,12 +4192,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹😃 math [mode]
 ┃╠✹😃 suitpvp [tag]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
 
-case 'ownermenu':
-var unicorn = await getBuffer(picak+'Owner Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+case 'ownermenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Owner Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
 ┃║
@@ -4174,11 +4224,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🤴 setppbot [image]
 ┃╠✹🤴 setexif
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'downloadmenu':
-var unicorn = await getBuffer(picak+'Downloader Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'downloadmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Download Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️═☬❯ DOWNLOADER 📥 ❮ 👇
 ┃║
@@ -4191,11 +4255,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹📥🎼 joox [query]
 ┃╠✹📥🔉 soundcloud [url]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'searchmenu':
-var unicorn = await getBuffer(picak+'Search Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+	    
+case 'searchmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Search Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ SEARCHER 🔎 ❮ 👇
 ┃║
@@ -4211,11 +4289,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔎 ringtone [query]
 ┃╠✹🔎 webtoon [query]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'randommenu':
-var unicorn = await getBuffer(picak+'Random Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+	
+case 'randommenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Random Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ RANDOM 🔖 ❮ 👇
 ┃║
@@ -4223,11 +4315,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔖 animequote (indo)
 ┃╠✹🔖 couplepp
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'randomanimemenu':
-var unicorn = await getBuffer(picak+'Random Anime Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'randomanimemenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Randomanime Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️═☬❯ RANDOM ANIME ❮ ☀️👇
 ┃║
@@ -4260,11 +4366,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹☀️ cringe
 ┃║
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'textpromenu':
-var unicorn = await getBuffer(picak+'Text Pro Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'textpromenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Textpro Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ TEXT PRO 📝 ❮ 👇
 ┃║	        
@@ -4326,11 +4446,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹📝 1917 [txt]
 ┃╠✹📝 leaves [txt]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'convertmenu':
-var unicorn = await getBuffer(picak+'Converter Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'convertmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Convert Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️═══☬❯ CONVERTER 🔄 ❮ 👇
 ┃║
@@ -4347,11 +4481,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔄 dbinary [reply txt]
 ┃╠✹🔄 styletext [text]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'databasemenu':
-var unicorn = await getBuffer(picak+'Database Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'databasemenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Database Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ DATABASE 💻 ❮ 👇
 ┃║
@@ -4364,11 +4512,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹💻 getmsg
 ┃╠✹💻 delmsg
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'anonymouschatmenu':
-var unicorn = await getBuffer(picak+'Database Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'anonymouschatmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Anonymouschat Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️═☬❯ ANONYMOUS CHAT 🚫 ❮ 👇
 ┃║
@@ -4377,21 +4539,49 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🚫 next
 ┃╠✹🚫 leave
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'islamicmenu':
-var unicorn = await getBuffer(picak+'Islamic Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'islamicmenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Islamic Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ ISLAMIC 🔸 ❮ 👇
 ┃║
 ┃╠✹🔸 juzamma
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'voicechangermenu':
-var unicorn = await getBuffer(picak+'Voice Changer Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'voicechangermenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Voicechanger Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️═☬❯ VOICE CHANGER 🎤 ❮ 👇
 ┃║
@@ -4407,11 +4597,25 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🎤 slow [reply aud]
 ┃╠✹🎤 squirrel [reply aud]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
-case 'horoscopemenu':
-var unicorn = await getBuffer(picak+'Horoscope Menu')
-await Ashiya.send5ButImg(from, `` + '' + ' ', `
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
+case 'horoscopemenu': {
+let buttons = [
+  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
+  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+        let buttonMessage = {
+        image: { url: picak+'Horoscope Menu'},
+        caption: `
 ┏━ ${botname} ━━⭓ 
 ┃╠✹📖️══☬❯ HOROSCOPE 🔹 ❮ 👇
 ┃║
@@ -4446,15 +4650,30 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔹 zodiak (indo)
 ┃╠✹🔹 shio (indo)
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
-break
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,
+		footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                buttons: buttons,
+                headerType: 4
+	
+                }
+                IshuMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+		    
+            }
+            break
+
 case 'thanksto': case 'tqto': case 'tqtt':
-var unicorn = await getBuffer(picak+'Developer')
+var unicorn = await getBuffer(picak+'Create By')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
-Thanks to Me ( NexusNw)
-Alien-Alfa (For helping me to deploy qr in replit and answered my every doubts regard this project)
-DGXeon ( 45% Credits goes to him ,in this script)
-And Again Me (King Nexus 🎉) 🐦 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+
+*Hi   ${m.pushName}*\n 
+		
+		*I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
+		
+		
+		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
+		
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢... 
+ !!!`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋‍","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
