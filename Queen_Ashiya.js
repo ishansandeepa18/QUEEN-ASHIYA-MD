@@ -1646,20 +1646,15 @@ break
             reply('Successfully Deleted The Vote Session In This Group')
 	    }
             break
-               case 'group': case 'grup': {
+              case 'mute': case 'grup': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) return replay(`${mess.admin}`)
-                if (args[0] === 'close'){
-                    await Ashiya.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Successful Closing The Group`)).catch((err) => reply(jsonformat(err)))
-                } else if (args[0] === 'open'){
-                    await Ashiya.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Successful Opening The Group`)).catch((err) => reply(jsonformat(err)))
-                } else {
-                let buttons = [
-                        { buttonId: 'group open', buttonText: { displayText: 'Open' }, type: 1 },
-                        { buttonId: 'group close', buttonText: { displayText: 'Close' }, type: 1 }
-                    ]
-                    await Ashiya.sendButtonText(m.chat, buttons, `Group Mode`, Ashiya.user.name, m)
+		if (!isAdmins) return replay(`${mess.admin}`)       
+                if (args[0] === 'on'){
+                    await Ashiya.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Group එක Mute🚫 කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
+                } else if (args[0] === 'off'){
+                    await Ashiya.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Group එක Unmute⭕  කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
+                    
 
              }
             }
@@ -1687,23 +1682,23 @@ break
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
                 if (args[0] === "on") {
-                if (db.data.chats[m.chat].antilink) return reply(`Activated`)
+                if (db.data.chats[m.chat].antilink) return reply(`කිසිම ලින්ක් එකක් දාන්න එපා... Antilink Activated කරලා තියෙන්නේ..`)
                 db.data.chats[m.chat].antilink = true
                 reply(`Antilink Active !`)
                 } else if (args[0] === "off") {
-                if (!db.data.chats[m.chat].antilink) return reply(`Deactivated`)
+                if (!db.data.chats[m.chat].antilink) return reply(`දැන් නම් ලින්ක් දැම්මට කමක් නැහැ... Antilink Deactivated කරලා තියෙන්නේ...`)
                 db.data.chats[m.chat].antilink = false
                 reply(`Antilink Inactive !`)
                 } else {
                  let buttons = [
-                        { buttonId: 'antilink on', buttonText: { displayText: 'On' }, type: 1 },
-                        { buttonId: 'antilink off', buttonText: { displayText: 'Off' }, type: 1 }
+                        { buttonId: 'antilink on', buttonText: { displayText: '𝐎𝐍 ❗' }, type: 1 },
+                        { buttonId: 'antilink off', buttonText: { displayText: '𝐎𝐅𝐅 ❗' }, type: 1 }
                     ]
                     await Ashiya.sendButtonText(m.chat, buttons, `Antilink Mode`, Ashiya.user.name, m)
                 }
              }
              break
-             case 'mute': {
+             case '.mute': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
