@@ -2085,8 +2085,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: 'Low Quality'}, type: 1},
-		    {buttonId: `play321 ${anu.url}`, buttonText: {displayText: 'High Quality'}, type: 1},
+                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: '𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 '}, type: 1},
+		    {buttonId: `play321 ${anu.url}`, buttonText: {displayText: '𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 '}, type: 1},
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -2132,7 +2132,7 @@ break
 🎗 Uploaded On : ${anu.ago}
 📢 Url : ${anu.url}
 
-😊 ඔයා තෝර ගත්තේ Audio එකේ High Quality, දැන් ඔයාට ඕන  🎵 AUDIO 🎵 එකද, නැතිනම් 📃 AUDIO DOCUMENT 📃 එකද කියා පහතින් තෝරන්න... `,
+😊 ඔයා තෝර ගත්තේ Audio එකේ High Quality, දැන් ඔයාට ඕන   AUDIO  එකද, නැතිනම්  AUDIO DOCUMENT  එකද කියා පහතින් තෝරන්න... `,
                     footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
                     buttons: buttons,
                     headerType: 4
@@ -2165,7 +2165,7 @@ break
 🎗 Uploaded On : ${anu.ago}
 📢 Url : ${anu.url}
 
-😊 ඔයා තෝර ගත්තේ Audio එකේ Low Quality, දැන් ඔයාට ඕන  🎵 AUDIO 🎵 එකද, නැතිනම් 📃 AUDIO DOCUMENT 📃 එකද කියා පහතින් තෝරන්න...  `,
+😊 ඔයා තෝර ගත්තේ Audio එකේ Low Quality, දැන් ඔයාට ඕන   AUDIO  එකද, නැතිනම්  AUDIO DOCUMENT  එකද කියා පහතින් තෝරන්න...  `,
 			
                     footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
                     buttons: buttons,
@@ -2260,9 +2260,9 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
 		let buttons = [
-                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: 'Low Quality 360P '}, type: 1},
-		    {buttonId: `ytmp42 ${anu.url}480`, buttonText: {displayText: 'Medium Quality 480P'}, type: 1},
-	            {buttonId: `ytmp43 ${anu.url}720`, buttonText: {displayText: 'High Quality 720P'}, type: 1},]
+                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: '𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟯𝟲𝟬𝗣'}, type: 1},
+		    {buttonId: `ytmp42 ${anu.url}480`, buttonText: {displayText: '𝗠𝗲𝗱𝗶𝘂𝗺 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟰𝟴𝟬𝗣'}, type: 1},
+	            {buttonId: `ytmp43 ${anu.url}720`, buttonText: {displayText: '𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟳𝟮𝟬𝗣'}, type: 1},]
                 
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
