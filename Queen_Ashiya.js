@@ -2094,7 +2094,7 @@ break
   *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 		    
 📝 Title : ${anu.title}
-🔎 Ext : Search
+
 ⏰ Duration : ${anu.timestamp}
 👀 Viewes : ${anu.views}
 🎗 Uploaded On : ${anu.ago}
