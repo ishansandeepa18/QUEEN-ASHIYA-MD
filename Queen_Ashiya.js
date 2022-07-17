@@ -3381,7 +3381,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
-𝘏𝘪  ${pushname}
+𝘏𝘪  ${pushname} 👋
 
 
     *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
@@ -3398,22 +3398,22 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                
              
 
-𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
-`,
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
+
                             hydratedButtons: [{
 				    
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3431,49 +3431,43 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./Queen_Ashiya_Media/gojo.jpg')}, 
+            
                             hydratedFooterText: `
-┌─❖
-│「 Hi 👋 」
-└┬❖ 「 ${pushname} 」
-┌┤✑  Daijobka sempai?😄
-│└───────────────┈ ⳹
-│ 「 BOT INFO 」
-│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-└┬──────────────┈ ⳹
-   │✑  Please Select The Button Below
-   └───────────────┈ ⳹`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: 'YouTube📍',
-                                    url: `${myweb}`
-                                }
-                            }, {
-                            	urlButton: {
-                                displayText: 'Script🔖',
-                                    url: `${sc}`
-                                }
-                            }, {
+━━━━━━━━━━━━━━━━━━━━━
+  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
+ ━━━━━━━━━━━━━━━━━━━━━
+
+𝘏𝘪  ${pushname} 👋
+
+
+   *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+
+
+...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋...
+
+💁‍♂️ ඔයාලට ඕන 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )  එක පහතින් තෝර ගන්න පුලුවන්....
+
+ 📂  𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 
+ 📂  𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐
+
+
+
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
+				
+                            hydratedButtons: [
+				    {
                                 quickReplyButton: {
-                                    displayText: 'All Menu🎉',
+                                    displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu⭐',
+                                    displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner🐦',
+                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
                                     id: `${prefix}owner`
                                 }
                             }]
