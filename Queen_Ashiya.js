@@ -109,10 +109,10 @@ const nexusnw = require('xfarr-api')
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database\\
-let setik = JSON.parse(fs.readFileSync('./database/sticker.json'));
-let vien = JSON.parse(fs.readFileSync('./database/voice.json'));
-let imagi = JSON.parse(fs.readFileSync('./database/image.json'))
-let videox = JSON.parse(fs.readFileSync('./database/video.json'))
+let setiker = JSON.parse(fs.readFileSync('./database/sticker.json'));
+let voice = JSON.parse(fs.readFileSync('./database/voice.json'));
+let image = JSON.parse(fs.readFileSync('./database/image.json'))
+let video = JSON.parse(fs.readFileSync('./database/video.json'))
 
 //read database\\
 let tebaklagu = db.data.game.tebaklagu = []
@@ -3367,7 +3367,7 @@ reply("Success Changing Menu To "+q)
 }
 
                     break
-                     case 'alive': case 'bot':{
+                     case 'alive': case 'ashiya':{
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
@@ -3375,7 +3375,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
-                            jpegThumbnail: fs.readFileSync('./Queen_Ashiya_Media/gojo.jpg')},
+                          
                             hydratedFooterText: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
@@ -3400,8 +3400,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢
 `,
-                            hydratedButtons: [
-				    {
+                            hydratedButtons: [{
+				    
                                 quickReplyButton: {
                                     displayText: '🍇All Menu🍇',
                                     id: `${prefix}allmenu`
