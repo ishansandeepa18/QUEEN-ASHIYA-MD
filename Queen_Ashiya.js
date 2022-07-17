@@ -4183,7 +4183,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
-                Ashiya.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/17/FlEwaG.jpg'},
+                Ashiya.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
 		caption: `
 		*Hi    ${m.pushName}*\n 
 		
