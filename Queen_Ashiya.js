@@ -4183,9 +4183,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
-                Ashiya.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/17/FlEwaG.jpg' }, caption: `*Hi    ${m.pushName}*\n 
+                Ashiya.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/17/FlEwaG.jpg'},
+		caption: `
+		*Hi    ${m.pushName}*\n 
 		
-		*I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
+		I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞
 		
 		
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
