@@ -245,17 +245,18 @@ const reply = (teks) => {
 	  //antilink\\
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`https://`)) {
-        reply(`「 ANTI LINK 」\n\nYou have been detected sending a group link, sorry you will be kicked !`)
+        reply(`😂 හරිනේ පුම්කේ අමාරුව \n\nඇයි බං Link දැම්මෙ...උබව Remove කරන්න වෙනවා බං Sorry... `)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒`)
         let gclink = (`https://chat.whatsapp.com/`+await Ashiya.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Sent This Group Link❤️`)
-        if (isAdmins) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are An Admin Of The Group❤️`)
-        if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh🐦`)
+        if (isgclink) return reply(`ඔයාව නම් මට අයින් කරන්න බෑ. මොකද ඔයා දැම්මේ මේ Group එකේ ලින්ක් එකනේ...`)
+        if (isAdmins) return reply(`හා ඔයාව නම් අයින් කරන්න බෑ මට. මොකද ඔයා මේකේ ඇඩ්මින් කෙනෙක්නේ`)
+        if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh`)
         Ashiya.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
+	    
 
         //auto reply 
         for (let anji of setik){
@@ -4001,14 +4002,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
 break
             case 'list': case 'menu': {
-            	let buttons = [
-                    {buttonId: `${prefix}allmenu`, buttonText: {displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁'}, type: 1},
-	                  {buttonId: `${prefix}command`, buttonText: {displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂'}, type: 1},
-		                {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-                let buttonMessage = {
-                    image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
-                    caption: `
+            	timestampe = speed();
+latensie = speed() - timestampe
+                anu = ``
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            hydratedContentText: anu,
+            
+                            hydratedFooterText: `
 			    
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
@@ -4031,13 +4033,29 @@ break
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
 				
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                    buttons: buttons,
-                    headerType: 4
+                            hydratedButtons: [
+				    {
+                                quickReplyButton: {
+                                    displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁',
+                                    id: `${prefix}allmenu`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
+                                    id: `${prefix}command`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
+                                    id: `${prefix}owner`
+                                }
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat })
+                Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
-                Ashiya.sendMessage(m.chat, buttonMessage, )
-            }
-            break
+                break
 		
 		
                 case 'command': {
