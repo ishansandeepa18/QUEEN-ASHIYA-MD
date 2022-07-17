@@ -2085,7 +2085,7 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: 'Low Quality'}, type: 1},
+                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵'}, type: 1},
 		    {buttonId: `play321 ${anu.url}`, buttonText: {displayText: 'High Quality'}, type: 1},
                 ]
                 let buttonMessage = {
@@ -2117,8 +2117,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: 'Low Quality'}, type: 1},
-		    {buttonId: `ytmp31 ${anu.url}`, buttonText: {displayText: 'High Quality'}, type: 1},
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵 '}, type: 1},
+		    {buttonId: `ytmp31 ${anu.url}`, buttonText: {displayText: '📃 AUDIO DOCUMENT 📃'}, type: 1},
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -2150,8 +2150,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵 '}, type: 1},
-		    {buttonId: `documentfile2 ${anu.url}`, buttonText: {displayText: '📃 AUDIO DOCUMENT 📃'}, type: 1},
+                    {buttonId: `ytmp31 ${anu.url}`, buttonText: {displayText: '🎵 AUDIO 🎵 '}, type: 1},
+		    {buttonId: `documentfile1 ${anu.url}`, buttonText: {displayText: '📃 AUDIO DOCUMENT 📃'}, type: 1},
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
