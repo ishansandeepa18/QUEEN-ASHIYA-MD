@@ -3693,7 +3693,7 @@ case 'allmenu': {
 		    {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
                
        let buttonMessage = {
-       image: { url: ''},
+       image: { url: picak+'All Menu'},
        caption: `
 ┏━ *${botname}* ━━⭓ 
 ┃
