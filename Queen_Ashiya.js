@@ -2147,7 +2147,57 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                Ashiya.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                IshuMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `📝 Title : ${media.title}\n🎬 File Size : ${media.filesizeF}\n📢 Url : ${isUrl(text)}\n📽 Ext : MP4\n🎦 Resolution : ${args[1] || 'Low Quality 360P'}` }, { quoted: m })
+            }
+            break
+		
+	case 'video': {
+		if (!text) return reply(`Example : ${prefix + command} අල්ලන් යන්න බැරි අතක්`)
+                let yts = require("yt-search")
+                let search = await yts(text)
+                let anu = search.videos[0]
+		let buttons = [
+                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: 'Low Quality 360P '}, type: 1},
+		    {buttonId: `ytmp42 ${anu.url}480`, buttonText: {displayText: 'Medium Quality 480P'}, type: 1},
+	            {buttonId: `ytmp43 ${anu.url}720`, buttonText: {displayText: 'High Quality 720P'}, type: 1},]
+                
+                let buttonMessage = {
+                    image: { url: anu.thumbnail },
+                    caption: `
+  *I Am 💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝*
+		    
+📝 Title : ${anu.title}
+⏰ Duration : ${anu.timestamp}
+👀 Viewes : ${anu.views}
+🎗 Uploaded On : ${anu.ago}
+
+
+😊 ඔයාට ඕන වීඩීයෝ එකේ Quality එක, පහතින් තෝරන්න 👇  `,
+                    footer: '💝❄D͎A͎R͎K͎  I̟S̟H̟U̟ ❄️💝',
+                    buttons: buttons,
+                    headerType: 4
+                }
+                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+		
+		case 'ytmp42': {
+                let { ytv } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`)
+                let quality = args[1] ? args[1] : '480p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                Ashiya.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `📝 Title : ${media.title}\n🎬 File Size : ${media.filesizeF}\n📢 Url : ${isUrl(text)}\n📽 Ext : MP4\n🎦 Resolution : ${args[1] || 'Medium Quality 480P'}` }, { quoted: m })
+            }
+            break
+		
+		case 'ytmp43': {
+                let { ytv } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`)
+                let quality = args[1] ? args[1] : '720p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                Ashiya.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `📝 Title : ${media.title}\n🎬 File Size : ${media.filesizeF}\n📢 Url : ${isUrl(text)}\n📽 Ext : MP4\n🎦 Resolution : ${args[1] || 'High Quality 720P'}` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
