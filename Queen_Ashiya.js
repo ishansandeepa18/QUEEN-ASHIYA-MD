@@ -3601,7 +3601,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
           listType: 1
                 }
             }), {})
-            IshuMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
