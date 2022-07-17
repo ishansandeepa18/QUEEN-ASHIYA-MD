@@ -1,4 +1,4 @@
-Ashiyarequire('./settings')
+require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const util = require('util')
@@ -200,13 +200,13 @@ module.exports = Ashiya = async (Ashiya, m, chatUpdate, store) => {
             console.error(err)
         }
 	
-	//group target \\https://i.im.ge/2022/07/17/FlAm5T.jpg
+	//group target \\
 const reply = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/gojo.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlAm5T.jpg"}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/gojo.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlAm5T.jpg"}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -245,14 +245,14 @@ const reply = (teks) => {
 	  //antilink\\
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`https://`)) {
-        reply(`😂 හරිනේ පුම්කේ අමාරුව \n\nඇයි බං Link දැම්මෙ...උබව Remove කරන්න වෙනවා බං Sorry... `)
+        reply(`「 ANTI LINK 」\n\nYou have been detected sending a group link, sorry you will be kicked !`)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒`)
         let gclink = (`https://chat.whatsapp.com/`+await Ashiya.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return reply(`ඔයාව නම් මට අයින් කරන්න බෑ. මොකද ඔයා දැම්මේ මේ Group එකේ ලින්ක් එකනේ...`)
-        if (isAdmins) return reply(`හා ඔයාව නම් අයින් කරන්න බෑ මට. මොකද ඔයා මේකේ ඇඩ්මින් කෙනෙක්නේ`)
-        if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh`)
+        if (isgclink) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Sent This Group Link❤️`)
+        if (isAdmins) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are An Admin Of The Group❤️`)
+        if (isCreator) return reply(`Group Is Installed With Anti-Link But I Won't Kick You 😉, Because You Are My Owner Hahahahah🤣😘, You Think I Will Betray You Huh🐦`)
         Ashiya.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
@@ -1130,7 +1130,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             break
 		
 		
-            case 'kuismath': case '.math': {
+            case 'kuismath': case 'math': {
                 if (kuismath.hasOwnProperty(m.sender.split('@')[0])) return replay(`There Are Still Unfinished Sessions!`)
                 let { genMath, modes } = require('./lib/math')
                 if (!text) return replay(`Mode: ${Object.keys(modes).join(' | ')}\nFor Examples: ${prefix}math medium`)
@@ -1871,12 +1871,12 @@ break
             reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
-                let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' })
+                let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
                 await fs.unlinkSync(encmedia)
             } else if (/video/.test(mime)) {
                 if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds!')
                 let media = await quoted.download()
-                let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' })
+                let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
                 await fs.unlinkSync(encmedia)
             } else {
                 reply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 Seconds`)
@@ -1892,7 +1892,7 @@ reply(mess.wait)
 mee = await Ashiya.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
 meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`
-memek = await Ashiya.sendImageAsSticker(m.chat, meme, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' })
+memek = await Ashiya.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(memek)
 }
 break
@@ -1917,7 +1917,7 @@ break
 		let [emoji1, emoji2] = text.split`+`
 		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
 		for (let res of anu.results) {
-		    let encmedia = await Ashiya.sendImageAsSticker(m.chat, res.url, m, { packname: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢', author: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', categories: res.tags })
+		    let encmedia = await Ashiya.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
 		    await fs.unlinkSync(encmedia)
 		}
 	    }
@@ -3442,169 +3442,6 @@ reply("Success Changing Menu To "+q)
 }
 
                     break
-		
-		
-		
-		case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-								   
-
-								   
-
-}
-break
-		case 'mk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Mk.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'පොල් ගානවා.. ඔයත් එනවද' }, { quoted: m })
-
-
-}
-break
-		case 'gn': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gn.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'තෝ යකාම කාපිය...' }, { quoted: m })
-
-
-}
-break
-		
-		case 'gm': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gm.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'සුබ උදෑසනක් වේවා.. ඔයාටත්...' }, { quoted: m })
-
-}
-break
-		case 'ishan': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ishan.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-
-}
-break
-		case 'adarei': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarei.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                         Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
-
-}
-break
-		case 'fuck': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Fuck.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-
-
-}
-break
-	case 'ha': case 'hako': case 'hakoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ha.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-}
-break
-	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Na.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'හා නැද්ද.. හා කමක් නෑ..' }, { quoted: m })
-
-}
-break
-	case 'mmm': case 'hmm': case 'හ්ම්': case 'mm': case 'hmmm': case 'හ්ම්ම්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hmm.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-}
-break
-		
-		case 'adarey': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarey.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
-
-}
-break
-	case 'ane': case 'anee': case 'අනේ': case 'අනෙ': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-
-}
-break
-	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Huththa.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
-
-}
-break
-	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Pakaya.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
-
-}
-break
-	case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ponnaya.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-                                          Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
-
-}
-break
-		case 'denawada': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/denawada.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'මොනවද ඕන ...' }, { quoted: m })
-
-
-}
-break
-	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Marilada.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'නෑ තාම පණපිටින් ඉන්නො..' }, { quoted: m })
-
-
-}
-break
-	case 'gothaya': case 'goothaya': case 'ගෝතයා': case 'ගෝතය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gothaya.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-
-}
-break
-	case 'umma': case 'ummah': case 'ummma': case 'උම්මා': case 'උම්මාහ්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Umma.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-
-
-}
-break
-	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Wesi.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'උබලයි අම්මද බං ...' }, { quoted: m })
-
-
-}
-break
-		
-		
-		
-		
                      case 'alive': case 'ashiya':{
                            	timestampe = speed();
 latensie = speed() - timestampe
@@ -3661,7 +3498,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-	case 'list': case 'menu': case 'මෙනු': {
+            case 'list': case 'menu': {
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
@@ -3844,19 +3681,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
-                Ashiya.sendMessage(m.chat, { image: { url: 'https://i.im.ge/2022/07/17/FlAm5T.jpg' }, caption: `
-		*Hi   ${m.pushName}*\n 
-		
-		I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞
-		
-		
-		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
-		
-		𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢...\n` }, { quoted: m })
+                Ashiya.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
-                reply(`https://www.youtube.com/c/SinhanadaMusicRemix\n  Subscribe කරන්න අමතක කරන්න එපා... අලුත්ම සිංදු ආපූ ගමන් අහන්න මේ චැනල් එක Subscribe කරලා තියා ගන්න...`)
+                reply(`GitHub : https://github.com/nexusNw/Gojo-Satoru\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
             }
             break
 case 'allmenu': {
@@ -3865,7 +3694,7 @@ case 'allmenu': {
 		    {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
                
        let buttonMessage = {
-        image: { url: picak+'All Menu'},
+       image: { url: picak+'All Menu'},
        caption: `
 ┏━ *${botname}* ━━⭓ 
 ┃
