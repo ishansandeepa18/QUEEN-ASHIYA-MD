@@ -3976,7 +3976,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹👩‍💻 report [bug]
 ┃║
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -4006,7 +4006,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🌎 checkvote
 ┃╠✹🌎 delvote
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 
 case 'rpgmenu':
@@ -4025,7 +4025,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹⛔ buy [option]
 ┃╠✹⛔ sell [option]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -4080,7 +4080,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹😃 math [mode]
 ┃╠✹😃 suitpvp [tag]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 
 case 'ownermenu':
@@ -4099,7 +4099,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🤴 setppbot [image]
 ┃╠✹🤴 setexif
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4116,7 +4116,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹📥🎼 joox [query]
 ┃╠✹📥🔉 soundcloud [url]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4136,7 +4136,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔎 ringtone [query]
 ┃╠✹🔎 webtoon [query]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4148,7 +4148,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔖 animequote (indo)
 ┃╠✹🔖 couplepp
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4185,7 +4185,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹☀️ cringe
 ┃║
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4251,7 +4251,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹📝 1917 [txt]
 ┃╠✹📝 leaves [txt]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4272,7 +4272,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔄 dbinary [reply txt]
 ┃╠✹🔄 styletext [text]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4289,7 +4289,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹💻 getmsg
 ┃╠✹💻 delmsg
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'anonymouschatmenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4302,7 +4302,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🚫 next
 ┃╠✹🚫 leave
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4312,7 +4312,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃║
 ┃╠✹🔸 juzamma
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4332,7 +4332,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🎤 slow [reply aud]
 ┃╠✹🎤 squirrel [reply aud]
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4371,7 +4371,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔹 zodiak (indo)
 ┃╠✹🔹 shio (indo)
 ┃╚═════════════✪
-┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+┗━⭓━ 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢  ━⭓ `,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
@@ -4379,7 +4379,7 @@ await Ashiya.send5ButImg(from, `` + '' + ' ', `
 Thanks to Me ( NexusNw)
 Alien-Alfa (For helping me to deploy qr in replit and answered my every doubts regard this project)
 DGXeon ( 45% Credits goes to him ,in this script)
-And Again Me (King Nexus 🎉) 🐦 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
+And Again Me (King Nexus 🎉) 🐦 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"quickReplyButton": {"displayText": "🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️","id": 'info'}},{"quickReplyButton": {"displayText": "𝙊𝙒𝙉𝙀𝙍 🙋","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
