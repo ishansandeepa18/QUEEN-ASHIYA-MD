@@ -202,11 +202,11 @@ module.exports = Ashiya = async (Ashiya, m, chatUpdate, store) => {
 	
 	//group target \\https://i.im.ge/2022/07/17/FlAm5T.jpg
 const reply = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlAm5T.jpg"}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/ashiya.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlAm5T.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlAm5T.jpg"}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/ashiya.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlAm5T.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
