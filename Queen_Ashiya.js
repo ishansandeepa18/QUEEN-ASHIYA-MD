@@ -202,11 +202,11 @@ module.exports = Ashiya = async (Ashiya, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlEwaG.jpg"}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.ibb.co/3M1pzNm/Ashiya.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.im.ge/2022/07/17/FlEwaG.jpg"}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.ibb.co/3M1pzNm/Ashiya.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -4001,15 +4001,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
 break
             case 'list': case 'menu': {
-            	timestampe = speed();
-latensie = speed() - timestampe
-                anu = ``
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-            
-                            hydratedFooterText: `
+            	let buttons = [
+                    {buttonId: `${prefix}allmenu`, buttonText: {displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁'}, type: 1},
+	                  {buttonId: `${prefix}command`, buttonText: {displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂'}, type: 1},
+		                {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
+                
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
+                    caption: `
 			    
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
@@ -4032,29 +4031,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
 				
-                            hydratedButtons: [
-				    {
-                                quickReplyButton: {
-                                    displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    buttons: buttons,
+                    headerType: 4
                 }
-                break
+                Ashiya.sendMessage(m.chat, buttonMessage, )
+            }
+            break
+		
+		
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
