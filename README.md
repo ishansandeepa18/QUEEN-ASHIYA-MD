@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.ibb.co/3M1pzNm/Ashiya.jpg" alt="nz" width="350"/>
+<img src="https://i.ibb.co/3M1pzNm/Ashiya.jpg" alt="nz" width="400"/>
 </p>
 
 
@@ -11,7 +11,7 @@
 ----
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?duration=10000&color=F53FF7&center=true&vCenter=true&lines=Hi+++;Created+By%3A-+%F0%9D%99%B8%F0%9D%9A%82%F0%9D%99%B7%F0%9D%99%B0%F0%9D%99%BD+%F0%9D%9A%82%F0%9D%99%B0%F0%9D%99%BD%F0%9D%99%B3%F0%9D%99%B4%F0%9D%99%B4%F0%9D%99%BF%F0%9D%99%B0...;%F0%9D%98%9A%F0%9D%98%B3%F0%9D%98%AA+%F0%9D%98%93%F0%9D%98%A2%F0%9D%98%AF%F0%9D%98%AC%F0%9D%98%A2+%F0%9D%98%9E%F0%9D%98%B0%F0%9D%98%B3%F0%9D%98%AD%F0%9D%98%A5+%F0%9D%98%89%F0%9D%98%A6%F0%9D%98%B4%F0%9D%98%B5+%F0%9D%98%9E%F0%9D%98%A9%F0%9D%98%A2%F0%9D%98%B5%F0%9D%98%B4%F0%9D%98%A2%F0%9D%98%B1%F0%9D%98%B1+%F0%9D%98%89%F0%9D%98%96%F0%9D%98%9B...;%F0%9D%97%9B%F0%9D%97%B2%F0%9D%97%B9%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%B1+%F0%9D%97%A0%F0%9D%97%B2+%3A-+%F0%9D%97%A0%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%AE+%F0%9D%97%A6%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B5%F0%9D%98%80%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%AE...)](https://git.io/typing-svg)
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=&duration=5550&color=F749F3&width=500&height=60&lines=Hi+Friends+...;I'm+QUEEN+ASHIYA+...;Sri+Lankan+World+Best+Whatsapp+BOT+...;Create+By+%3A-++Ishan+Sandeepa+...)](https://git.io/typing-svg)
 
 
 
@@ -27,7 +27,7 @@
          2.) Heraku Acount එකක්.
 
 
-* ✏️ මුලින්ම ඔයා Git Hub එකට Log වෙලා ඉන්න ඊට පස්සෙ QUEEN-ASHIYA-MD Frock කර ගන්න...
+* ✏️ මුලින්ම ඔයා Git Hub එකට Log වෙලා ඉන්න ඊට පස්සෙ QUEEN-ASHIYA-MD   Frock කර ගන්න...
 
 * ✏️ ඊට පස්සෙ ඔයා ඔයාගේ  Whtsapp එකෙන් Qr එක Scan කරන්න... ඊට පස්සෙ ඔයාගෙ නම්බරෙන්, ඔයාටම Massege එකක් එයි..ඒ Document එකක්.. ඒ තමයි ඔයාගෙ Session එක... 
 
@@ -97,16 +97,13 @@
 
 </details><hr>
 
-## ස්තූතිය ....
-
-* ❤ Misara Sathsara 
 
 	
 	
 	
 	
 
-	----
+	
 	
 ## License  
 
