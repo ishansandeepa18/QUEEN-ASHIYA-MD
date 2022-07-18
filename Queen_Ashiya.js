@@ -16,7 +16,7 @@ const { performance } = require('perf_hooks')
 const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
-const nexusnw = require('xfarr-api')
+const IshanSandeepa = require('xfarr-api')
 
 //rpg function\\
    const { 
