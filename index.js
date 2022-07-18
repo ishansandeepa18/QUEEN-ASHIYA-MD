@@ -6,7 +6,7 @@
 //════════════════════════════//
 
 require('./settings')
-const { default: NexusNwIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
+const { default: IshanSandeepaIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
@@ -57,7 +57,7 @@ if (global.db) setInterval(async () => {
   }, 30 * 1000)
 
 async function startAshiya() {
-    const Ashiya = NexusNwIncConnect({
+    const Ashiya = IshanSandeepaIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
         browser: ['Gojo Satoru\Nexus','Safari','1.0.0'],
