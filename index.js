@@ -60,7 +60,7 @@ async function startAshiya() {
     const Ashiya = IshanSandeepaIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Gojo Satoru\Nexus','Safari','1.0.0'],
+        browser: ['QUEEN-ASHIYA-MD\Ishan Sandeepa','Safari','1.0.0'],
         auth: state
     })
 
@@ -71,7 +71,7 @@ async function startAshiya() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await Ashiya.sendContact(callerId, global.owner)
-    Ashiya.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
+    Ashiya.sendMessage(callerId, { text: `Automatic Block System!\nඇයි අනේ කෝල් ගන්නේ, එහෙනම් Bye Bye Block List එකට යන්න...!`}, { quoted : pa7rick })
     await sleep(8000)
     await Ashiya.updateBlockStatus(callerId, "block")
     }
@@ -112,7 +112,7 @@ async function startAshiya() {
        } else if (pea[0].restrict == false) {
        Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nදැන් ඔයාලා හැමදෙනාටම Group එකේ Info Edit කරන්න පුලුවන්...  !`, `Group Settings Change Message`, wm_fatih, [])
        } else {
-       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nමෙන්න මේ ඉශූ Group එකේ නම වෙනස් කලා... *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nමෙන්න QUEEN ASHIYA Group එකේ නම වෙනස් කලා... *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
     })
 
