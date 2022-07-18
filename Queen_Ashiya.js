@@ -1890,7 +1890,7 @@ break
                 let encmedia = await Ashiya.sendImageAsSticker(m.chat, media, m, { packname: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', author: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' })
                 await fs.unlinkSync(encmedia)
             } else if (/video/.test(mime)) {
-                if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds!')
+                if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds! වෙන්න ඕන...')
                 let media = await quoted.download()
                 let encmedia = await Ashiya.sendVideoAsSticker(m.chat, media, m, { packname: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞', author: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' })
                 await fs.unlinkSync(encmedia)
@@ -2078,7 +2078,7 @@ break
         n = result
         images = n[Math.floor(Math.random() * n.length)].url
         let buttons = [
-                    {buttonId: `gimage ${text}`, buttonText: {displayText: '➡️➡️Next Image➡️➡️'}, type: 1}
+                    {buttonId: `gimage ${text}`, buttonText: {displayText: '➡️Next Image➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: images },
@@ -3100,7 +3100,7 @@ break
                 Ashiya.sendMessage(m.chat, { video: { url: anu.result }, caption: `Download From ${text}` }, { quoted: m })
             }
             break
-            case 'umma': case 'ummadl': {
+            case '.umma': case 'ummadl': {
 	        if (!text) return reply(`Example : ${prefix + command} https://umma.id/channel/video/post/gus-arafat-sumber-kecewa-84464612933698`)
                 let { umma } = require('./lib) scraper')
 		let anu = await umma(isUrl(text)[0])
@@ -4056,7 +4056,7 @@ break
 break
 	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා උබ කියනකන් හිටියේ 😂' }, { quoted: m })
 
-                                                     Ashiya.sendMessage(from, { react: { text: `😊`, key: m.key }})
+                                                     
 
 }
 break
@@ -4122,7 +4122,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-            case 'list': case 'menu': {
+	case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
 		    
             	timestampe = speed();
 latensie = speed() - timestampe
@@ -4294,9 +4294,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔Create By",
 								"rows": [
 									{
-										"title": "𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢",
-										"description": ".",
-										"rowId": `${prefix}tqtt`
+										"title": "BOT INFO",
+										"description": "QUEEN ASHIYA බොට් ගැන",
+										"rowId": `${prefix}info`
 									}
 								]
 							}
