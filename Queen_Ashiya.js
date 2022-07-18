@@ -1794,7 +1794,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: '𝙈𝙀𝙉𝙐',
                                     id: 'menu'
                                 }
                             }, {
@@ -1828,7 +1828,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: '𝙈𝙀𝙉𝙐',
                                     id: 'menu'
                                 }
                             }, {
