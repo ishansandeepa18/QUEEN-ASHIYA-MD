@@ -4076,6 +4076,12 @@ break
 		
 		
                      case 'alive': case 'ashiya':{
+			     
+			     {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+
+
+			     
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
