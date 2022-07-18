@@ -4081,7 +4081,7 @@ break
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
-			      {
+			      
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
