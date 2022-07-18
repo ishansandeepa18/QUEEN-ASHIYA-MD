@@ -6,6 +6,7 @@
 //
 //════════════════════════════//
 
+
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -26,7 +27,7 @@ global.ownernomer = '94786746412'
 global.ownername = '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢'
 global.botname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
 global.footer = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
-global.ig = 'https://github.com/nexusNw'
+global.ig = 'https://github.com/ishansandeepa757'
 global.region = 'India, South India, Kerala'
 global.sc = 'https://github.com/ishansandeepa757'
 global.myweb = 'https://www.youtube.com/c/SinhanadaMusicRemix'
