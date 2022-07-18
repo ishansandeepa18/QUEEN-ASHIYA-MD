@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.im.ge/2022/07/17/FlAm5T.jpg" alt="nz" width="350"/>
+<img src="https://i.ibb.co/3M1pzNm/Ashiya.jpg" alt="nz" width="350"/>
 </p>
 
 
