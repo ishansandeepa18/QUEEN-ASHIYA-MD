@@ -34,7 +34,7 @@ global.myweb = 'https://www.youtube.com/c/SinhanadaMusicRemix'
 global.packname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
 global.author = '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢'
 global.sessionName = 'session'
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['','!','.','🐦','🐤','🗿']                   // 👈 මේවා ඔයාට ඕන විදියට වෙනස් කර ගන්න \\ 
 global.sp = '⭔'
 global.mess = {
     success: 'හරි ✅',
@@ -47,8 +47,16 @@ global.mess = {
     wait: 'පොඩ්ඩක් ඉන්න Wait ⏳ ...',
     error: 'Error! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
+	
+	
+	
+	
+	 // මේවා වෙනස් කරන්න එපා .....👇 \\
+	
+	
+	
 }
-    global.limitawal = {
+    global.limitawal = {        
     premium: "Infinity",
     free: 12,
     monayawal: 1000
