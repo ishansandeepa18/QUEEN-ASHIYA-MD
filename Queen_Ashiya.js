@@ -238,7 +238,7 @@ const reply = (teks) => {
             console.log('Limit Reseted')
         }, {
             scheduled: true,
-            timezone: "Asia/Kolkata"
+            timezone: "Asia/Sri Lanka"
         })
         
 	//auto set bio\\
@@ -4065,7 +4065,7 @@ break
 break
 	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා උබ කියනකන් හිටියේ 😂' }, { quoted: m })
 
-                                                     
+    return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})                                    
 
 }
 break
