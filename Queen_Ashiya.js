@@ -4095,7 +4095,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "⚔All Features",
+								"title": "⚔ 𝗔𝗹𝗹 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀",
 								"rows": [{
 									
 										"title": "ᴀʟʟ ᴍᴇɴᴜ 📁",
@@ -4105,7 +4105,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "⚔Bot Features",
+								"title": "⚔ 𝗕𝗼𝘁 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀s",
 								"rows": [
 									{
 										"title": "ᴍᴀɪɴ ᴍᴇɴᴜ 👨‍🎓",
@@ -4185,7 +4185,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "⚔Chat With Fellow Users",
+								"title": "⚔ 𝗖𝗵𝗮𝘁 𝗪𝗶𝘁𝗵 𝗙𝗲𝗹𝗹𝗼𝘄 𝗨𝘀𝗲𝗿𝘀",
 								"rows": [
 									{
 										"title": "ᴀɴᴏɴʏᴍᴏᴜꜱ ᴄʜᴀᴛ ᴍᴇɴᴜ 🚫",
@@ -4195,7 +4195,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "⚔Create By",
+								"title": "⚔ 𝗖𝗿𝗲𝗮𝘁𝗲 𝗕𝘆",
 								"rows": [
 									{
 										"title": "ʙᴏᴛ ɪɴꜰᴏ",
