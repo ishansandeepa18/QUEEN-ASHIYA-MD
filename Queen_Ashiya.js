@@ -4098,7 +4098,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔All Features",
 								"rows": [{
 									
-										"title": "All Menu 📁",
+										"title": "ᴀʟʟ ᴍᴇɴᴜ 📁",
 										"description": "සියලුම කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක!",
 										"rowId": `${prefix}allmenu`
 									}
@@ -4108,12 +4108,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔Bot Features",
 								"rows": [
 									{
-										"title": "Main Menu 👨‍🎓",
+										"title": "ᴍᴀɪɴ ᴍᴇɴᴜ 👨‍🎓",
 										"description": "Main කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}mainmenu`
 									},
 									{
-										"title": "Owner Menu 🤴",
+										"title": "ᴏᴡɴᴇʀ ᴍᴇɴᴜ 🤴",
 										"description": "Owner කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}ownermenu`
 										},
