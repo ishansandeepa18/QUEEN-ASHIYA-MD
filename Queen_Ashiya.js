@@ -4016,15 +4016,14 @@ break
 
 
 			      
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                          
-                            hydratedFooterText: `
+                           	let buttons = [
+                    {buttonId: `${prefix}menu`, buttonText: {displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂'}, type: 1},
+		    {buttonId: `${prefix}allmenu`, buttonText: {displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁'}, type: 1},
+	            {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋'}, type: 1},]
+                
+                let buttonMessage = {
+                    image: { url: },
+                    caption: `
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -4048,29 +4047,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`,
 
-                            hydratedButtons: [{
-				    
-                                quickReplyButton: {
-                                    displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
-                                    id: `${prefix}menu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    buttons: buttons,
+                    headerType: 4
                 }
-break
+                Ashiya.sendMessage(m.chat, buttonMessage, )
+		    
+            }
+            break
 	
 		
 		
