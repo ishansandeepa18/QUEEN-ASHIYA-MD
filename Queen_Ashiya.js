@@ -238,7 +238,7 @@ const reply = (teks) => {
             console.log('Limit Reseted')
         }, {
             scheduled: true,
-            timezone: "Asia/Sri Lanka"
+            timezone: "Asia/Kolkata"
         })
         
 	//auto set bio\\
@@ -1332,7 +1332,7 @@ Ashiya.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange
       case 'hot': {
             
             
-            let member = participants.map(u => u.id)
+            
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `ඇයි බං කුනුහර්ප කියන්නේ, කුනුහර්ප කියන්න එපා බං
