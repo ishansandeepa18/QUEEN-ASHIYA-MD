@@ -4170,16 +4170,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}horoscopemenu`
 										}
 								]
-							},
-							{
-								"title": "⚔ 𝗖𝗵𝗮𝘁 𝗪𝗶𝘁𝗵 𝗙𝗲𝗹𝗹𝗼𝘄 𝗨𝘀𝗲𝗿𝘀",
-								"rows": [
-									{
-										"title": "ᴀɴᴏɴʏᴍᴏᴜꜱ ᴄʜᴀᴛ ᴍᴇɴᴜ 🚫",
-										
-										"rowId": `${prefix}anonymouschatmenu`
-									}
-								]
+							
+								
 							},
 							{
 								"title": "⚔ 𝗖𝗿𝗲𝗮𝘁𝗲 𝗕𝘆",
