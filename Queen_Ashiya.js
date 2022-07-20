@@ -4118,67 +4118,67 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu 🌎",
+										"title": "ɢʀᴏᴜᴘ ᴍᴇɴᴜ 🌎",
 										"description": "Groop කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}groupmenu`
 										},
 									{
-										"title": "Rpg Menu ⛔",
+										"title": "ʀᴘɢ ᴍᴇɴᴜ ⛔",
 										"description": "Displays The List Of Rpg Features",
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
-										"title": "Download Menu 📥",
+										"title": "ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 📥",
 										"description": "Download කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Search Menu 🔎",
+										"title": "ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ 🔎",
 										"description": "Displays The List Of Searching Features",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-											"title": "Random Menu 🔪",
+											"title": "ʀᴀɴᴅᴏᴍ ᴍᴇɴᴜ 🔪",
 										"description": "Displays The List Of Random Features",
 										"rowId": `${prefix}randommenu`
 										},
 										{
-											"title": "Random Anime Menu 🛡",
+											"title": "ʀᴀɴᴅᴏᴍ ᴀɴɪᴍᴇ ᴍᴇɴᴜ 🛡",
 										"description": "Displays The List Of Random Anime Features",
 										"rowId": `${prefix}randomanimemenu`
 										},
 										{
-											"title": "Fun Menu 😃",
+											"title": "ꜰᴜɴ ᴍᴇɴᴜ 😃",
 										"description": "Displays The List Of Fun Features",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-											"title": "Convert Menu 🔄",
+											"title": "ᴄᴏɴᴠᴇʀᴛ ᴍᴇɴᴜ 🔄",
 										"description": "Convert කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu 💻",
+											"title": "ᴅᴀᴛᴀʙᴀꜱᴇ ᴍᴇɴᴜ 💻",
 										"description": "Displays The List Of Database Features",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-											"title": "Voice Changer Menu 🎤",
+											"title": "ᴠᴏɪᴄᴇ ᴄʜᴀɴɢᴇʀ ᴍᴇɴᴜ 🎤",
 										"description": "Displays The List Of Voice Changing Features",
 										"rowId": `${prefix}voicechangermenu`
 										},
 										{
-											"title": "TXT-to-IMG Menu 📝",
+											"title": "ᴛxᴛ-ᴛᴏ-ɪᴍɢ ᴍᴇɴᴜ 📝",
 										"description": "Displays The List Of Textpro Features",
 										"rowId": `${prefix}textpromenu`
 										},
 										{
-											"title": "Islamic Menu 🔸",
+											"title": "ɪꜱʟᴀᴍɪᴄ ᴍᴇɴᴜ 🔸",
 										"description": "Displays The List Of Islamic Features",
 										"rowId": `${prefix}islamicmenu`
 										},
 										{
-											"title": "Horoscope Menu 🔹",
+											"title": "ʜᴏʀᴏꜱᴄᴏᴘᴇ ᴍᴇɴᴜ 🔹",
 										"description": "Displays The List Of Horoscope Features",
 										"rowId": `${prefix}horoscopemenu`
 										}
@@ -4188,7 +4188,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔Chat With Fellow Users",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu 🚫",
+										"title": "ᴀɴᴏɴʏᴍᴏᴜꜱ ᴄʜᴀᴛ ᴍᴇɴᴜ 🚫",
 										"description": "Displays The List Of Anonymous Chat Features",
 										"rowId": `${prefix}anonymouschatmenu`
 									}
@@ -4198,7 +4198,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "⚔Create By",
 								"rows": [
 									{
-										"title": "BOT INFO",
+										"title": "ʙᴏᴛ ɪɴꜰᴏ",
 										"description": "QUEEN ASHIYA බොට් ගැන",
 										"rowId": `${prefix}info`
 									}
