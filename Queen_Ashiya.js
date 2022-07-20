@@ -238,7 +238,7 @@ const reply = (teks) => {
             console.log('Limit Reseted')
         }, {
             scheduled: true,
-            timezone: "Asia/Kolkata"
+            timezone: "Asia/Sri Lanka"
         })
         
 	//auto set bio\\
@@ -1274,75 +1274,9 @@ Ashiya.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					Ashiya.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
-                    case 'stupid':
-      case 'foolish':
-      case 'smart':
-      case 'idiot':
-      case 'gay':
-      case 'lesbi':
-      case 'bastard':
-      case 'stubble':
-      case 'dog':
-      case 'fuck':
-      case 'ape':
-      case 'noob':
-      case 'great':
-      case 'horny':
-      case 'wibu':
-      case 'asshole':
-      case 'handsome':
-      case 'beautiful':
-      case 'cute':
-      case 'kind':
-      case 'ugly':
-      case 'pretty':
-      case 'lesbian':
-      case 'randi':
-      case 'gandu':
-      case 'madarchod':
-      case 'kala':
-      case 'gora':
-      case 'chutiya':
-      case 'nibba':
-      case 'nibbi':
-      case 'bhosdiwala':
-      case 'chutmarika':
-      case 'bokachoda':
-      case 'suarerbaccha':
-      case 'bolochoda':
-      case 'muthal':
-      case 'muthbaaz':
-      case 'randibaaz':
-      case 'topibaaz':
-      case 'cunt':
-      case 'nerd':
-      case 'behenchod':
-      case 'behnchoda':
-      case 'bhosdika':
-      case 'bc':
-      case 'nerd':
-      case 'mc':
-      case 'bsdk':
-      case 'bhosdk':
-      case 'nigger':
-      case 'loda':
-      case 'laund':
-      case 'nigga':
-      case 'sexy':
-      case 'hot': {
-           
-          
-          
-          
-            let jawab = `ඇයි බං කුනුහර්ප කියන්නේ කුනුහර්ප කියන්න එපා බං
-	    ${pushname}`
-            let ments = [me, jodoh]
-            let buttons = [
-                        { buttonId: '👀', buttonText: { displayText: '𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔' }, type: 1 }]
                     
-                    await Ashiya.sendButtonText(m.chat, buttons, jawab, Ashiya.user.name, m, {mentions: ments})
-            }
-            break
+		
+		
 case 'when':
 				if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
 					const kapan = ['5 More Days', '10 More Days', '15 More Days','20 More Days', '25 More Days','30 More Days','35 More Days','40 More Days','45 More Days','50 More Days','55 More Days','60 More Days','65 More Days','70 More Days','75 More Days','80 More Days','85 More Days','90 More Days','100 More Days','5 Months More', '10 Months More', '15 Months More','20 Months More', '25 Months More','30 Months More','35 Months More','40 Months More','45 Months More','50 Months More','55 Months More','60 Months More','65 Months More','70 Months More','75 Months More','80 Months More','85 Months More','90 Months More','100 Months More','1 More Year','2 More Years','3 More Years','4 More Years','5 More Years','Tomorrow','The Day After Tomorrow',`After This Command, You Too ${q}`]
