@@ -4108,11 +4108,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "ɢʀᴏᴜᴘ ᴍᴇɴᴜ 🌎",
 										
 										"rowId": `${prefix}groupmenu`
-										},
-									{
-										"title": "ʀᴘɢ ᴍᴇɴᴜ ⛔",
 										
-										"rowId": `${prefix}rpgmenu`
 									},
 									{
 										"title": "ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 📥",
@@ -4123,21 +4119,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ 🔎",
 										
 										"rowId": `${prefix}searchmenu`
-									},
-									{
-											"title": "ʀᴀɴᴅᴏᴍ ᴍᴇɴᴜ 🔪",
+									
 										
-										"rowId": `${prefix}randommenu`
-										},
-										{
-											"title": "ʀᴀɴᴅᴏᴍ ᴀɴɪᴍᴇ ᴍᴇɴᴜ 🛡",
-										
-										"rowId": `${prefix}randomanimemenu`
-										},
-										{
-											"title": "ꜰᴜɴ ᴍᴇɴᴜ 😃",
-										
-										"rowId": `${prefix}funmenu`
 										},
 										{
 											"title": "ᴄᴏɴᴠᴇʀᴛ ᴍᴇɴᴜ 🔄",
@@ -4158,16 +4141,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 											"title": "ᴛxᴛ-ᴛᴏ-ɪᴍɢ ᴍᴇɴᴜ 📝",
 										
 										"rowId": `${prefix}textpromenu`
-										},
-										{
-											"title": "ɪꜱʟᴀᴍɪᴄ ᴍᴇɴᴜ 🔸",
 										
-										"rowId": `${prefix}islamicmenu`
-										},
-										{
-											"title": "ʜᴏʀᴏꜱᴄᴏᴘᴇ ᴍᴇɴᴜ 🔹",
-										
-										"rowId": `${prefix}horoscopemenu`
 										}
 								]
 							
