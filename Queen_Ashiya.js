@@ -1641,6 +1641,7 @@ break
             }
             break
             case 'antilink': {
+	       if (!m.isGroup) return replay(`${mess.group}`)
                if (!isCreator) return replay(`${mess.owner}`)
                 if (args[0] === "on") {
                 if (db.data.chats[m.chat].antilink) return reply(`කිසිම ලින්ක් එකක් දාන්න එපා... Antilink Activated කරලා තියෙන්නේ..`)
