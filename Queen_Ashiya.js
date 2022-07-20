@@ -4077,7 +4077,7 @@ break
                case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `𝘏𝘪  ${pushname} 👋`, 
+                     
 			
                     description: `
 		   			    
