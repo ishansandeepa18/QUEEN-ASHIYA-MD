@@ -1330,17 +1330,17 @@ Ashiya.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange
       case 'nigga':
       case 'sexy':
       case 'hot': {
-            
-            
-            
-            
-            let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `ඇයි බං කුනුහර්ප කියන්නේ, කුනුහර්ප කියන්න එපා බං
+           
+          
+            let member = participants.map(u => u.id)
+            let me = m.sender
+          
+            let jawab = `ඇයි බං කුනුහර්ප කියන්නේ කුනුහර්ප කියන්න එපා බං
 	    ${pushname}`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '👀', buttonText: { displayText: '𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔' }, type: 1 }
-                    ]
+                        { buttonId: '👀', buttonText: { displayText: '𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔' }, type: 1 }]
+                    
                     await Ashiya.sendButtonText(m.chat, buttons, jawab, Ashiya.user.name, m, {mentions: ments})
             }
             break
