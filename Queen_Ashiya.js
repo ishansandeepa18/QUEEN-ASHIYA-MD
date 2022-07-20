@@ -4303,18 +4303,6 @@ case 'allmenu': {
 ┃╠✹📝 1917 [txt]
 ┃╠✹📝 leaves [txt]
 ┃║
-┃╠✹📖️══☯︎❯ RPG ⛔ ❮ 👇
-┃║
-┃╠✹⛔ hunting
-┃╠✹⛔ mining
-┃╠✹⛔ heal
-┃╠✹⛔ userlimit
-┃╠✹⛔ profile
-┃╠✹⛔ inventory
-┃╠✹⛔ leaderboard
-┃╠✹⛔ buy [option]
-┃╠✹⛔ sell [option]
-┃║
 ┃╠✹📖️═☬❯ DOWNLOADER 📥 ❮ 👇
 ┃║
 ┃╠✹📥🎵 song [url|quality]
@@ -4339,90 +4327,6 @@ case 'allmenu': {
 ┃╠✹🔎 ytsearch [query]
 ┃╠✹🔎 ringtone [query]
 ┃╠✹🔎 webtoon [query]
-┃║
-┃╠✹📖️══☬❯ RANDOM 🔖 ❮ 👇
-┃║
-┃╠✹🔖 coffee
-┃╠✹🔖 animequote (indo)
-┃╠✹🔖 couplepp
-┃║
-┃╠✹📖️═☬❯ RANDOM ANIME ❮ ☀️👇
-┃║
-┃╠✹☀️ loli
-┃╠✹☀️ bully
-┃╠✹☀️ cuddle
-┃╠✹☀️ cry
-┃╠✹☀️ hug
-┃╠✹☀️ awoo
-┃╠✹☀️ kiss
-┃╠✹☀️ lick
-┃╠✹☀️ pat
-┃╠✹☀️ smug
-┃╠✹☀️ bonk
-┃╠✹☀️ yeet
-┃╠✹☀️ blush
-┃╠✹☀️ smile
-┃╠✹☀️ wave
-┃╠✹☀️ highfive
-┃╠✹☀️ handhold
-┃╠✹☀️ nom
-┃╠✹☀️ glomp
-┃╠✹☀️ bite
-┃╠✹☀️ slap
-┃╠✹☀️ kill
-┃╠✹☀️ happy
-┃╠✹☀️ wink
-┃╠✹☀️ poke
-┃╠✹☀️ dance
-┃╠✹☀️ cringe
-┃║
-┃╠✹📖️══☬❯ FUN 😃 ❮ 👇
-┃║
-┃╠✹😃 how [text]
-┃╠✹😃 when [text]
-┃╠✹😃 is [text]
-┃╠✹😃 what [text]
-┃╠✹😃 can [text]
-┃╠✹😃 rate [text]
-┃╠✹😃 wangy [text]
-┃╠✹😃 beautifulcheck [tag]
-┃╠✹😃 awesomecheck [tag]
-┃╠✹😃 prettycheck [tag]
-┃╠✹😃 lesbiancheck [tag]
-┃╠✹😃 gaycheck [tag]
-┃╠✹😃 cutecheck [tag]
-┃╠✹😃 uglycheck [tag]
-┃╠✹😃 hornycheck [tag]
-┃╠✹😃 charactercheck [tag]
-┃╠✹😃 lovelycheck [tag]
-┃╠✹😃 couple
-┃╠✹😃 mysoulmate
-┃╠✹😃 hot
-┃╠✹😃 sexy
-┃╠✹😃 kind
-┃╠✹😃 idiot
-┃╠✹😃 handsome
-┃╠✹😃 beautiful
-┃╠✹😃 cute
-┃╠✹😃 pretty
-┃╠✹😃 lesbian
-┃╠✹😃 noob
-┃╠✹😃 bastard
-┃╠✹😃 foolish
-┃╠✹😃 nerd
-┃╠✹😃 asshole
-┃╠✹😃 gay
-┃╠✹😃 smart
-┃╠✹😃 stubble
-┃╠✹😃 dog
-┃╠✹😃 horny
-┃╠✹😃 cunt
-┃╠✹😃 wibu
-┃╠✹😃 tictactoe
-┃╠✹😃 delttt
-┃╠✹😃 guess [option]
-┃╠✹😃 math [mode]
-┃╠✹😃 suitpvp [tag]
 ┃║
 ┃╠✹📖️═══☬❯ CONVERTER 🔄 ❮ 👇
 ┃║
@@ -4450,13 +4354,6 @@ case 'allmenu': {
 ┃╠✹💻 getmsg
 ┃╠✹💻 delmsg
 ┃║
-┃╠✹📖️═☬❯ ANONYMOUS CHAT 🚫 ❮ 👇
-┃║
-┃╠✹🚫 anonymous
-┃╠✹🚫 start
-┃╠✹🚫 next
-┃╠✹🚫 leave
-┃║
 ┃╠✹📖️═☬❯ VOICE CHANGER 🎤 ❮ 👇
 ┃║
 ┃╠✹🎤 bass [reply aud]
@@ -4470,43 +4367,6 @@ case 'allmenu': {
 ┃╠✹🎤 robot [reply aud]
 ┃╠✹🎤 slow [reply aud]
 ┃╠✹🎤 squirrel [reply aud]
-┃║
-┃╠✹📖️══☬❯ ISLAMIC 🔸 ❮ 👇
-┃║
-┃╠✹🔸 juzamma
-┃║
-┃╠✹📖️══☬❯ HOROSCOPE 🔹 ❮ 👇
-┃║
-┃╠✹🔹 nomorhoki (indo)
-┃╠✹🔹 artimimpi (indo)
-┃╠✹🔹 artinama (indo)
-┃╠✹🔹 ramaljodoh (indo)
-┃╠✹🔹 ramaljodohbali (indo)
-┃╠✹🔹 suamiistri (indo)
-┃╠✹🔹 ramalcinta (indo)
-┃╠✹🔹 cocoknama (indo)
-┃╠✹🔹 pasangan (indo)
-┃╠✹🔹 jadiannikah (indo)
-┃╠✹🔹 sifatusaha (indo)
-┃╠✹🔹 rezeki (indo)
-┃╠✹🔹 pekerjaan (indo)
-┃╠✹🔹 nasib (indo)
-┃╠✹🔹 penyakit (indo)
-┃╠✹🔹 tarot (indo)
-┃╠✹🔹 fengshui (indo)
-┃╠✹🔹 haribaik (indo)
-┃╠✹🔹 harisangar (indo)
-┃╠✹🔹 harisial (indo)
-┃╠✹🔹 nagahari (indo)
-┃╠✹🔹 arahrezeki (indo)
-┃╠✹🔹 peruntungan (indo)
-┃╠✹🔹 weton (indo)
-┃╠✹🔹 karakter (indo)
-┃╠✹🔹 keberuntungan (indo)
-┃╠✹🔹 memancing (indo)
-┃╠✹🔹 masasubur (indo)
-┃╠✹🔹 zodiak (indo)
-┃╠✹🔹 shio (indo)
 ┃║
 ┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ ━⭓ `,
    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
@@ -4598,106 +4458,8 @@ let buttons = [
             }
             break
 	    
-case 'rpgmenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Rpg Menu'},
-        caption: `
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️══☯︎❯ RPG ⛔ ❮ 👇
-┃║
-┃╠✹⛔ hunting
-┃╠✹⛔ mining
-┃╠✹⛔ heal
-┃╠✹⛔ userlimit
-┃╠✹⛔ profile
-┃╠✹⛔ inventory
-┃╠✹⛔ leaderboard
-┃╠✹⛔ buy [option]
-┃╠✹⛔ sell [option]
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
-	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
-	
-case 'funmenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Fun Menu'},
-        caption: `
 
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️══☬❯ FUN 😃 ❮ 👇
-┃║
-┃╠✹😃 how [text]
-┃╠✹😃 when [text]
-┃╠✹😃 is [text]
-┃╠✹😃 what [text]
-┃╠✹😃 can [text]
-┃╠✹😃 rate [text]
-┃╠✹😃 wangy [text]
-┃╠✹😃 beautifulcheck [tag]
-┃╠✹😃 awesomecheck [tag]
-┃╠✹😃 prettycheck [tag]
-┃╠✹😃 lesbiancheck [tag]
-┃╠✹😃 gaycheck [tag]
-┃╠✹😃 cutecheck [tag]
-┃╠✹😃 uglycheck [tag]
-┃╠✹😃 hornycheck [tag]
-┃╠✹😃 charactercheck [tag]
-┃╠✹😃 lovelycheck [tag]
-┃╠✹😃 couple
-┃╠✹😃 mysoulmate
-┃╠✹😃 hot
-┃╠✹😃 sexy
-┃╠✹😃 kind
-┃╠✹😃 idiot
-┃╠✹😃 handsome
-┃╠✹😃 beautiful
-┃╠✹😃 cute
-┃╠✹😃 pretty
-┃╠✹😃 lesbian
-┃╠✹😃 noob
-┃╠✹😃 bastard
-┃╠✹😃 foolish
-┃╠✹😃 nerd
-┃╠✹😃 asshole
-┃╠✹😃 gay
-┃╠✹😃 smart
-┃╠✹😃 stubble
-┃╠✹😃 dog
-┃╠✹😃 horny
-┃╠✹😃 cunt
-┃╠✹😃 wibu
-┃╠✹😃 tictactoe
-┃╠✹😃 delttt
-┃╠✹😃 guess [option]
-┃╠✹😃 math [mode]
-┃╠✹😃 suitpvp [tag]
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ  ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
 	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
 
 case 'ownermenu': {
 let buttons = [
@@ -4796,82 +4558,9 @@ let buttons = [
             }
             break
 	
-case 'randommenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Random Menu'},
-        caption: `
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️══☬❯ RANDOM 🔖 ❮ 👇
-┃║
-┃╠✹🔖 coffee
-┃╠✹🔖 animequote (indo)
-┃╠✹🔖 couplepp
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
-	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
 
-case 'randomanimemenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Randomanime Menu'},
-        caption: `
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️═☬❯ RANDOM ANIME ❮ ☀️👇
-┃║
-┃╠✹☀️ loli
-┃╠✹☀️ bully
-┃╠✹☀️ cuddle
-┃╠✹☀️ cry
-┃╠✹☀️ hug
-┃╠✹☀️ awoo
-┃╠✹☀️ kiss
-┃╠✹☀️ lick
-┃╠✹☀️ pat
-┃╠✹☀️ smug
-┃╠✹☀️ bonk
-┃╠✹☀️ yeet
-┃╠✹☀️ blush
-┃╠✹☀️ smile
-┃╠✹☀️ wave
-┃╠✹☀️ highfive
-┃╠✹☀️ handhold
-┃╠✹☀️ nom
-┃╠✹☀️ glomp
-┃╠✹☀️ bite
-┃╠✹☀️ slap
-┃╠✹☀️ kill
-┃╠✹☀️ happy
-┃╠✹☀️ wink
-┃╠✹☀️ poke
-┃╠✹☀️ dance
-┃╠✹☀️ cringe
-┃║
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ  ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
-	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
+
+
 
 case 'textpromenu': {
 let buttons = [
@@ -5019,56 +4708,7 @@ let buttons = [
             }
             break
 
-case 'anonymouschatmenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Anonymouschat Menu'},
-        caption: `
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️═☬❯ ANONYMOUS CHAT 🚫 ❮ 👇
-┃║
-┃╠✹🚫 anonymous
-┃╠✹🚫 start
-┃╠✹🚫 next
-┃╠✹🚫 leave
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ  ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
-	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
 
-case 'islamicmenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Islamic Menu'},
-        caption: `
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️══☬❯ ISLAMIC 🔸 ❮ 👇
-┃║
-┃╠✹🔸 juzamma
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ  ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
-	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
 
 case 'voicechangermenu': {
 let buttons = [
@@ -5104,58 +4744,7 @@ let buttons = [
             }
             break
 
-case 'horoscopemenu': {
-let buttons = [
-  {buttonId: `${prefix}info`, buttonText: {displayText: '🖥️ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 🖥️'}, type: 1},
-  {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍'}, type: 1}]
-                
-        let buttonMessage = {
-        image: { url: picak+'Horoscope Menu'},
-        caption: `
-┏━ ${botname} ━━⭓ 
-┃╠✹📖️══☬❯ HOROSCOPE 🔹 ❮ 👇
-┃║
-┃╠✹🔹 nomorhoki (indo)
-┃╠✹🔹 artimimpi (indo)
-┃╠✹🔹 artinama (indo)
-┃╠✹🔹 ramaljodoh (indo)
-┃╠✹🔹 ramaljodohbali (indo)
-┃╠✹🔹 suamiistri (indo)
-┃╠✹🔹 ramalcinta (indo)
-┃╠✹🔹 cocoknama (indo)
-┃╠✹🔹 pasangan (indo)
-┃╠✹🔹 jadiannikah (indo)
-┃╠✹🔹 sifatusaha (indo)
-┃╠✹🔹 rezeki (indo)
-┃╠✹🔹 pekerjaan (indo)
-┃╠✹🔹 nasib (indo)
-┃╠✹🔹 penyakit (indo)
-┃╠✹🔹 tarot (indo)
-┃╠✹🔹 fengshui (indo)
-┃╠✹🔹 haribaik (indo)
-┃╠✹🔹 harisangar (indo)
-┃╠✹🔹 harisial (indo)
-┃╠✹🔹 nagahari (indo)
-┃╠✹🔹 arahrezeki (indo)
-┃╠✹🔹 peruntungan (indo)
-┃╠✹🔹 weton (indo)
-┃╠✹🔹 karakter (indo)
-┃╠✹🔹 keberuntungan (indo)
-┃╠✹🔹 memancing (indo)
-┃╠✹🔹 masasubur (indo)
-┃╠✹🔹 zodiak (indo)
-┃╠✹🔹 shio (indo)
-┃╚═════════════✪
-┗━⭓━ ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ  ━⭓ `,
-		footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                buttons: buttons,
-                headerType: 4
-	
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, { quoted: m })
-		    
-            }
-            break
+
 
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Create By')
