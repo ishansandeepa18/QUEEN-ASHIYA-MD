@@ -4017,9 +4017,9 @@ break
 
 			      
                      let buttons = [
-                    {buttonId: `${prefix}menu`, buttonText: {displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂'}, type: 1},
-		    {buttonId: `${prefix}allmenu`, buttonText: {displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁'}, type: 1},
-	            {buttonId: `${prefix}owner`, buttonText: {displayText: '𝙊𝙒𝙉𝙀𝙍 🙋'}, type: 1},]
+                    {buttonId: `${prefix}menu`, buttonText: {displayText: '𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 📂'}, type: 1},
+		  
+	            {buttonId: `${prefix}owner`, buttonText: {displayText: '𝗢𝗪𝗡𝗘𝗥 🙋'}, type: 1},]
                 
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
@@ -4033,7 +4033,7 @@ break
 
     *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 
-...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋...
+
 
   ...........   𝘐'𝘮 𝘈𝘭𝘪𝘷𝘦 𝘕𝘰𝘸  .........
 
