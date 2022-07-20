@@ -4085,14 +4085,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
-𝘏𝘪  ${pushname} 👋
+𝐇𝐞𝐥𝐥𝐨  ${pushname} 👋
 
 
    *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
  
     💁‍♂️ ඔයාලට ඕන 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )  එක පහතින් තෝර ගන්න පුලුවන්.... \n\n`,
-                    buttonText: "👨‍💻 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 👨‍💻",
-                    footerText: `𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
+                    buttonText: " 𝐒𝐞𝐥𝐞𝐜𝐭 ",
+                    footerText: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`,
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "⚔ 𝗔𝗹𝗹 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀",
