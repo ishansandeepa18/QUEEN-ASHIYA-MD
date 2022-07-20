@@ -4057,7 +4057,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }, {
                                 quickReplyButton: {
                                     displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
-                                    id: `${prefix}command`
+                                    id: `${prefix}menu`
                                 }
                                 }, {
                                 quickReplyButton: {
@@ -4071,65 +4071,10 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-	case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
-		    
-            	timestampe = speed();
-latensie = speed() - timestampe
-                anu = ``
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-            
-                            hydratedFooterText: `
-			    
-┏━━━━━━━━━━━━━━━━━━━━━━
-┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
-┗━━━━━━━━━━━━━━━━━━━━━━
-
-𝘏𝘪  ${pushname} 👋
-
-
-   *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
-
-
-...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋...
-
-💁‍♂️ ඔයාලට ඕන 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )  එක පහතින් තෝර ගන්න පුලුවන්....
-
- 📂  𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 
- 📂  𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐
-
-
-
-𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
-				
-                            hydratedButtons: [
-				    {
-                                quickReplyButton: {
-                                    displayText: '𝘼𝙇𝙇 𝙈𝙀𝙉𝙐 📁',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 📂',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '𝙊𝙒𝙉𝙀𝙍 🙋',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                Ashiya.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
-                break
+	
 		
 		
-                case 'command': {
+               case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `𝘏𝘪  ${pushname} 👋`, 
