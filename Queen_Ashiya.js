@@ -4029,7 +4029,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
-𝘏𝘪  ${pushname} 👋
+𝐇𝐞𝐥𝐥𝐨  ${pushname}  👋
 
 
     *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
@@ -4046,7 +4046,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                
              
 
-𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢`,
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`,
 
                             hydratedButtons: [{
 				    
@@ -4089,6 +4089,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 
 
    *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+   
+   
  
     𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
     \n\n`,
@@ -4110,77 +4112,77 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"rows": [
 									{
 										"title": "ᴍᴀɪɴ ᴍᴇɴᴜ 👨‍🎓",
-										"description": "Main කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										
 										"rowId": `${prefix}mainmenu`
 									},
 									{
 										"title": "ᴏᴡɴᴇʀ ᴍᴇɴᴜ 🤴",
-										"description": "Owner කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										
 										"rowId": `${prefix}ownermenu`
 										},
 									{
 										"title": "ɢʀᴏᴜᴘ ᴍᴇɴᴜ 🌎",
-										"description": "Groop කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										
 										"rowId": `${prefix}groupmenu`
 										},
 									{
 										"title": "ʀᴘɢ ᴍᴇɴᴜ ⛔",
-										"description": "Displays The List Of Rpg Features",
+										
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
 										"title": "ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 📥",
-										"description": "Download කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
 										"title": "ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ 🔎",
-										"description": "Displays The List Of Searching Features",
+										
 										"rowId": `${prefix}searchmenu`
 									},
 									{
 											"title": "ʀᴀɴᴅᴏᴍ ᴍᴇɴᴜ 🔪",
-										"description": "Displays The List Of Random Features",
+										
 										"rowId": `${prefix}randommenu`
 										},
 										{
 											"title": "ʀᴀɴᴅᴏᴍ ᴀɴɪᴍᴇ ᴍᴇɴᴜ 🛡",
-										"description": "Displays The List Of Random Anime Features",
+										
 										"rowId": `${prefix}randomanimemenu`
 										},
 										{
 											"title": "ꜰᴜɴ ᴍᴇɴᴜ 😃",
-										"description": "Displays The List Of Fun Features",
+										
 										"rowId": `${prefix}funmenu`
 										},
 										{
 											"title": "ᴄᴏɴᴠᴇʀᴛ ᴍᴇɴᴜ 🔄",
-										"description": "Convert කමාන්ඩ් ලිස්ට් එක මේ මගින් ලබා ගත හැක",
+										
 										"rowId": `${prefix}convertmenu`
 										},
 										{
 											"title": "ᴅᴀᴛᴀʙᴀꜱᴇ ᴍᴇɴᴜ 💻",
-										"description": "Displays The List Of Database Features",
+										
 										"rowId": `${prefix}databasemenu`
 										},
 										{
 											"title": "ᴠᴏɪᴄᴇ ᴄʜᴀɴɢᴇʀ ᴍᴇɴᴜ 🎤",
-										"description": "Displays The List Of Voice Changing Features",
+										
 										"rowId": `${prefix}voicechangermenu`
 										},
 										{
 											"title": "ᴛxᴛ-ᴛᴏ-ɪᴍɢ ᴍᴇɴᴜ 📝",
-										"description": "Displays The List Of Textpro Features",
+										
 										"rowId": `${prefix}textpromenu`
 										},
 										{
 											"title": "ɪꜱʟᴀᴍɪᴄ ᴍᴇɴᴜ 🔸",
-										"description": "Displays The List Of Islamic Features",
+										
 										"rowId": `${prefix}islamicmenu`
 										},
 										{
 											"title": "ʜᴏʀᴏꜱᴄᴏᴘᴇ ᴍᴇɴᴜ 🔹",
-										"description": "Displays The List Of Horoscope Features",
+										
 										"rowId": `${prefix}horoscopemenu`
 										}
 								]
@@ -4190,7 +4192,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"rows": [
 									{
 										"title": "ᴀɴᴏɴʏᴍᴏᴜꜱ ᴄʜᴀᴛ ᴍᴇɴᴜ 🚫",
-										"description": "Displays The List Of Anonymous Chat Features",
+										
 										"rowId": `${prefix}anonymouschatmenu`
 									}
 								]
@@ -4215,14 +4217,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
     case 'info': case 'ashiyainfo': case 'sewabot': case 'botinfo': {
                 Ashiya.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
 		caption: `
-		*Hi    ${m.pushName}*\n 
+		*𝐇𝐞𝐥𝐥𝐨   ${m.pushName}*\n 
 		
 		I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞
 		
 		
 		...  🇱🇰  𝕊𝕣𝕚 𝕃𝕒𝕟𝕜𝕒 𝔹𝕖𝕤𝕥  𝕎𝕙𝕒𝕥𝕤𝕒𝕡𝕡 𝔹𝕆𝕋... 
 		
-		𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢...\n` }, { quoted: m })
+		 ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ\n` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
