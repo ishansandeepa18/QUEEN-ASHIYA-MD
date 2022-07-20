@@ -1332,8 +1332,7 @@ Ashiya.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange
       case 'hot': {
            
           
-            let member = participants.map(u => u.id)
-            let me = m.sender
+          
           
             let jawab = `ඇයි බං කුනුහර්ප කියන්නේ කුනුහර්ප කියන්න එපා බං
 	    ${pushname}`
