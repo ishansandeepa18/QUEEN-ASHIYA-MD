@@ -3596,7 +3596,7 @@ break
 
 }
 break
-	case 'ane': case 'anee': case 'අනේ': case 'අනෙ': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
+	case 'Fuck': case 'fuckk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
