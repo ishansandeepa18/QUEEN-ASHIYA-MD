@@ -251,11 +251,7 @@ const reply = (teks) => {
 	    }
 	}
 	    
-	 //antispam or auto react
-//if (m.message && msgFilter.isFiltered(from)) {
-//console.log(`${global.themeemoji}[SPAM]`, color(moment(m.messageTimestamp * 1000).format('DD/MM/YYYY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(m.pushName))
-//return Ashiya.sendMessage(from, { react: { text: `${global.themeemoji}`, key: m.key }})
-//}
+	 
 	    
 	
 	  //antilink\\
@@ -272,6 +268,22 @@ const reply = (teks) => {
         Ashiya.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
+	    
+	    //anti bad words by xeon
+if (antiToxic)
+if (bad.includes(messagesD)) {
+tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being toxic my friend🤢','Dont be toxic🦄']
+sin =  tos[Math.floor(Math.random() * (tos.length))]
+reply(sin)
+if (m.text) {
+bvl = `\`\`\`「 Bad Word Detected 」\`\`\`\n\nYou are using bad word but you are an admin that's why i won't kick you😇`
+if (isAdmins) return reply(bvl)
+if (m.key.fromMe) return reply(bvl)
+if (isCreator) return reply(bvl)
+kice = m.sender
+await Ashiya.groupParticipantsUpdate(m.chat, [kice], 'remove')
+Ashiya.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${kice.split("@")[0]} was kicked because of using bad words in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+}
 	    
 
         //auto reply 
