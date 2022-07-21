@@ -3472,7 +3472,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'owner': case 'creator': {
                 reply
-			 Ashiya.sendContact(m.chat, global.owner, global.ownername, m)
+			 Ashiya.sendContact(m.chat, global.owner, m)
+		    
     
 }
 break
