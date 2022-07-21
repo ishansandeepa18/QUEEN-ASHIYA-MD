@@ -2217,7 +2217,7 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
 		let buttons = [
-                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: `𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟯𝟲𝟬𝗣 ${media.filesizeF`}, type: 1},
+                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: '𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟯𝟲𝟬𝗣 ${media.filesizeF'}, type: 1},
 		    {buttonId: `ytmp42 ${anu.url}480`, buttonText: {displayText: '𝗠𝗲𝗱𝗶𝘂𝗺 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟰𝟴𝟬𝗣'}, type: 1},
 	            {buttonId: `ytmp43 ${anu.url}720`, buttonText: {displayText: '𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟳𝟮𝟬𝗣'}, type: 1},]
                 
