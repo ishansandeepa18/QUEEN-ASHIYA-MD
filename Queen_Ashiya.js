@@ -253,7 +253,7 @@ const reply = (teks) => {
 	    
 	  // auto react
 
-//return Ashiya.sendMessage(from, { react: { text: '👨‍💻', key: m.key }})
+//return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})
 //}
 	    
 	
@@ -1143,16 +1143,23 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             }
             break
 		
-	case 'react': { 
-  
-Ashiya.sendMessage(m.chat, reactionMessage)} 
-break
+	case 'react': {
+                if (!isCreator) throw mess.owner
+                reactionMessage = {
+                    react: {
+                        text: args[0],
+                        key: { remoteJid: m.chat, fromMe: true, id: quoted.id }
+                    }
+                }
+                Ashiya.sendMessage(m.chat, reactionMessage)
+            }
+            break
 		
 		 
 		
 		
 		
-            case 'kuismath': case 'math': {
+            case 'kuismath': case '.math': {
                 if (kuismath.hasOwnProperty(m.sender.split('@')[0])) return replay(`There Are Still Unfinished Sessions!`)
                 let { genMath, modes } = require('./lib/math')
                 if (!text) return replay(`Mode: ${Object.keys(modes).join(' | ')}\nFor Examples: ${prefix}math medium`)
@@ -2210,7 +2217,7 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
 		let buttons = [
-                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: '𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟯𝟲𝟬𝗣'}, type: 1},
+                    {buttonId: `ytmp4 ${anu.url}360`, buttonText: {displayText: `𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟯𝟲𝟬𝗣 ${media.filesizeF`}, type: 1},
 		    {buttonId: `ytmp42 ${anu.url}480`, buttonText: {displayText: '𝗠𝗲𝗱𝗶𝘂𝗺 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟰𝟴𝟬𝗣'}, type: 1},
 	            {buttonId: `ytmp43 ${anu.url}720`, buttonText: {displayText: '𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝟳𝟮𝟬𝗣'}, type: 1},]
                 
@@ -4004,11 +4011,9 @@ break
 		
 		
 		
-                     case 'alive': case 'ashiya': {
+                     case 'alive': case 'ashiya':
 			     
-			    Ashiya.sendMessage(from, { react: { text: "🙋", key: m.key }})
-			     
-			     result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
+			     {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
