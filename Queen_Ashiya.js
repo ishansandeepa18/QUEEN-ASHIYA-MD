@@ -4006,7 +4006,7 @@ break
 		
                      case 'alive': case 'ashiya': {
 			     
-			    Ashiya.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
+			    Ashiya.sendMessage(from, { react: { text: "🙋", key: m.key }})
 			     
 			     result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
