@@ -17,7 +17,7 @@ const axios = require('axios')
 const path = require('path')
 const os = require('os')
 const maker = require('mumaker')
-let { msgFilter } = require('./lib/antispam')
+
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
 const speed = require('performance-now')
