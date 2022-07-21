@@ -253,7 +253,7 @@ const reply = (teks) => {
 	    
 	  // auto react
 
-//return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})
+//return Ashiya.sendMessage(from, { react: { text: '👨‍💻', key: m.key }})
 //}
 	    
 	
@@ -4011,9 +4011,11 @@ break
 		
 		
 		
-                     case 'alive': case 'ashiya':
+                     case 'alive': case 'ashiya': {
 			     
-			     {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
+			    Ashiya.sendMessage(from, { react: { text: '🙋', key: m.key }})
+			     
+			     result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
