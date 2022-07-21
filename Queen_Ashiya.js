@@ -260,8 +260,8 @@ const reply = (teks) => {
 	  //antilink\\
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`https://`)) {
-        reply(`😂 හරිනේ පුම්කේ අමාරුව \n\nඇයි බං Link දැම්මෙ...උබව Remove කරන්න වෙනවා බං Sorry... `)
-        if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒`)
+        reply(`අනේ සූටියෝ ඇයි අනේ ඔයා ලින්ක් එකක් දැම්මෙ \n\nඔයා මේකේ ඇඩ්මින් කෙනෙක් නෙවේ නම්, මං මේකේ ඇඩ්මින් කෙනෙක් නම් මට ඔයාව මේ Group එකෙන් Remove කරන්න වෙනවා Sorry... `)
+        if (!isBotAdmins) return reply(`මං මේ Group එකේ ඇඩ්මින් කෙනෙක් නෙවෙයි... ඒක නිසා ඔයාව මට Remove කරන්න බෑ... 😒`)
         let gclink = (`https://chat.whatsapp.com/`+await Ashiya.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
