@@ -4078,9 +4078,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
  
 ★ 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎
 
-
 • ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
-   
+• ᴘʟᴀᴛꜰʀᴏᴍ : ${os.platform()}
    
  
     𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
