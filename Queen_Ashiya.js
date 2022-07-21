@@ -3472,7 +3472,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'owner': case 'creator': {
                 reply
-			('My Owner Is (`${owner}`)\n\n*http://wa.me/`${global.ownernomer}`*\n\n I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞')
+			('My Owner Is ${global.owner}\n\n*http://wa.me/`${global.ownernomer}`*\n\n I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞')
     
 }
 break
