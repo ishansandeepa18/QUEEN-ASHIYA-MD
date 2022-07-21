@@ -4074,8 +4074,13 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 
  𝐇𝐞𝐥𝐥𝐨  ${pushname}  👋
 
+ *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+ 
+★ 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎
 
-   *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+• ꜱᴘᴇᴇᴅ : ${latensie.toFixed(4)} miliseconds
+
+• ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
    
    
  
