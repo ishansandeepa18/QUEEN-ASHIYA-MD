@@ -17,7 +17,7 @@ const axios = require('axios')
 const path = require('path')
 const os = require('os')
 const maker = require('mumaker')
-
+let { msgFilter } = require('./lib/antispam')
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
 const speed = require('performance-now')
@@ -251,9 +251,10 @@ const reply = (teks) => {
 	    }
 	}
 	    
-	  // auto react
-
-//return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})
+	 //antispam or auto react
+//if (m.message && msgFilter.isFiltered(from)) {
+//console.log(`${global.themeemoji}[SPAM]`, color(moment(m.messageTimestamp * 1000).format('DD/MM/YYYY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(m.pushName))
+//return Ashiya.sendMessage(from, { react: { text: `${global.themeemoji}`, key: m.key }})
 //}
 	    
 	
