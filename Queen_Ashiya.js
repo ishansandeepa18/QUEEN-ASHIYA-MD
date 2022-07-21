@@ -211,12 +211,12 @@ module.exports = Ashiya = async (Ashiya, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞`,"body": ` ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": ""}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞`,"body": ` ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`, "previewType": "PHOTO","thumbnailUrl": `https://i.ibb.co/3M1pzNm/Ashiya.jpg`,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.ibb.co/3M1pzNm/Ashiya.jpg"}}}, { quoted: m})
         
         }
         
         const replay = (teks) => {
-            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞`,"body": ` ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": ""}}}, { quoted: m})
+            Ashiya.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞`,"body": ` ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`, "previewType": "PHOTO","thumbnailUrl": `https://i.ibb.co/3M1pzNm/Ashiya.jpg`,"thumbnail": fs.readFileSync(`./Queen_Ashiya_Media/Ashiya.jpg`),"sourceUrl": "https://i.ibb.co/3M1pzNm/Ashiya.jpg"}}}, { quoted: m})
         
         }
 	
