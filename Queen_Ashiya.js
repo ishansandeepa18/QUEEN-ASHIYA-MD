@@ -3512,26 +3512,33 @@ reply("Success Changing Menu To "+q)
                     break
 		
 		
-	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
+	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': case 'හායි': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-								   
+					Ashiya.sendMessage(m.chat, { text :'හායි යාලුවනේ ඉතින් කොහොමද ඔයාට, හොදින්ද...😇' }, { quoted: m })	   
 								   
 
 }
 break
 		case 'mk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Mk.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'පොල් ගානවා.. ඔයත් එනවද' }, { quoted: m })
+			    
+                                        result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/mk.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+			    
+                                        Ashiya.sendMessage(m.chat, { text :'මොනවා කරන්නද අනේ... ඔයාලා දිහා බලා ගෙන මං මේ ඉන්නවා...ඔයාලට ඉතින් මාව දැන් අමතක වෙලානේ....🙄' }, { quoted: m })
 
 
 }
 break
 		case 'gn': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gn.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'තෝ යකාම කාපිය...' }, { quoted: m })
+			    
+                                        result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/gn.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+			    
+                                        Ashiya.sendMessage(m.chat, { text :'දැන්ම නිදා ගන්න එපා .... ඇද පල්ලේ හොල්මන් ඇති... හොදද 😋' }, { quoted: m })
+			    
 
 
 }
@@ -3539,8 +3546,11 @@ break
 		
 		case 'gm': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gm.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+			    
+                                        result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/gm.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
-                                        Ashiya.sendMessage(m.chat, { text :'සුබ උදෑසනක් වේවා.. ඔයාටත්...' }, { quoted: m })
+                                        Ashiya.sendMessage(m.chat, { text :'🌼 දහසක් මල්  විකසිත වන මේ හිමිදිරි උදෑසනේ...පතන්නම් ඔයාටත් සුබම සුබ උදෑසනක් කියා ....🤭' }, { quoted: m })
 
 }
 break
@@ -3552,26 +3562,22 @@ break
 
 }
 break
-		case 'adarei': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarei.mp3`)
+	case 'adarei': case 'adarey':case 'ආදරෙයි': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarei.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
+						     
+                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/adarey.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
+						     
                                          Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
 
 }
 break
-		case 'fuck': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Fuck.mp3`)
+		
+	case 'ha': case 'hako': case 'hakoo': case 'හා': case 'හාකෝ': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ha.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-
-
-
-
-}
-break
-	case 'ha': case 'hako': case 'hakoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ha.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
+                                        result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ha.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 }
 break
@@ -3590,13 +3596,7 @@ break
 }
 break
 		
-		case 'adarey': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarey.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
-
-}
-break
+		
 	case 'Fuck': case 'fuckk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
@@ -3605,28 +3605,20 @@ break
 
 }
 break
-	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Huththa.mp3`)
+	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Huththa.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+					
+                                        result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/bijja.webp`)
+					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
-                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
+                                        Ashiya.sendMessage(m.chat, { text :'හා ඔයා කුනුහර්ප දන්නවා... ලැජ්ජ නැද්ද කුනුහර්ප කියන්න.... ඔයා හිතන් ඉන්නෙ ඔයා කුනුහර්ප කිව්වම කැපිලා පෙනෙයි කියලද, ශික් ඔයාලගේ අම්මලා තාත්තලා ඔයාට කිසි දෙයක් උගන්වලා නෑ වගේ...😠' }, { quoted: m })
 
 }
 break
-	case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Pakaya.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-                                        Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
-
-}
-break
-	case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ponnaya.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+	
+	 
 
 
-                                          Ashiya.sendMessage(m.chat, { text :'උබලයි තාත්තාද බං ...' }, { quoted: m })
-
-}
-break
 		case 'denawada': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/denawada.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
@@ -3662,7 +3654,7 @@ break
 	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Wesi.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
-                                        Ashiya.sendMessage(m.chat, { text :'උබලයි අම්මද බං ...' }, { quoted: m })
+                                        Ashiya.sendMessage(m.chat, { text :'ඇයි ඔයාගේ අම්මා තාත්තා ඔයාට හොද නරක උගන්වලා නැද්ද...ඔහොම කතා කරන්නේ...😠' }, { quoted: m })
 
 
 }
@@ -3674,13 +3666,7 @@ break
 
 }
 break
-		case 'adarey': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/adarey.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
+	
 		case 'arakku': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/arakku.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
@@ -3790,27 +3776,9 @@ case 'ganja': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ganja.webp
 
 }
 break
-		case 'gm': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/gm.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-		case 'gn': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/gn.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-		case 'ha': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ha.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
+		
+		
+		
 		case 'hari': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/hari.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
@@ -3888,13 +3856,7 @@ break
 
 }
 break
-		case 'mk': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/mk.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
+		
 		case 'modaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/modaya.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
@@ -3972,35 +3934,9 @@ break
 
 }
 break
-		case 'adarey': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/adarey.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-		case 'huththa': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/huththa.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-		case 'ponnaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ponnaya.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-	case 'pakaya': case 'pamkaya': case 'pakayo': case 'pakayoo': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/bijja.webp`)
-					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
-
-
-
-}
-break
-	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා උබ කියනකන් හිටියේ 😂' }, { quoted: m })
+		
+		
+	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා අනේ ඔයා කියනකන්මයි මං හිටියේ' }, { quoted: m })
 
     return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})                                    
 
