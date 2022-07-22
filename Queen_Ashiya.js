@@ -3605,7 +3605,7 @@ break
 
 }
 break
-	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Huththa.mp3`)
+	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Pakaya.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 					
                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/Huththa.webp`)
