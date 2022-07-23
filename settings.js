@@ -21,22 +21,29 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['94786746412']
-global.premium = ['94786746412']
-global.ownernomer = '94786746412'
-global.ownername = '𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢'
-global.botname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
-global.footer = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
-global.ig = 'https://github.com/ishansandeepa757'
+
+global.owner = ['94786746412'] //your owner number
+global.premium = ['94786746412'] //your Owner number in menu msg
+global.ownernomer = '94786746412' //your owner number info
+
+global.ownername = '𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' //your owner name
+global.botname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' //your bot name
+global.footer = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' 
+
+global.ig = 'https://github.com/ishansandeepa757' //Github Account!
 global.region = 'Sri Lanka'
 global.sc = 'https://github.com/ishansandeepa757'
-global.myweb = 'https://www.youtube.com/c/SinhanadaMusicRemix'
+global.myweb = 'https://www.youtube.com/c/SinhanadaMusicRemix' //your chanal link
 global.packname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
+
 global.author = '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢'
 global.sessionName = 'session'
-global.prefa = ['','!','.','🐦','🐤','🗿']                   // 👈 මේවා ඔයාට ඕන විදියට වෙනස් කර ගන්න \\ 
+global.prefa = ['','!','.','🐦','🐤','🗿']                          // 👈 මේවා ඔයාට ඕන විදියට වෙනස් කර ගන්න \\ 
 global.sp = '⭔'
-global.mess = {
+
+global.mess = { // COSTOMIZE WITH YOUR LANGUAGE .....👇
+	
+	
     success: 'හරි ✅',
     admin: 'උබට බෑ බං ඇඩ්මින්ට විතරයි පුලුවන්...!',
     botAdmin: 'ඔයා ඇඩ්මින් කෙනෙක් නෙවෙයි... !',
