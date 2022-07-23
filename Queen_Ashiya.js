@@ -4005,6 +4005,10 @@ break
 		
 		
                case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
+		       
+		       timestampe = speed();
+latensie = speed() - timestampe
+		       
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                      
@@ -4024,6 +4028,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 👨‍🎓 ᴹʸ ᴼʷⁿᵉʳ ᴵˢ  ${global.ownername}
 
 ☎️ ᴹʸ ᴼʷⁿᵉʳ ᴺᵘᵐᵇᵉʳ ᴵˢ  ${global.owner}
+
+🕘 ʙᴏᴛ ꜱᴘᴇᴇᴅ  ${latensie.toFixed(4)} miliseconds
 
  
  
