@@ -3950,19 +3950,10 @@ break
 		
                      case 'alive': case 'ashiya':
 			     
-			     {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
-					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
-
-
-			      
-                     let buttons = [
-                    {buttonId: `${prefix}menu`, buttonText: {displayText: '𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 📂'}, type: 1},
-		  
-	            {buttonId: `${prefix}owner`, buttonText: {displayText: '𝗢𝗪𝗡𝗘𝗥 🙋'}, type: 1},]
-                
-                let buttonMessage = {
-                    image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
-                    caption: `
+			      timestampe = speed();
+                        latensie = speed() - timestampe
+                        var unicorn = await getBuffer('https://i.ibb.co/3M1pzNm/Ashiya.jpg')
+                        await Ashiya.send5ButImg(from, `` + '' + ' ',`
 ┏━━━━━━━━━━━━━━━━━━━━━━
 ┃  *𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔   ᴹᴰ*
 ┗━━━━━━━━━━━━━━━━━━━━━━
@@ -3984,17 +3975,29 @@ break
                
              
 
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`,
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`,unicorn, [{
+                            urlButton: {
+                            displayText: '𝗚𝗜𝗧 𝗛𝗨𝗕 𝗔𝗖𝗖𝗢𝗨𝗡𝗧',
+                            url: 'https://github.com/ishansandeepa757'
+                            }
+                            }, {
+                            urlButton: {
+                            displayText: `${button}`,
+                            url: `${btnurl}`
+                            }                            	
+                            }, {
+                            quickReplyButton: {
+                            displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍',
+                            id: `${prefix}owner`
+                            }
+                            },{
+                            quickReplyButton: {
+                            displayText: '𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 📁',
+                            id: `${prefix}menu`
+                            }
+                            }] )
+                            break
 
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
-                    buttons: buttons,
-                    headerType: 4
-                }
-                Ashiya.sendMessage(m.chat, buttonMessage, )
-		    
-            }
-            break
-	
 		
 		
                case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
