@@ -4025,7 +4025,6 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 
 ☎️ ᴹʸ ᴼʷⁿᵉʳ ᴺᵘᵐᵇᵉʳ ᴵˢ  ${global.owner}
 
-🕘 ʙᴏᴛ ꜱᴘᴇᴇᴅ  ${latensie.toFixed(4)} miliseconds
  
  
  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
