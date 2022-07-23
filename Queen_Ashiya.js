@@ -278,24 +278,28 @@ const reply = (teks) => {
         for (let anji of setik){
 				if (budy === anji){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/${anji}.webp`)
+					if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/voice/${anju}.mp3`)
+					if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/image/${anjh}.jpg`)
+					if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 					for (let anjh of videox){
 				if (budy === anjh){
 					result = fs.readFileSync(`./Queen_Ashiya_Media/video/${anjh}.mp4`)
+					if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
 				  }
@@ -3496,6 +3500,25 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 					Ashiya.sendImage(m.chat, data.url, mess.success, m)
 					})
 					break
+		
+		case 'chatbot' {
+
+if (!isCreator)return reply(`mess.owner`)
+if (args[0] === "on") {
+global.chatbotpre = 'true'
+reply(`ON`)
+}else
+if (args[0] === "off") {
+global.chatbotpre = 'false'
+reply(`OFF`)
+}
+}
+
+break
+	    
+	    
+	    
+		
 case "setmenuxxx": 
 if (!text) return reply("1. image\n2. list\n3. catalog\n\nExample .setmenu image")
 if (q == "image") {
