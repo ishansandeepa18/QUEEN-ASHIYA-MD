@@ -4119,8 +4119,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
 		
 		case 'notice':{
-                                replay(`Hi, ${global.ownername}\nFrom QUEEN-ASHIYA\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
-                                replay(`හායි, ${global.ownername}\nQUEEN-ASHIYA විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
+                                replay(`Hi, ${global.ownername}\n
+				From QUEEN-ASHIYA\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
+                                replay(`හායි, ${global.ownername}\n
+				QUEEN-ASHIYA විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
                             }
                             break
 		
