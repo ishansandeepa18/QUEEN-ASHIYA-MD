@@ -3506,15 +3506,15 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 if (!isCreator)return reply(`${mess.owner}`)
 if (args[0] === "on") {
 global.chatbotpre = 'true'
-reply(`Chat Bot On`)
+reply(`Chat Bot On ✅`)
 }else
 if (args[0] === "off") {
 global.chatbotpre = 'false'
-reply(`Chat Bot Off`)
+reply(`Chat Bot Off 🚫`)
 } else {
                  let buttons = [
-                        { buttonId: 'chatbot on', buttonText: { displayText: '𝐎𝐍 ❗' }, type: 1 },
-                        { buttonId: 'chatbot off', buttonText: { displayText: '𝐎𝐅𝐅 ❗' }, type: 1 }
+                        { buttonId: 'chatbot on', buttonText: { displayText: '𝐎𝐍 ' }, type: 1 },
+                        { buttonId: 'chatbot off', buttonText: { displayText: '𝐎𝐅𝐅 ' }, type: 1 }
                     ]
                     await Ashiya.sendButtonText(m.chat, buttons, `Chat Bot Mode`, Ashiya.user.name, m)
                 }
@@ -4095,7 +4095,7 @@ break
                case 'list': case 'menu': case 'pannel': case 'panel': case 'මෙනු': case 'මෙනූ': {
 		       
 		       timestampe = speed();
-latensie = speed() - timestampe
+                  latensie = speed() - timestampe
 		       
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
@@ -4250,6 +4250,7 @@ case 'allmenu': {
 ┃
 ┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
 ┃║
+┃╠✹👩‍💻 notice
 ┃╠✹👩‍💻 alive
 ┃╠✹👩‍💻 info
 ┃╠✹👩‍💻 script
@@ -4265,6 +4266,7 @@ case 'allmenu': {
 ┃║
 ┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
 ┃║
+┃║✹🤴 chatbot [on/off]
 ┃╠✹🤴 chat [option]
 ┃╠✹🤴 add [link]
 ┃╠✹🤴 leave
