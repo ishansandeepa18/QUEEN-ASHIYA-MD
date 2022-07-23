@@ -1619,9 +1619,9 @@ break
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
 		if (!isAdmins) return replay(`${mess.admin}`)       
                 if (args[0] === 'on'){
-                    await Ashiya.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Group එක Mute🚫 කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
+                    await Ashiya.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Group එක Mute🔒 කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
                 } else if (args[0] === 'off'){
-                    await Ashiya.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Group එක Unmute⭕  කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
+                    await Ashiya.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Group එක Unmute🔓  කිරීම සාර්තකව සිදු කරන ලදී...`)).catch((err) => reply(jsonformat(err)))
                     
 
              }
