@@ -3536,6 +3536,7 @@ reply("Success Changing Menu To "+q)
 		
 		
 	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': case 'හායි': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
+										if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 					Ashiya.sendMessage(m.chat, { text :'හායි යාලුවනේ ඉතින් කොහොමද ඔයාට, හොදින්ද...😇' }, { quoted: m })	   
@@ -3544,6 +3545,9 @@ reply("Success Changing Menu To "+q)
 }
 break
 		case 'mk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Mk.mp3`)
+			    
+			    if (global.chatbotpre === "false")return
+			    
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 			    
                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/mk.webp`)
@@ -3555,6 +3559,9 @@ break
 }
 break
 		case 'gn': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gn.mp3`)
+			    
+			    if (global.chatbotpre === "false")return
+			    
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 			    
                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/Gn.webp`)
@@ -3568,6 +3575,9 @@ break
 break
 		
 		case 'gm': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gm.mp3`)
+			    
+			    if (global.chatbotpre === "false")return
+			    
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 			    
                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/Gm.webp`)
@@ -3578,6 +3588,8 @@ break
 }
 break
 		case 'ishan': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ishan.mp3`)
+			       
+			       if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3586,6 +3598,8 @@ break
 }
 break
 	case 'adarei': case 'adarey':case 'ආදරෙයි': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Adarei.mp3`)
+						     
+						     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 						     
                                          result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/adarey.webp`)
@@ -3597,6 +3611,8 @@ break
 break
 		
 	case 'ha': case 'hako': case 'hakoo': case 'හා': case 'හාකෝ': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ha.mp3`)
+								       if (global.chatbotpre === "false")return
+								       
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/Ha.webp`)
@@ -3605,6 +3621,8 @@ break
 }
 break
 	case 'na': case 'naha': case 'naa': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Na.mp3`)
+					     if (global.chatbotpre === "false")return
+					     
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
                                         Ashiya.sendMessage(m.chat, { text :'හා නැද්ද.. හා කමක් නෑ..' }, { quoted: m })
@@ -3612,6 +3630,8 @@ break
 }
 break
 	case 'mmm': case 'hmm': case 'හ්ම්': case 'mm': case 'hmmm': case 'හ්ම්ම්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hmm.mp3`)
+										     
+										     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3621,6 +3641,7 @@ break
 		
 		
 	case 'Fuck': case 'fuckk': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Ane.mp3`)
+				    if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3630,6 +3651,7 @@ break
 break
 	case 'huththa': case 'huththaa': case 'හුත්තෝ': case 'huththo': case 'huththoo': case 'pakaya': case 'pakayaa': case 'පකයා': case 'පම්කයා': case ' pamkaya': case 'ponnaya': case 'ponnayaa': case 'ponni': case 'පොන්නයා': case 'පොන්නය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Pakaya.mp3`)
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+					if (global.chatbotpre === "false")return
 					
                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/Huththa.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
@@ -3643,6 +3665,7 @@ break
 
 
 		case 'denawada': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/denawada.mp3`)
+				  if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
                                         Ashiya.sendMessage(m.chat, { text :'මොනවද ඕන ...' }, { quoted: m })
@@ -3651,6 +3674,7 @@ break
 }
 break
 	case 'marilada': case 'මැරිලද': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Marilada.mp3`)
+					 if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
                                         Ashiya.sendMessage(m.chat, { text :'නෑ තාම පණපිටින් ඉන්නො..' }, { quoted: m })
@@ -3659,6 +3683,7 @@ break
 }
 break
 	case 'gothaya': case 'goothaya': case 'ගෝතයා': case 'ගෝතය': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Gothaya.mp3`)
+								     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3667,6 +3692,7 @@ break
 }
 break
 	case 'umma': case 'ummah': case 'ummma': case 'උම්මා': case 'උම්මාහ්': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Umma.mp3`)
+										if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
 
@@ -3675,6 +3701,7 @@ break
 }
 break
 	case 'wesi': case 'vesi': case 'vesavi': case 'wesavi': case 'vesawi': case 'වේසී': case 'වේසාවී': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Wesi.mp3`)
+						if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 
                                         Ashiya.sendMessage(m.chat, { text :'ඇයි ඔයාගේ අම්මා තාත්තා ඔයාට හොද නරක උගන්වලා නැද්ද...ඔහොම කතා කරන්නේ...😠' }, { quoted: m })
@@ -3683,6 +3710,7 @@ break
 }
 break
 		case 'ado': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ado.webp`)
+			     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3691,6 +3719,7 @@ break
 break
 	
 		case 'arakku': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/arakku.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3698,6 +3727,7 @@ break
 }
 break
 		case 'athal': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/athal.webp`)
+			       if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3705,6 +3735,7 @@ break
 }
 break
 		case 'aththa': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/aththa.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3712,6 +3743,7 @@ break
 }
 break
 		case 'ayye': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ayye.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3719,6 +3751,7 @@ break
 }
 break
 		case 'ayyo': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ayyo.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3726,6 +3759,7 @@ break
 }
 break
 		case 'ba': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ba.webp`)
+			    if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3733,6 +3767,7 @@ break
 }
 break
 		case 'baha': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/baha.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3740,6 +3775,7 @@ break
 }
 break
 		case 'bayay': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/bayay.webp`)
+			       if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3747,6 +3783,7 @@ break
 }
 break
 		case 'bijja': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/bijja.webp`)
+			       if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3754,6 +3791,7 @@ break
 }
 break
 		case 'bomuda': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/bomuda.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3761,6 +3799,7 @@ break
 }
 break
 		case 'data': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/data.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3768,6 +3807,7 @@ break
 }
 break
 		case 'diyanko': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/diyanko.webp`)
+				 if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3775,6 +3815,7 @@ break
 }
 break
 		case 'ela': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ela.webp`)
+			     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3784,6 +3825,7 @@ break
 
 
 case 'iya': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/iya.webp`)
+	     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3793,6 +3835,7 @@ break
 
 
 case 'ganja': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ganja.webp`)
+	       if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3803,6 +3846,7 @@ break
 		
 		
 		case 'hari': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/hari.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3810,6 +3854,7 @@ break
 }
 break
 		case 'holman': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/holman.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3817,6 +3862,7 @@ break
 }
 break
 		case 'ida': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ida.webp`)
+			     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3824,6 +3870,7 @@ break
 }
 break
 		case 'idahan': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/idahan.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3831,6 +3878,7 @@ break
 }
 break
 		case 'karapanko': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/karapanko.webp`)
+				   if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3838,6 +3886,7 @@ break
 }
 break
 		case 'kawda': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/kawda.webp`)
+			       if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3845,6 +3894,7 @@ break
 }
 break
 		case 'ko': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ko.webp`)
+			    if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3852,6 +3902,7 @@ break
 }
 break
 		case 'koo': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/koo.webp`)
+			     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3859,6 +3910,7 @@ break
 }
 break
 		case 'manika': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/manika.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3866,6 +3918,7 @@ break
 }
 break
 		case 'marila': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/marila.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3873,6 +3926,7 @@ break
 }
 break
 		case 'me': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/me.webp`)
+			    if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3881,6 +3935,7 @@ break
 break
 		
 		case 'modaya': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/modaya.webp`)
+				if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3888,6 +3943,7 @@ break
 }
 break
 		case 'mokakda': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/mokakda.webp`)
+				 if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3895,6 +3951,7 @@ break
 }
 break
 		case 'moko': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/moko.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3902,6 +3959,7 @@ break
 }
 break
 		case 'naha': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/naha.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3909,6 +3967,7 @@ break
 }
 break
 		case 'natapan': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/natapan.webp`)
+				 if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3916,6 +3975,7 @@ break
 }
 break
 		case 'niyamay': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/niyamay.webp`)
+				 if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3923,6 +3983,7 @@ break
 }
 break
 		case 'ow': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/ow.webp`)
+			    if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3930,6 +3991,7 @@ break
 }
 break
 		case 'palayan': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/palayan.webp`)
+				 if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3937,6 +3999,7 @@ break
 }
 break
 		case 'pennanna': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/pennanna.webp`)
+				  if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3944,6 +4007,7 @@ break
 }
 break
 		case 'sira': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/sira.webp`)
+			      if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3951,6 +4015,7 @@ break
 }
 break
 		case 'tharahay': {result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/tharahay.webp`)
+				  if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 
 
@@ -3959,9 +4024,11 @@ break
 break
 		
 		
-	case 'kelapan': case 'hapan': case 'napan': {Ashiya.sendMessage(m.chat, { text :'හා අනේ ඔයා කියනකන්මයි මං හිටියේ' }, { quoted: m })
+	case 'kelapan': case 'hapan': case 'napan': 
+	     if (global.chatbotpre === "false")return
+	    {Ashiya.sendMessage(m.chat, { text :'හා අනේ ඔයා කියනකන්මයි මං හිටියේ' }, { quoted: m })
 
-    return Ashiya.sendMessage(from, { react: { text: `👨‍💻`, key: m.key }})                                    
+   
 
 }
 break
