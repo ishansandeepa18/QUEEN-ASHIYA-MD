@@ -4117,6 +4117,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		 ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ\n` }, { quoted: m })
             }
             break
+		
+		case 'notice':{
+                                replay(`Hi, ${global.ownername}\nFrom QUEEN-ASHIYA\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
+                                replay(`හායි, ${global.ownername}\nQUEEN-ASHIYA විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
+                            }
+                            break
+		
+		
             case 'sc': case 'script': {
                 reply(`https://www.youtube.com/c/SinhanadaMusicRemix\n  Subscribe කරන්න අමතක කරන්න එපා... අලුත්ම සිංදු ආපූ ගමන් අහන්න මේ චැනල් එක Subscribe කරලා තියා ගන්න...`)
             }
