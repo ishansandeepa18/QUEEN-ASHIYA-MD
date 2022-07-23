@@ -3501,7 +3501,7 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 					})
 					break
 		
-		case 'chatbot' {
+	case 'chatbot': {
 
 if (!isCreator)return reply(`mess.owner`)
 if (args[0] === "on") {
