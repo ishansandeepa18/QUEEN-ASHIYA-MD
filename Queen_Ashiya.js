@@ -3511,10 +3511,15 @@ reply(`Chat Bot On`)
 if (args[0] === "off") {
 global.chatbotpre = 'false'
 reply(`Chat Bot Off`)
-}
-}
-
-break
+} else {
+                 let buttons = [
+                        { buttonId: 'chatbot on', buttonText: { displayText: '𝐎𝐍 ❗' }, type: 1 },
+                        { buttonId: 'chatbot off', buttonText: { displayText: '𝐎𝐅𝐅 ❗' }, type: 1 }
+                    ]
+                    await Ashiya.sendButtonText(m.chat, buttons, `Chat Bot Mode`, Ashiya.user.name, m)
+                }
+             }
+             break
 	    
 	    
 	    
