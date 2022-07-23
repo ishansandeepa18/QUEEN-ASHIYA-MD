@@ -26,7 +26,7 @@ global.owner = ['94786746412'] //your owner number
 global.premium = ['94786746412'] //your Owner number in menu msg
 global.ownernomer = '94786746412' //your owner number info
 
-global.ownername = '𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢' //your owner name
+global.ownername = 'Ishan Sandeepa' //your owner name
 global.botname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' //your bot name
 global.footer = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞' 
 
