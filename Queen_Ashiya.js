@@ -2049,7 +2049,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+  *I Am ${global.botname}*
 		    
 📝 Title : ${anu.title}
 
@@ -2059,7 +2059,7 @@ break
 📢 Url : ${anu.url}
 
 😊 ඔයාට ඕන Audio එකේ Quality එක පහතින් තෝරන්න...  `,
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2081,7 +2081,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+  *I Am ${global.botname}*
 		    
 📝 Title : ${anu.title}
 
@@ -2091,7 +2091,7 @@ break
 📢 Url : ${anu.url}
 
 😊 ඔයා තෝර ගත්තේ Audio එකේ High Quality, දැන් ඔයාට ඕන   AUDIO  එකද, නැතිනම්  AUDIO DOCUMENT  එකද කියා පහතින් තෝරන්න... `,
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2114,7 +2114,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+  *I Am ${global.botname}*
 		    
 📝 Title : ${anu.title}
 
@@ -2125,7 +2125,7 @@ break
 
 😊 ඔයා තෝර ගත්තේ Audio එකේ Low Quality, දැන් ඔයාට ඕන   AUDIO  එකද, නැතිනම්  AUDIO DOCUMENT  එකද කියා පහතින් තෝරන්න...  `,
 			
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -2225,7 +2225,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+  *I Am ${global.botname}*
 		    
 📝 Title : ${anu.title}
 ⏰ Duration : ${anu.timestamp}
@@ -3475,7 +3475,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 reply
 		
 		
-		(`I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞\n\n*😇 My Owner Is   ${global.ownername}*\n\n☎️ http://wa.me/${global.owner}\n\n ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ `)
+		(`I Am ${global.botname}\n\n*😇 My Owner Is   ${global.ownername}*\n\n☎️ http://wa.me/${global.owner}\n\n ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ `)
 		    
     
 }
@@ -3966,7 +3966,8 @@ break
 
     *I Am  ${global.botname}*
 
-
+😇 My Owner Is  ${global.ownername}
+😇 My Owner Number Is  ${global.owner}
 
   ...........   𝘐'𝘮 𝘈𝘭𝘪𝘷𝘦 𝘕𝘰𝘸  .........
 
@@ -4016,7 +4017,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
  
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
-My Owner Is  ${global.ownername}
+😇 My Owner Is  ${global.ownername}
+😇 My Owner Number Is  ${global.owner}
  
  
  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
@@ -4112,7 +4114,7 @@ My Owner Is  ${global.ownername}
 		caption: `
 		*𝐇𝐞𝐥𝐥𝐨   ${m.pushName}*\n 
 		
-		I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞
+		I Am ${global.botname}
 		
 		
 		
