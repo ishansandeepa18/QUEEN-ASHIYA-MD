@@ -36,6 +36,8 @@ global.sc = 'https://github.com/ishansandeepa757'
 global.myweb = 'https://www.youtube.com/c/SinhanadaMusicRemix' //your chanal link
 global.packname = '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞'
 
+global.chatbotpre = "true"
+
 global.author = '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺:- 𝘐𝘴𝘩𝘢𝘯 𝘚𝘢𝘯𝘥𝘦𝘦𝘱𝘢'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']                          // 👈 මේවා ඔයාට ඕන විදියට වෙනස් කර ගන්න \\ 
