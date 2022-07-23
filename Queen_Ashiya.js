@@ -3950,6 +3950,9 @@ break
 		
                      case 'alive': case 'ashiya':
 			     
+		result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Alive.mp3`)
+					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+		
 			      timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/3M1pzNm/Ashiya.jpg')
@@ -3983,12 +3986,12 @@ break
                                             	
                             }, {
                             quickReplyButton: {
-                            displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍',
+                            displayText: '𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 📁',
                             id: `${prefix}owner`
                             }
                             },{
                             quickReplyButton: {
-                            displayText: '𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 📁',
+                            displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍',
                             id: `${prefix}menu`
                             }
                             }] )
