@@ -3980,11 +3980,7 @@ break
                             displayText: '𝗚𝗜𝗧 𝗛𝗨𝗕 𝗔𝗖𝗖𝗢𝗨𝗡𝗧',
                             url: 'https://github.com/ishansandeepa757'
                             }
-                            }, {
-                            urlButton: {
-                            displayText: `${button}`,
-                            url: `${btnurl}`
-                            }                            	
+                                            	
                             }, {
                             quickReplyButton: {
                             displayText: '𝙊𝙒𝙉𝙀𝙍 🙋‍',
