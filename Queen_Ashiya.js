@@ -4024,14 +4024,7 @@ break
 break
 		
 		
-	case 'kelapan': case 'hapan': case 'napan': 
-	     if (global.chatbotpre === "false")return
-	    {Ashiya.sendMessage(m.chat, { text :'හා අනේ ඔයා කියනකන්මයි මං හිටියේ' }, { quoted: m })
-
-   
-
-}
-break
+	
 		
 		
 		
