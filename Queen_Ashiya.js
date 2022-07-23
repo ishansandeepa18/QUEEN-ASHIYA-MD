@@ -3966,8 +3966,9 @@ break
 
     *I Am  ${global.botname}*
 
-😇 My Owner Is  ${global.ownername}
-😇 My Owner Number Is  ${global.owner}
+➡️ ᴹʸ ᴼʷⁿᵉʳ ᴵˢ  ${global.ownername}
+
+➡️ My Owner Number Is  ${global.owner}
 
   ...........   𝘐'𝘮 𝘈𝘭𝘪𝘷𝘦 𝘕𝘰𝘸  .........
 
@@ -4017,8 +4018,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
  
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
-😇 My Owner Is  ${global.ownername}
-😇 My Owner Number Is  ${global.owner}
+➡️ My Owner Is  ${global.ownername}
+
+➡️ My Owner Number Is  ${global.owner}
  
  
  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
