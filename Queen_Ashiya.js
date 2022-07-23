@@ -3966,9 +3966,10 @@ break
 
     *I Am  ${global.botname}*
 
-➡️ ᴹʸ ᴼʷⁿᵉʳ ᴵˢ  ${global.ownername}
+👨‍🎓 ᴹʸ ᴼʷⁿᵉʳ ᴵˢ  ${global.ownername}
 
-➡️ My Owner Number Is  ${global.owner}
+☎️ ᴹʸ ᴼʷⁿᵉʳ ᴺᵘᵐᵇᵉʳ ᴵˢ  ${global.owner}
+
 
   ...........   𝘐'𝘮 𝘈𝘭𝘪𝘷𝘦 𝘕𝘰𝘸  .........
 
@@ -4018,9 +4019,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
  
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
-➡️ My Owner Is  ${global.ownername}
+👨‍🎓 ᴹʸ ᴼʷⁿᵉʳ ᴵˢ  ${global.ownername}
 
-➡️ My Owner Number Is  ${global.owner}
+☎️ ᴹʸ ᴼʷⁿᵉʳ ᴺᵘᵐᵇᵉʳ ᴵˢ  ${global.owner}
+
+𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
  
  
  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
