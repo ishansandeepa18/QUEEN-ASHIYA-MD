@@ -3503,14 +3503,14 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 		
 	case 'chatbot': {
 
-if (!isCreator)return reply(`mess.owner`)
+if (!isCreator)return reply(`${mess.owner}`)
 if (args[0] === "on") {
 global.chatbotpre = 'true'
-reply(`ON`)
+reply(`Chat Bot On`)
 }else
 if (args[0] === "off") {
 global.chatbotpre = 'false'
-reply(`OFF`)
+reply(`Chat Bot Off`)
 }
 }
 
