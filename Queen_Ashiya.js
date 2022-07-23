@@ -3964,7 +3964,7 @@ break
 𝐇𝐞𝐥𝐥𝐨  ${pushname}  👋
 
 
-    *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+    *I Am  ${global.botname}*
 
 
 
@@ -4012,10 +4012,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 
  𝐇𝐞𝐥𝐥𝐨  ${pushname}  👋
 
- *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+ *I Am  ${global.botname}*
  
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
+My Owner Is  ${global.ownername}
  
  
  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 )
