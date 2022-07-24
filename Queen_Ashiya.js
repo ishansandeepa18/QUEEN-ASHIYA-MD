@@ -2147,10 +2147,8 @@ break
                 const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
 		await Ashiya.sendMessage(from, { delete: down.key})
 		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
-		Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+		Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
 		await Ashiya.sendMessage(from, { delete: uplord.key})
-        
-                Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
 		
@@ -2163,11 +2161,11 @@ break
                 const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
 		await Ashiya.sendMessage(from, { delete: down.key})
 		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
-		Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+		Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
 		await Ashiya.sendMessage(from, { delete: uplord.key})
                
         
-                Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+                
             }
             break
 		
