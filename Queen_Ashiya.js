@@ -2053,7 +2053,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am ${global.botname}*
+  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 		    
 📝 Title : ${anu.title}
 
@@ -2085,7 +2085,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am ${global.botname}*
+  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 		    
 📝 Title : ${anu.title}
 
@@ -2118,7 +2118,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am ${global.botname}*
+  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 		    
 📝 Title : ${anu.title}
 
@@ -2147,8 +2147,8 @@ break
                 const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
 		await Ashiya.sendMessage(from, { delete: down.key})
 		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
-		await  Ashiya.sendMessage(from, { delete: uplord.key})
-               
+		Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+		await Ashiya.sendMessage(from, { delete: uplord.key})
         
                 Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
@@ -2163,7 +2163,8 @@ break
                 const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
 		await Ashiya.sendMessage(from, { delete: down.key})
 		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
-		await  Ashiya.sendMessage(from, { delete: uplord.key})
+		Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+		await Ashiya.sendMessage(from, { delete: uplord.key})
                
         
                 Ashiya.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
@@ -2179,10 +2180,9 @@ break
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
 		await Ashiya.sendMessage(from, { delete: down.key})
-			Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
 		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
+		Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
 		await Ashiya.sendMessage(from, { delete: uplord.key})
-		
                
 		
 	}
@@ -2196,8 +2196,8 @@ break
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 const down = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Download 📥 වෙන ගමන් ...'},{ quoted: m })
 		await Ashiya.sendMessage(from, { delete: down.key})
-			Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
 		const uplord = await  Ashiya.sendMessage(from ,{text:'ඔයාගේ සිංදුව Upload 📤 කරන ගමන්...'},{ quoted: m })
+		Ashiya.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
 		await Ashiya.sendMessage(from, { delete: uplord.key})
 		
                
@@ -2229,7 +2229,7 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-  *I Am ${global.botname}*
+  *I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 		    
 📝 Title : ${anu.title}
 ⏰ Duration : ${anu.timestamp}
@@ -2238,7 +2238,7 @@ break
 
 
 😊 ඔයාට ඕන වීඩීයෝ එකේ Quality එක, පහතින් තෝරන්න 👇  `,
-                    footer: '💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞',
+                    footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4052,7 +4052,7 @@ break
 𝐇𝐞𝐥𝐥𝐨  ${pushname}  👋
 
 
-    *I Am  ${global.botname}*
+    *I Am  💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 
 👨‍🎓 ᴹʸ ᴼʷⁿᵉʳ ᴵˢ  ${global.ownername}
 
@@ -4109,7 +4109,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 
  𝐇𝐞𝐥𝐥𝐨  ${pushname}  👋
 
- *I Am  ${global.botname}*
+ *I Am  💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
  
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
@@ -4214,7 +4214,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		caption: `
 		*𝐇𝐞𝐥𝐥𝐨   ${m.pushName}*\n 
 		
-		I Am ${global.botname}
+		I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞
 		
 		
 		
@@ -4246,7 +4246,7 @@ case 'allmenu': {
        let buttonMessage = {
        image: { url: 'https://i.ibb.co/3M1pzNm/Ashiya.jpg'},
        caption: `
-┏━ *${botname}* ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃
 ┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
 ┃║
@@ -4443,7 +4443,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Main Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃
 ┃╔══☯︎❯ 💁 MAIN 👩‍💻 ❮  👇
 ┃║
@@ -4479,7 +4479,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Group Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️══☬❯ GROUP 🌎 ❮ 👇   
 ┃║   
 ┃╠✹🌎 grouplink
@@ -4526,7 +4526,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Owner Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
 ┃║
 ┃╠✹🤴 chat [option]
@@ -4558,7 +4558,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Download Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️═☬❯ DOWNLOADER 📥 ❮ 👇
 ┃║
 ┃╠✹📥🎵 song [url|quality]
@@ -4589,7 +4589,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Search Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️══☬❯ SEARCHER 🔎 ❮ 👇
 ┃║
 ┃╠✹🔎 play [query]
@@ -4627,7 +4627,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Textpro Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️══☬❯ TEXT PRO 📝 ❮ 👇
 ┃║	        
 ┃╠✹📝 candy [txt]
@@ -4707,7 +4707,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Convert Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️═══☬❯ CONVERTER 🔄 ❮ 👇
 ┃║
 ┃╠✹🔄 toimage [reply stick]
@@ -4742,7 +4742,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Database Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️══☬❯ DATABASE 💻 ❮ 👇
 ┃║
 ┃╠✹💻 setcmd
@@ -4775,7 +4775,7 @@ let buttons = [
         let buttonMessage = {
         image: { url: picak+'Voicechanger Menu'},
         caption: `
-┏━ ${botname} ━━⭓ 
+┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️═☬❯ VOICE CHANGER 🎤 ❮ 👇
 ┃║
 ┃╠✹🎤 bass [reply aud]
@@ -4808,8 +4808,9 @@ var unicorn = await getBuffer(picak+'Create By')
 await Ashiya.send5ButImg(from, `` + '' + ' ', `
 
 *𝐇𝐞𝐥𝐥𝐨    ${m.pushName}*\n 
+
 		
-		*I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
+*I Am 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞*
 		
 		
 		 
