@@ -3607,7 +3607,7 @@ break
 						     if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 						     
-                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/adarey.webp`)
+                                         result = fs.readFileSync(`./Queen_Ashiya_Media/sticker/Adarey.webp`)
 					Ashiya.sendMessage(m.chat, { sticker: result }, { quoted: m })
 						     
                                          Ashiya.sendMessage(m.chat, { text :'ඔයාටත් ආදරෙයි මං ගොඩක්' }, { quoted: m })
