@@ -2047,8 +2047,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[0]
                 let buttons = [
-                    {buttonId: `play123 ${anu.url}`, buttonText: {displayText: '𝗟𝗼𝘄 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 '}, type: 1},
-		    {buttonId: `play321 ${anu.url}`, buttonText: {displayText: '𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 '}, type: 1},
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎵 𝗔𝗨𝗗𝗜𝗢 🎵'}, type: 1},
+		    {buttonId: `documentfile2 ${anu.url}`, buttonText: {displayText: '📃 𝐀𝐔𝐃𝐈𝐎 𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓 📃 '}, type: 1},
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -4061,15 +4061,18 @@ break
 
   ...........   𝘐'𝘮 𝘈𝘭𝘪𝘷𝘦 𝘕𝘰𝘸  .........
 
-ඔයා බැලුවේ මං Online ද , කියලද අනේ... 🤭
-
- ඔව් අනේ මං Online තමයි ඉන්නේ...😋
 
 සියලුම  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 ( 📖 ) එක දැන ගැනීමට  .𝗺𝗲𝗻𝘂  ලෙස 𝘁𝘆𝗽𝗲 කරන්න... 
                
              
 
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`,unicorn, [{
+                            urlButton: {
+                            displayText: '𝐐𝐔𝐄𝐄𝐍 𝐀𝐒𝐇𝐈𝐘𝐀 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐖𝐞𝐛𝐬𝐢𝐭𝐞',
+                            url: 'https://sites.google.com/view/queen-ashiya/home'
+                            }
+	
+                            },{
                             urlButton: {
                             displayText: '𝗚𝗜𝗧 𝗛𝗨𝗕 𝗔𝗖𝗖𝗢𝗨𝗡𝗧',
                             url: 'https://github.com/ishansandeepa757'
@@ -4236,7 +4239,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		
 		
             case 'sc': case 'script': {
-                reply(`https://github.com/ishansandeepa757\n \n My Git Hub Link ... `)
+                reply(`https://sites.google.com/view/queen-ashiya/home\n \n 𝐐𝐔𝐄𝐄𝐍 𝐀𝐒𝐇𝐈𝐘𝐀 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐖𝐞𝐛𝐬𝐢𝐭𝐞 ... `)
 		    
 		    
             }
