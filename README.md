@@ -43,11 +43,23 @@
 
 
 
-<b>👉  මෙතනින් qr එක Scan 🔎 කරන්න...  ➡➡➡     [මෙතන ටච් කරන්න...](https://replit.com/@ishansandeepa18/QUEEN-ASHIYA-MD?v=1)
+<b>👉  මෙතනින් qr එක Scan 🔎 කරන්න... 
+
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ishansandeepa18/QUEEN-ASHIYA-MD?v=1)
 
 
 
-<b>👉  මෙතනිම් බොට්ව Deploy 💻 කරන්න... ➡➡➡ [මෙතන ටච් කරන්න...](https://heroku.com/deploy)
+
+
+---- 
+
+
+
+
+<b>👉  මෙතනිම් බොට්ව Deploy 💻 කරන්න...
+
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 
 
@@ -55,6 +67,7 @@
 
 
 ----
+
 
 
 <b><details><summary>Available Features</summary><br>
