@@ -1651,11 +1651,11 @@ break
                 if (args[0] === "on") {
                 if (db.data.chats[m.chat].antilink) return reply(`කිසිම ලින්ක් එකක් දාන්න එපා... Antilink Activated කරලා තියෙන්නේ..`)
                 db.data.chats[m.chat].antilink = true
-                reply(`Antilink Active !`)
+                reply(`කිසිම ලින්ක් එකක් දාන්න එපා... Antilink Activated කරලා තියෙන්නේ.. !`)
                 } else if (args[0] === "off") {
                 if (!db.data.chats[m.chat].antilink) return reply(`දැන් නම් ලින්ක් දැම්මට කමක් නැහැ... Antilink Deactivated කරලා තියෙන්නේ...`)
                 db.data.chats[m.chat].antilink = false
-                reply(`Antilink Inactive !`)
+                reply(`දැන් නම් ලින්ක් දැම්මට කමක් නැහැ... Antilink Deactivated කරලා තියෙන්නේ... !`)
                 } else {
                  let buttons = [
                         { buttonId: 'antilink on', buttonText: { displayText: '𝐎𝐍 ❗' }, type: 1 },
@@ -2127,7 +2127,7 @@ break
 🎗 Uploaded On : ${anu.ago}
 📢 Url : ${anu.url}
 
-😊 ඔයා තෝර ගත්තේ Audio එකේ Low Quality, දැන් ඔයාට ඕන   AUDIO  එකද, නැතිනම්  AUDIO DOCUMENT  එකද කියා පහතින් තෝරන්න...  `,
+😊  ඔයාට ඕන   AUDIO  එකද, නැතිනම්  AUDIO DOCUMENT  එකද කියා පහතින් තෝරන්න...  `,
 			
                     footer: 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ',
                     buttons: buttons,
@@ -3538,6 +3538,24 @@ reply("Success Changing Menu To "+q)
                     break
 		
 		
+		
+		case 'notice': {
+			
+ replay(`𝗛𝗶,  ${global.ownername}  👋\n
+😇 𝗙𝗿𝗼𝗺 𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.\n \n \nᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`)
+			
+			
+ replay(`හායි,  ${global.ownername}  👋\n
+😇 𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔 විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම Auto Reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.\n \n \nᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`)
+			
+                         }
+		
+                            break
+		
+		
+		
+		
+		
 	case 'hi': case 'hy': case 'hai': case 'hey': case 'hai': case 'හායි': {result = fs.readFileSync(`./Queen_Ashiya_Media/voice/Hi.mp3`)
 										if (global.chatbotpre === "false")return
 					Ashiya.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
@@ -4224,18 +4242,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 		
-		case 'notice': {
-			
- replay(`𝗛𝗶,  ${global.ownername}  👋\n
-😇 𝗙𝗿𝗼𝗺 𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.\n \n \nᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`)
-			
-			
- replay(`හායි,  ${global.ownername}  👋\n
-😇 𝗤𝗨𝗘𝗘𝗡 𝗔𝗦𝗛𝗜𝗬𝗔 විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම Auto Reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.\n \n \nᴘᴏᴡᴇʀᴇᴅ ʙʏ  ɪꜱʜᴀɴ ꜱᴀɴᴅᴇᴇᴘᴀ`)
-			
-                         }
 		
-                            break
 		
 		
             case 'sc': case 'script': {
@@ -4538,6 +4545,7 @@ let buttons = [
 ┏━ 💞 𝚀𝚄𝙴𝙴𝙽 𝙰𝚂𝙷𝙸𝚈𝙰 💞 ━━⭓ 
 ┃╠✹📖️══☬❯ OWNER  🤴❮ 👇
 ┃║
+┃║✹🤴 chatbot [on/off]
 ┃╠✹🤴 chat [option]
 ┃╠✹🤴 add [link]
 ┃╠✹🤴 leave
