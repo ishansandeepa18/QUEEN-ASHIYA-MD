@@ -71,26 +71,10 @@
 
 
 
-<b><details><summary>Available Features</summary><br>
+<b><details><summary>𝐐𝐔𝐄𝐄𝐍 𝐀𝐒𝐇𝐈𝐘𝐀 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐖𝐞𝐛𝐬𝐢𝐭𝐞</summary><br>
 	
-| Features |  Availability |
-| :------: |  :----------: |
-|   Convert     |       ✅     |
-|   Database     |       ✅     |
-|   Owner     |       ✅    |
-|   Islami     |       ✅     |
-|   Downloader     |       ✅     |
-|   Webzone     |       ✅      |
-|   Searching     |       ✅      |
-|   Textpro     |       ✅      |
-|   Ephoto     |       ✅     |
-|   Anime Web     |       ✅      |
-|   Stalker     |       ✅      |
-|   Random Text     |       ✅     |
-|   Random Image     |       ✅     |
-|   Nekos Life     |       ✅      |
-|   More Nsfw     |       ✅      |
-|   Creator     |       ✅      |
+
+https://sites.google.com/view/queen-ashiya/home
 
 </details>
 
