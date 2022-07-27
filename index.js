@@ -106,15 +106,15 @@ async function startAshiya() {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nGroup එක Mute කලා යාලුවනේ පුලුවන් ඉක්මනින් ආයේ Unmute කරන්නම් සිදුවන අපහසුතාවයට සමාවෙන්න... !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, ` මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... \n\nGroup එක Mute කලා යාලුවනේ පුලුවන් ඉක්මනින් ආයේ Unmute කරන්නම් සිදුවන අපහසුතාවයට සමාවෙන්න... !`, `Group Settings Change Message`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nGroup එක Unmute කලා යාලුවනේ දැන් ඔයාලට පුලුවන් මේ බොට් ඉශූගෙන් උදව් ගන්න... !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, ` මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... \n\nGroup එක Unmute කලා යාලුවනේ දැන් ඔයාලට පුලුවන් මේ බොට් ඉශූගෙන් උදව් ගන්න... !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == true) {
-       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nGroup එකේ Info Edit කරන්න පුලුවන් ඇඩ්මින්ලට විතරයි... !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, ` මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... \n\nGroup එකේ Info Edit කරන්න පුලුවන් ඇඩ්මින්ලට විතරයි... !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == false) {
-       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nදැන් ඔයාලා හැමදෙනාටම Group එකේ Info Edit කරන්න පුලුවන්...  !`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, ` මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... \n\nදැන් ඔයාලා හැමදෙනාටම Group එකේ Info Edit කරන්න පුලුවන්...  !`, `Group Settings Change Message`, wm_fatih, [])
        } else {
-       Ashiya.send5ButImg(pea[0].id, `「 මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 」\n\nමෙන්න QUEEN ASHIYA Group එකේ නම වෙනස් කලා... *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+       Ashiya.send5ButImg(pea[0].id, ` මෙන්න QUEEN ASHIYA  Group Setting වෙනස් කලා... 😇\n\nමෙන්න QUEEN ASHIYA Group එකේ නම වෙනස් කලා... *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
     })
 
@@ -147,16 +147,16 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.ibb.co/3M1pzNm/Ashiya.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     Ashiya.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-⭐✑ Hi👋 @${num.split("@")[0]},
-⭐✑ Welcome To ${metadata.subject}
+😇✑ Hi👋 @${num.split("@")[0]},
+😇✑ Welcome To ${metadata.subject}
 
-⭐✑ Description: ${metadata.desc}
+😇✑ Description: ${metadata.desc}
 
-⭐✑ ඔයාව සාදරයෙන් පිළිගන්නවා මේ Group එකට... ඔයාලට පුලුවන් මේ Group එකෙන් ඔයාලගේ වැඩ පහසු කර ගන්න වැඩි දුර තොරතුරු දැන ගැනීමට .menu / .list ලෙස Type කරන්න...!!`} )
+😇✑ ඔයාව සාදරයෙන් පිළිගන්නවා මේ Group එකට... ඔයාලට පුලුවන් මේ Group එකෙන් ඔයාලගේ වැඩ පහසු කර ගන්න වැඩි දුර තොරතුරු දැන ගැනීමට .menu / .list ලෙස Type කරන්න...!!`} )
                 } else if (anu.action == 'remove') {
                     Ashiya.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-⭐✑ මේන්න මේ ගෝතයා Group එකෙන් Left උනා... හා කමක් නෑ. උට හොද නම් මට මොකෝ 😅` })
+😳✑ මේන්න මේ ගෝතයා Group එකෙන් Left උනා... හා කමක් නෑ. උට හොද නම් මට මොකෝ 😅` })
                 }
             }
         } catch (err) {
